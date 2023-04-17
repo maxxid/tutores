@@ -1,0 +1,16 @@
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\TUTORES.csproj.AssemblyReference.cache
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\TUTORES.GeneratedMSBuildEditorConfig.editorconfig
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Login\MainPage.xaml.g.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Login\SelectionPage.xaml.g.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\TUTORES.AssemblyInfoInputs.cache
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\TUTORES.AssemblyInfo.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\TUTORES.csproj.CoreCompileInputs.cache
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\TUTORES.dll
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\refint\TUTORES.dll
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\TUTORES.pdb
+E:\DEV23\TUTORES\TUTORES\bin\Debug\netstandard2.0\TUTORES.deps.json
+E:\DEV23\TUTORES\TUTORES\bin\Debug\netstandard2.0\TUTORES.dll
+E:\DEV23\TUTORES\TUTORES\bin\Debug\netstandard2.0\TUTORES.pdb
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\XamlC.stamp
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\ref\TUTORES.dll

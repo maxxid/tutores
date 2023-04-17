@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TUTORES.Vistas.Login.SelectionPage"
+             NavigationPage.HasNavigationBar="false">
+        <Grid>
+            <Frame>
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,1"
+                                         EndPoint="1,0">
+                        <GradientStop Color="#11305E"
+                                      Offset="0.1"/>
+                        <GradientStop Color="#4768AD"
+                                      Offset="0.1"/>
+                        <GradientStop Color="#4D5085"
+                                      Offset="1.0"/>
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition  />
+                        <RowDefinition  />
+                        <RowDefinition Height="60"/>
+                    </Grid.RowDefinitions>
+                
+                <BoxView Color="Transparent" />
+                    <Label Text="Bienvenido Hector! " 
+                           HorizontalOptions="Start"
+                           VerticalOptions="End"
+                           TextColor="White"
+                           FontSize="Title"
+                           Padding="0,50"/>
+                     <Label Text="Elegi el rol que vas a usar ahora" 
+                       HorizontalOptions="Start"
+                       VerticalOptions="End"
+                       TextColor="White"
+                       FontSize="Medium"
+                       />
+
+                    <CollectionView
+                        ItemsSource="{Binding Roles}"
+                        Grid.Row="1"
+                        BackgroundColor="Transparent"
+                        EmptyView="No hay items para mostrar"
+                    >
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Vertical" ItemSpacing="1"/>
+                        </CollectionView.ItemsLayout>
+                        
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+
+                            <RadioButton  
+                                Content="{Binding Concat}"
+                                BackgroundColor="White"
+                                CornerRadius="10"
+                                Padding="10,10">
+                            </RadioButton>
+                           
+
+                        </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                     </CollectionView>
+                
+
+                    <Frame 
+                        CornerRadius="10"
+                        Grid.Row="2">
+                        <Label
+                            Text="Continuar"
+                            HorizontalOptions="Center"
+                            TextColor="Black"></Label>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding PushSelectionCommand}"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+
+            </Grid>
+
+
+        </Frame>
+        </Grid>
+</ContentPage>
