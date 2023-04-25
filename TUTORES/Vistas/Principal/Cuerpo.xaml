@@ -1,210 +1,179 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TUTORES.Vistas.Principal.Cuerpo">
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="TUTORES.Vistas.Principal.Cuerpo"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit">
     <Grid>
 
-
-
-
-
-
-        <Frame 
-               HasShadow="True"
-               CornerRadius="0"
-               HeightRequest="1200"
-               WidthRequest="120"
-               Padding="15,30,15,120"
-               >
+        <Frame
+            Padding="15,30,15,120"
+            CornerRadius="0"
+            HasShadow="True"
+            HeightRequest="1200"
+            WidthRequest="120">
             <Frame.Background>
-                <LinearGradientBrush StartPoint="0,1"
-                             EndPoint="1,0">
-                    <GradientStop Color="#2BC0E4"
-                          Offset="0.1"/>
-                    <GradientStop Color="#EAECC6"
-                          Offset="1.0"/>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Offset="0.1" Color="#11305E" />
+                    <GradientStop Offset="0.1" Color="#4768AD" />
+                    <GradientStop Offset="1.0" Color="#4D5085" />
                 </LinearGradientBrush>
             </Frame.Background>
 
 
-            <StackLayout
-                    BackgroundColor="Transparent"
-                    Padding="1">
-                <Grid
-                        ColumnSpacing="10"
-                        
-                        >
+            <StackLayout Padding="1" BackgroundColor="Transparent">
+                <Grid ColumnSpacing="10">
                     <Grid.RowDefinitions>
-                        <RowDefinition/>
+                        <RowDefinition />
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="45"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition Width="45" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="45" />
 
                     </Grid.ColumnDefinitions>
-                    <Image Source="usuario.png"
-                                   HeightRequest="45" 
-                                   Grid.Column="0"
-                                   HorizontalOptions="Start"
-                                   Grid.Row="0"
-                            />
-                    <Label Text="Bienvenido &#10;Hoy es Miercoles 15 de Febrero"
-                                   FontSize="15" 
-                                   TextColor="Black"
-                                   Grid.Column="1"
-                                    HorizontalOptions="FillAndExpand">
-
-                    </Label>
-                    <Image Source="menu2.png"
-                                   HeightRequest="40"
-                                   Grid.Column="2"
-                                   HorizontalOptions="End"
-
-                            />
-                </Grid>
-                <Label 
-                        Text="Ultima Actualizacion: 14/02/2023"
-                        FontSize="13"
-                        Margin="5,10,0,10"
-                        TextColor="Black">
-
-                </Label>
-                <Grid
-                    ColumnSpacing="10"
-                    >
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="140"/>
-                    </Grid.RowDefinitions>
-                    <Frame
-                        CornerRadius="15"
+                    <Image
+                        Grid.Row="0"
                         Grid.Column="0"
-                    >
-
-                        <StackLayout
-                            Orientation="Vertical"
-                            VerticalOptions="Center"
-                           >
-
-                            <Image Source="montana.png"
-                                   HeightRequest="45" 
-                            />
-                            <Label Text="Mod offline" FontSize="13" TextColor="#0d7680"  ></Label>
-                        </StackLayout>
-                    </Frame>
-                    <Frame
-                        CornerRadius="15"
+                        HeightRequest="45"
+                        HorizontalOptions="Start"
+                        Source="icon_A_usuario.png" />
+                    <Label
                         Grid.Column="1"
-                        HasShadow="True"
-                    >
-                        <StackLayout
-                            VerticalOptions="CenterAndExpand"
-                        >
-                            <Image Source="tardanzaICON.png"
-                                   HeightRequest="45" />
-                            <Label Text="Tardanzas" FontSize="13" TextColor="#0d7680" HorizontalOptions="Center"></Label>
+                        FontSize="15"
+                        HorizontalOptions="FillAndExpand"
+                        Text="Bienvenido Hector! &#10;Hoy es Martes 25 de Abril"
+                        TextColor="White" />
+                    <Image
+                        Grid.Column="2"
+                        HeightRequest="40"
+                        HorizontalOptions="End"
+                        Source="icon_A_menu.png" />
+                </Grid>
+                <Label
+                    Margin="5,10,0,10"
+                    FontSize="13"
+                    Text="Ultima Actualizacion: 14/04/2023"
+                    TextColor="White" />
+                <Grid ColumnSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="140" />
+                    </Grid.RowDefinitions>
+                    <Frame Grid.Column="0" CornerRadius="15">
+
+                        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+
+                            <Image HeightRequest="45" Source="icon_A_sinConexion.png" />
+                            <Label
+                                FontSize="13"
+                                Text="Mod offline"
+                                TextColor="#0d7680" />
                         </StackLayout>
                     </Frame>
                     <Frame
+                        Grid.Column="1"
                         CornerRadius="15"
-                        Padding="10"
-                        HasShadow="True"
+                        HasShadow="True">
+                        <StackLayout VerticalOptions="CenterAndExpand">
+                            <Image HeightRequest="45" Source="icon_A_tardanza2.png" />
+                            <Label
+                                FontSize="13"
+                                HorizontalOptions="Center"
+                                Text="Tardanzas"
+                                TextColor="#0d7680" />
+                        </StackLayout>
+                    </Frame>
+                    <Frame
                         Grid.Column="2"
-                        
-                    >
-                        <StackLayout
-                            VerticalOptions="Center"
-                            >
-                            <Image Source="asistenciaICON.png"
-                                   HeightRequest="45"
-                            />
-                            <Label Text="Asistencias" FontSize="13" TextColor="#0d7680"  HorizontalOptions="Center"></Label>
+                        Padding="10"
+                        CornerRadius="15"
+                        HasShadow="True">
+                        <StackLayout VerticalOptions="Center">
+                            <Image HeightRequest="45" Source="icon_A_asistencia.png" />
+                            <Label
+                                FontSize="13"
+                                HorizontalOptions="Center"
+                                Text="Asistencias"
+                                TextColor="#0d7680" />
                         </StackLayout>
                     </Frame>
                 </Grid>
 
                 <Frame
-                    CornerRadius="15"
                     Grid.Column="0"
                     Margin="0,15"
                     BorderColor="GreenYellow"
-
-                >
-
-                    <StackLayout
-                        Orientation="Vertical"
-                        VerticalOptions="Center"
+                    CornerRadius="15"
                     >
 
-                        <Image Source="wifi.png"
-                               HeightRequest="45" 
-                        />
-                        <Label Text="Sincronizar Ahora" FontSize="13" TextColor="#0d7680"  ></Label>
-                        <Label Text="Ult. Sincronizacion: 14/02/2023" FontSize="11" TextColor="#0d7680"  ></Label>
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center">
+
+                        <Image HeightRequest="45" Source="icon_A_sincronizar.png" />
+                        <Label
+                            FontSize="13"
+                            Text="Sincronizar Ahora"
+                            TextColor="#0d7680" />
+                        <Label
+                            FontSize="11"
+                            Text="Ult. Sincronizacion: 14/02/2023"
+                            TextColor="#0d7680" />
 
                     </StackLayout>
                 </Frame>
 
                 <Frame
-                        CornerRadius="10"
-                        BackgroundColor="RoyalBlue"
-                        Padding="0"
-                        Margin="0"
-                        IsVisible="False"
-                        >
+                    Margin="0"
+                    Padding="0"
+                    BackgroundColor="RoyalBlue"
+                    CornerRadius="10"
+                    IsVisible="False">
 
                     <StackLayout
-                            Orientation="Horizontal"
-                            VerticalOptions="CenterAndExpand"
-                            HorizontalOptions="CenterAndExpand"
-                            Spacing="10"
-                            Padding="5"
-                        >
+                        Padding="5"
+                        HorizontalOptions="CenterAndExpand"
+                        Orientation="Horizontal"
+                        Spacing="10"
+                        VerticalOptions="CenterAndExpand">
+
+
+                        <Frame CornerRadius="15">
+
+                            <StackLayout
+                                BackgroundColor="Red"
+                                Orientation="Vertical"
+                                VerticalOptions="Center">
+
+                                <Image HeightRequest="45" Source="icon_A_sinConexion.png" />
+                                <Label
+                                    FontSize="13"
+                                    Text="Modo offline"
+                                    TextColor="#0d7680" />
+                            </StackLayout>
+                        </Frame>
+
+
+
+                        <Frame CornerRadius="15">
+                            <StackLayout VerticalOptions="CenterAndExpand">
+                                <Image HeightRequest="45" Source="icon_A_sincronizar.png" />
+                                <Label
+                                    FontSize="13"
+                                    Text="Sincronizar"
+                                    TextColor="#0d7680" />
+                            </StackLayout>
+                        </Frame>
 
 
                         <Frame
+                            Padding="33"
                             CornerRadius="15"
-                            >
-
-                            <StackLayout
-                                    Orientation="Vertical"
-                                    VerticalOptions="Center"
-                                    BackgroundColor="Red">
-
-                                <Image Source="montana.png"
-                                   HeightRequest="45" 
-                                    />
-                                <Label Text="Modo offline" FontSize="13" TextColor="#0d7680"  ></Label>
-                            </StackLayout>
-                        </Frame>
-
-
-
-                        <Frame
-                        CornerRadius="15"
-                        >
-                            <StackLayout
-                            VerticalOptions="CenterAndExpand"
-                         >
-                                <Image Source="wifi.png"
-                                   HeightRequest="45" />
-                                <Label Text="Sincronizar" FontSize="13" TextColor="#0d7680"></Label>
-                            </StackLayout>
-                        </Frame>
-
-
-                        <Frame
-                        CornerRadius="15"
-                        Padding="33"
-                        HasShadow="True"
-                        >
-                            <StackLayout
-                            VerticalOptions="Center"
-                        >
-                                <Image Source="carpeta.png"
-                                   HeightRequest="45"
-                            />
-                                <Label Text="Cursos" FontSize="13" TextColor="#0d7680"></Label>
+                            HasShadow="True">
+                            <StackLayout VerticalOptions="Center">
+                                <Image HeightRequest="45" Source="icon_B_cursos.png" />
+                                <Label
+                                    FontSize="13"
+                                    Text="Cursos"
+                                    TextColor="#0d7680" />
                             </StackLayout>
                         </Frame>
                     </StackLayout>
