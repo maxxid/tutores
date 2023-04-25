@@ -25,12 +25,23 @@
     <Folder Include="Datos\" />
     <Folder Include="Colores\" />
     <Folder Include="Fuentes\" />
-    <Folder Include="Vistas\Main\" />
     <Folder Include="Vistas\Emergentes\" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="Vistas\Login\SelectionPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\Principal\A_PaginaContenedora.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\Principal\Cuerpo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\Principal\Encabezado.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Vistas\Principal\PiePagina.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

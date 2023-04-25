@@ -1,101 +1,100 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TUTORES.MainPage"
-             NavigationPage.HasNavigationBar="false"
-             >
+<ContentPage
+    x:Class="TUTORES.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    NavigationPage.HasNavigationBar="false">
 
     <Grid>
-        <Frame
-            >
+        <Frame>
             <Frame.Background>
-                <LinearGradientBrush StartPoint="0,1"
-                                     EndPoint="1,0">
-                    <GradientStop Color="#11305E"
-                                  Offset="0.1"/>
-                    <GradientStop Color="#4768AD"
-                                  Offset="0.1"/>
-                    <GradientStop Color="#4D5085"
-                                  Offset="1.0"/>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                    <GradientStop Offset="0.1" Color="#11305E" />
+                    <GradientStop Offset="0.1" Color="#4768AD" />
+                    <GradientStop Offset="1.0" Color="#4D5085" />
                 </LinearGradientBrush>
             </Frame.Background>
 
-            
-            <StackLayout
-                VerticalOptions="End">
 
-                <Label 
-                    Text="Bienvenido!"
+            <StackLayout VerticalOptions="End">
+                <Frame
+                    Margin="100"
+                    Padding="15"
+                    CornerRadius="15"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start">
+                    <Image
+                        HeightRequest="80"
+                        HorizontalOptions="Center"
+                        Source="gobaseguir.png"
+                        WidthRequest="200" />
+
+                </Frame>
+                <Label
+                    Margin="0,0,0,40"
                     FontSize="Title"
-                    TextColor="White"
-                    Margin="0,0,0,40">
+                    Text="Bienvenido!"
+                    TextColor="White">
                     <Label.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding PushSelectionCommand}"/>
-
+                        <TapGestureRecognizer Command="{Binding PushSelectionCommand}" />
                     </Label.GestureRecognizers>
                 </Label>
 
                 <StackLayout>
-                    <Label 
+                    <Label
+                        FontSize="Medium"
                         Text="Nombre de Usuario"
+                        TextColor="White" />
+                    <Entry Placeholder="a@gmail.com" />
+                    <Label
                         FontSize="Medium"
-                        TextColor="White"
-                        >
-                    </Label>
-                    <Entry Placeholder="a@gmail.com"></Entry>
-                    <Label 
                         Text="Contraseña"
-                        FontSize="Medium"
-                        TextColor="White">
-                    </Label>
-                    <Entry Placeholder="* * * * * * * "></Entry>
-                    <Frame 
-                        CornerRadius="10">
+                        TextColor="White" />
+                    <Entry Placeholder="* * * * * * * " />
+                    <Frame CornerRadius="10">
                         <Label
-                            Text="Iniciar Sesion con Usuario"
                             HorizontalOptions="Center"
-                            TextColor="Black"></Label>
+                            Text="Iniciar Sesion con Usuario"
+                            TextColor="Black" />
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding PushSelectionCommand}"/>
+                            <TapGestureRecognizer Command="{Binding PushSelectionCommand}" />
                         </Frame.GestureRecognizers>
                     </Frame>
 
-                    
+
                     <Frame
+                        Margin="0,10"
+                        Padding="0"
                         BackgroundColor="WhiteSmoke"
                         HeightRequest="2"
-                        Padding="0"
-                        WidthRequest="1"
-                        Margin="0,10"
-                    >
+                        WidthRequest="1">
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding PushSelectionCommand}"/>
+                            <TapGestureRecognizer Command="{Binding PushSelectionCommand}" />
                         </Frame.GestureRecognizers>
 
 
                     </Frame>
 
-                    <Frame 
-                        CornerRadius="10"
-                        Padding="20,10"
-                      >
-                        <Grid
-                            
-                            >
+                    <Frame Padding="20,10" CornerRadius="10">
+                        <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="4*" />
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto" />
                             </Grid.RowDefinitions>
-                            <Image Source="googleaccount.png" HeightRequest="40" Margin="0" Grid.Column="0"/>
+                            <Image
+                                Grid.Column="0"
+                                Margin="0"
+                                HeightRequest="40"
+                                Source="googleaccount.png" />
                             <Label
-                                Text="Iniciar Sesion con Google"
-                                HorizontalOptions="Center"
                                 Grid.Column="1"
-                                VerticalOptions="Center"
-                                TextColor="Black"></Label>
+                                HorizontalOptions="Center"
+                                Text="Iniciar Sesion con Google"
+                                TextColor="Black"
+                                VerticalOptions="Center" />
                         </Grid>
 
                     </Frame>

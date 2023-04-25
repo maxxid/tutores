@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
 using TUTORES.Modelo;
+using TUTORES.Vistas.Principal;
 using Xamarin.Forms;
 
 namespace TUTORES.VistaModelo
@@ -62,9 +65,23 @@ namespace TUTORES.VistaModelo
 
             };
         }
-        
+
+        #region PROCEDIMIENTOS
+
+        public async Task PushSelectionPage()
+        {
+            await Navigation.PushAsync(new A_PaginaContenedora());
+        }
 
 
+        #endregion
+
+
+        #region COMANDOS
+        public ICommand PushSelectionCommand => new Command(async () => await PushSelectionPage());
+
+
+        #endregion
 
 
     }

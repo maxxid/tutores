@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:principal="clr-namespace:TUTORES.Vistas.Principal;assembly=TUTORES"
+             x:Class="TUTORES.Vistas.Principal.A_PaginaContenedora">
+    <Grid>
+        <CollectionView >
+            <CollectionView.Header>
+                <principal:Encabezado/>
+            </CollectionView.Header>
+
+
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Span="2"
+                                 Orientation="Vertical">
+                </GridItemsLayout>
+            </CollectionView.ItemsLayout>
+
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <principal:Cuerpo/>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+
+        </CollectionView>
+
+
+
+
+        <principal:Encabezado/>
+        <principal:Cuerpo/>
+        <principal:PiePagina />
+
+
+    </Grid>
+</ContentPage>

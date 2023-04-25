@@ -14,3 +14,7 @@ E:\DEV23\TUTORES\TUTORES\bin\Debug\netstandard2.0\TUTORES.dll
 E:\DEV23\TUTORES\TUTORES\bin\Debug\netstandard2.0\TUTORES.pdb
 E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\XamlC.stamp
 E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\ref\TUTORES.dll
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Principal\A_PaginaContenedora.xaml.g.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Principal\Cuerpo.xaml.g.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Principal\Encabezado.xaml.g.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Principal\PiePagina.xaml.g.cs

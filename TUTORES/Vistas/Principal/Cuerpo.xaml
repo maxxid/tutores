@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TUTORES.Vistas.Principal.Cuerpo">
+    <Grid>
+
+
+
+
+
+
+        <Frame 
+               HasShadow="True"
+               CornerRadius="0"
+               HeightRequest="1200"
+               WidthRequest="120"
+               Padding="15,30,15,120"
+               >
+            <Frame.Background>
+                <LinearGradientBrush StartPoint="0,1"
+                             EndPoint="1,0">
+                    <GradientStop Color="#2BC0E4"
+                          Offset="0.1"/>
+                    <GradientStop Color="#EAECC6"
+                          Offset="1.0"/>
+                </LinearGradientBrush>
+            </Frame.Background>
+
+
+            <StackLayout
+                    BackgroundColor="Transparent"
+                    Padding="1">
+                <Grid
+                        ColumnSpacing="10"
+                        
+                        >
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="45"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="45"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Image Source="usuario.png"
+                                   HeightRequest="45" 
+                                   Grid.Column="0"
+                                   HorizontalOptions="Start"
+                                   Grid.Row="0"
+                            />
+                    <Label Text="Bienvenido &#10;Hoy es Miercoles 15 de Febrero"
+                                   FontSize="15" 
+                                   TextColor="Black"
+                                   Grid.Column="1"
+                                    HorizontalOptions="FillAndExpand">
+
+                    </Label>
+                    <Image Source="menu2.png"
+                                   HeightRequest="40"
+                                   Grid.Column="2"
+                                   HorizontalOptions="End"
+
+                            />
+                </Grid>
+                <Label 
+                        Text="Ultima Actualizacion: 14/02/2023"
+                        FontSize="13"
+                        Margin="5,10,0,10"
+                        TextColor="Black">
+
+                </Label>
+                <Grid
+                    ColumnSpacing="10"
+                    >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="140"/>
+                    </Grid.RowDefinitions>
+                    <Frame
+                        CornerRadius="15"
+                        Grid.Column="0"
+                    >
+
+                        <StackLayout
+                            Orientation="Vertical"
+                            VerticalOptions="Center"
+                           >
+
+                            <Image Source="montana.png"
+                                   HeightRequest="45" 
+                            />
+                            <Label Text="Mod offline" FontSize="13" TextColor="#0d7680"  ></Label>
+                        </StackLayout>
+                    </Frame>
+                    <Frame
+                        CornerRadius="15"
+                        Grid.Column="1"
+                        HasShadow="True"
+                    >
+                        <StackLayout
+                            VerticalOptions="CenterAndExpand"
+                        >
+                            <Image Source="tardanzaICON.png"
+                                   HeightRequest="45" />
+                            <Label Text="Tardanzas" FontSize="13" TextColor="#0d7680" HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                    </Frame>
+                    <Frame
+                        CornerRadius="15"
+                        Padding="10"
+                        HasShadow="True"
+                        Grid.Column="2"
+                        
+                    >
+                        <StackLayout
+                            VerticalOptions="Center"
+                            >
+                            <Image Source="asistenciaICON.png"
+                                   HeightRequest="45"
+                            />
+                            <Label Text="Asistencias" FontSize="13" TextColor="#0d7680"  HorizontalOptions="Center"></Label>
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+
+                <Frame
+                    CornerRadius="15"
+                    Grid.Column="0"
+                    Margin="0,15"
+                    BorderColor="GreenYellow"
+
+                >
+
+                    <StackLayout
+                        Orientation="Vertical"
+                        VerticalOptions="Center"
+                    >
+
+                        <Image Source="wifi.png"
+                               HeightRequest="45" 
+                        />
+                        <Label Text="Sincronizar Ahora" FontSize="13" TextColor="#0d7680"  ></Label>
+                        <Label Text="Ult. Sincronizacion: 14/02/2023" FontSize="11" TextColor="#0d7680"  ></Label>
+
+                    </StackLayout>
+                </Frame>
+
+                <Frame
+                        CornerRadius="10"
+                        BackgroundColor="RoyalBlue"
+                        Padding="0"
+                        Margin="0"
+                        IsVisible="False"
+                        >
+
+                    <StackLayout
+                            Orientation="Horizontal"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand"
+                            Spacing="10"
+                            Padding="5"
+                        >
+
+
+                        <Frame
+                            CornerRadius="15"
+                            >
+
+                            <StackLayout
+                                    Orientation="Vertical"
+                                    VerticalOptions="Center"
+                                    BackgroundColor="Red">
+
+                                <Image Source="montana.png"
+                                   HeightRequest="45" 
+                                    />
+                                <Label Text="Modo offline" FontSize="13" TextColor="#0d7680"  ></Label>
+                            </StackLayout>
+                        </Frame>
+
+
+
+                        <Frame
+                        CornerRadius="15"
+                        >
+                            <StackLayout
+                            VerticalOptions="CenterAndExpand"
+                         >
+                                <Image Source="wifi.png"
+                                   HeightRequest="45" />
+                                <Label Text="Sincronizar" FontSize="13" TextColor="#0d7680"></Label>
+                            </StackLayout>
+                        </Frame>
+
+
+                        <Frame
+                        CornerRadius="15"
+                        Padding="33"
+                        HasShadow="True"
+                        >
+                            <StackLayout
+                            VerticalOptions="Center"
+                        >
+                                <Image Source="carpeta.png"
+                                   HeightRequest="45"
+                            />
+                                <Label Text="Cursos" FontSize="13" TextColor="#0d7680"></Label>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentView>
