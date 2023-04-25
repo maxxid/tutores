@@ -99,12 +99,12 @@
                     </Frame>
                 </Grid>
 
+
                 <Frame
                     Grid.Column="0"
                     Margin="0,15"
                     BorderColor="GreenYellow"
-                    CornerRadius="15"
-                    >
+                    CornerRadius="15">
 
                     <StackLayout Orientation="Vertical" VerticalOptions="Center">
 

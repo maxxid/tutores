@@ -11,11 +11,13 @@ namespace TUTORES.Vistas.Login
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SelectionPage : ContentPage
-	{
-		public SelectionPage ()
+    {
+        private String myString;
+		public SelectionPage (String myString)
 		{
 			InitializeComponent ();
-            BindingContext = new SelectionPageVM(Navigation);
+            this.myString = myString;
+            BindingContext = new SelectionPageVM(Navigation, myString);
         }
 	}
 }

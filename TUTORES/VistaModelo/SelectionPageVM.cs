@@ -14,11 +14,14 @@ namespace TUTORES.VistaModelo
     {
         public ObservableCollection<Rol> Roles { get; set; }
         public String Selection { get; set; }
-
+        private String _username;
+        private String _bienvenido;
         #region CONTRUCTOR
-        public SelectionPageVM(INavigation navigation)
+        public SelectionPageVM(INavigation navigation, String UserRecived)
         {
             Navigation = navigation;
+            User = UserRecived;
+            Bienvenido = "Bienvenido " + User + "!";
             InitProducts();
         }
         #endregion
@@ -29,8 +32,17 @@ namespace TUTORES.VistaModelo
 
         }
 
-  
 
+        public string User
+        {
+            get { return _username; }
+            set { _username = value; }
+        }
+        public string Bienvenido
+        {
+            get { return _bienvenido; }
+            set { _bienvenido = value; }
+        }
 
         private void InitProducts()
         {

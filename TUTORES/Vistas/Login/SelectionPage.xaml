@@ -26,7 +26,7 @@
                     Padding="0,50"
                     FontSize="Title"
                     HorizontalOptions="Start"
-                    Text="Bienvenido Hector! "
+                    Text="{Binding Bienvenido}"
                     TextColor="White"
                     VerticalOptions="End" >
                     <Label.GestureRecognizers>
@@ -56,7 +56,8 @@
                                 Padding="10,10"
                                 BackgroundColor="White"
                                 Content="{Binding Concat}"
-                                CornerRadius="10" />
+                                CornerRadius="10" 
+                                />
 
 
                         </DataTemplate>

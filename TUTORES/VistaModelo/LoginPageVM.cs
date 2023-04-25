@@ -14,6 +14,9 @@ namespace TUTORES.VistaModelo
         #region VARIABLES
         private string _optionSelected ="1";
 
+        private string _username;
+        private string _password;
+
         #endregion
 
 
@@ -24,6 +27,17 @@ namespace TUTORES.VistaModelo
             Navigation = navigation;
         }
 
+        public string User
+        {
+            get { return _username; }
+            set { _username = value; }
+        }
+
+        public string Password
+        {
+            get { return _password; }
+            set { SetValue(ref _password, value); }
+        }
         public string OptionSelected
         {
             get { return _optionSelected;}
@@ -39,11 +53,27 @@ namespace TUTORES.VistaModelo
         }
         public async Task PushSelectionPage()
         {
-           await Navigation.PushAsync(new SelectionPage());
+           await Navigation.PushAsync(new SelectionPage("Max"));
         }
-        
+        public async Task IniciarSesion()
+        {
+            if (User==null || Password ==null || User == "" || Password == "")
+            { await DisplayAlert("Error","Ingrese un usuario/contraseña valido", "Ok");
+            }
+            else
+            {
+            await Navigation.PushAsync(new SelectionPage(User));
+
+            }
+
+        }
+
         public ICommand PushSelectionCommand => new Command(async () => await PushSelectionPage());
         public ICommand SelectionCommand => new Command(Seleccion);
+        
+        public ICommand IniciarSesionCommand => new Command(async () => await IniciarSesion());
 
+
+        
     }
 }

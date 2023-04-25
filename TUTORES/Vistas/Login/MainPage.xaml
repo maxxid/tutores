@@ -45,19 +45,19 @@
                         FontSize="Medium"
                         Text="Nombre de Usuario"
                         TextColor="White" />
-                    <Entry Placeholder="a@gmail.com" />
+                    <Entry Placeholder="ejemplo@gmail.com" Text="{Binding User}" IsTextPredictionEnabled="True" TextColor="Azure"/>
                     <Label
                         FontSize="Medium"
                         Text="Contraseña"
                         TextColor="White" />
-                    <Entry Placeholder="* * * * * * * " />
+                    <Entry Placeholder="* * * * * * * " Text="{Binding Password}" IsPassword="true" TextColor="Azure"/>
                     <Frame CornerRadius="10">
                         <Label
                             HorizontalOptions="Center"
                             Text="Iniciar Sesion con Usuario"
                             TextColor="Black" />
                         <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding PushSelectionCommand}" />
+                            <TapGestureRecognizer Command="{Binding IniciarSesionCommand}" />
                         </Frame.GestureRecognizers>
                     </Frame>
 
@@ -67,13 +67,7 @@
                         Padding="0"
                         BackgroundColor="WhiteSmoke"
                         HeightRequest="2"
-                        WidthRequest="1">
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding PushSelectionCommand}" />
-                        </Frame.GestureRecognizers>
-
-
-                    </Frame>
+                        WidthRequest="1" />
 
                     <Frame Padding="20,10" CornerRadius="10">
                         <Grid>
