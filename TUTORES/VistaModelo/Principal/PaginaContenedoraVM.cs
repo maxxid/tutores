@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -11,19 +12,27 @@ namespace TUTORES.VistaModelo.Principal
 {
     class PaginaContenedoraVM :BaseViewModel
     {
-        public PaginaContenedoraVM(INavigation navigation)
+
+        private string _rol;
+        public PaginaContenedoraVM(INavigation navigation, string rol)
         {
+            _rol = rol;
             Navigation = navigation;
+
+
+
         }
 
+        private string Rol
+        {
+            get { return _rol; }
+            set { _rol = value; }
+        }
         #region PROCEDIMIENTOS
-
         public async Task PushSelectionPage()
         {
-            await Navigation.PushAsync(new A_PaginaContenedora());
+            await Navigation.PushAsync(new A_PaginaContenedora(Rol));
         }
-
-
         #endregion
 
 

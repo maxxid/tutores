@@ -13,10 +13,10 @@ namespace TUTORES.Vistas.Principal
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class A_PaginaContenedora : ContentPage
 	{
-		public A_PaginaContenedora ()
+		public A_PaginaContenedora (String rol)
 		{
 			InitializeComponent ();
-            BindingContext = new PaginaContenedoraVM(Navigation);
+            BindingContext = new PaginaContenedoraVM(Navigation, rol);
 
         }
     }

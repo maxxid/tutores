@@ -28,11 +28,12 @@
                     HorizontalOptions="Start"
                     Text="{Binding Bienvenido}"
                     TextColor="White"
-                    VerticalOptions="End" >
+                    VerticalOptions="End">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding PushSelectionCommand}" />
                     </Label.GestureRecognizers>
                 </Label>
+
                 <Label
                     FontSize="Medium"
                     HorizontalOptions="Start"
@@ -45,21 +46,20 @@
                     BackgroundColor="Transparent"
                     EmptyView="No hay items para mostrar"
                     ItemsSource="{Binding Roles}">
+
                     <CollectionView.ItemsLayout>
                         <LinearItemsLayout ItemSpacing="1" Orientation="Vertical" />
                     </CollectionView.ItemsLayout>
 
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-
                             <RadioButton
                                 Padding="10,10"
                                 BackgroundColor="White"
+                                CheckedChanged="RadioButton_OnCheckedChanged"
                                 Content="{Binding Concat}"
-                                CornerRadius="10" 
-                                />
-
-
+                                CornerRadius="10"
+                                GroupName="Roles" />
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
@@ -68,23 +68,15 @@
                     Grid.Row="2"
                     BackgroundColor="CadetBlue"
                     CornerRadius="10">
-
                     <Label
                         HorizontalOptions="Center"
                         Text="Continuar"
-                        TextColor="Black">
-                    </Label>
-
+                        TextColor="Black" />
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding PushSelectionCommand}" />
                     </Frame.GestureRecognizers>
                 </Frame>
-
-
             </Grid>
-
-          
         </Frame>
-       
     </Grid>
 </ContentPage>

@@ -12,12 +12,30 @@ namespace TUTORES.Vistas.Login
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SelectionPage : ContentPage
     {
-        private String myString;
-		public SelectionPage (String myString)
+        private String textUser;
+        public String _cargoSeleccionado=null;
+		public SelectionPage (String textUserRecived)
 		{
 			InitializeComponent ();
-            this.myString = myString;
-            BindingContext = new SelectionPageVM(Navigation, myString);
+            this.textUser = textUserRecived;
+            BindingContext = new SelectionPageVM(Navigation, textUser);
         }
-	}
+
+
+       
+        
+        private void RadioButton_OnCheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+            RadioButton radioButton = sender as RadioButton;
+
+
+            if (radioButton.IsChecked)
+            {
+                _cargoSeleccionado = radioButton.ContentAsString();
+
+                DisplayAlert("Seleccionado", _cargoSeleccionado, "ok");
+            }
+
+        }
+    }
 }

@@ -32,7 +32,7 @@
 
         <principal:Encabezado/>
         <principal:Cuerpo/>
-        <principal:PiePagina />
+        <!--<principal:PiePagina />-->
 
 
     </Grid>

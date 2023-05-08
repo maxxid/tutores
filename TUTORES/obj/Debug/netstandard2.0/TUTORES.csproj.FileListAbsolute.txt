@@ -18,3 +18,11 @@ E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Principal\A_PaginaConte
 E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Principal\Cuerpo.xaml.g.cs
 E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Principal\Encabezado.xaml.g.cs
 E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Principal\PiePagina.xaml.g.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\PageEmergente_Fail.xaml.g.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\PageEmergente_OK.xaml.g.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\ViewEmergente_CambioRol.xaml.g.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\ViewEmergente_ModoOffline.xaml.g.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\ViewEmergente_ModoOnline.xaml.g.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\View_MenuHamburguesa.xaml.g.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Faltas\TabbedPage1.xaml.g.cs
+E:\DEV23\TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Tardanzas\PageSeleccionCurso.xaml.g.cs

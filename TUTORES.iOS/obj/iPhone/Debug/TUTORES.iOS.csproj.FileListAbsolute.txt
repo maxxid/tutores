@@ -61,3 +61,8 @@ E:\DEV23\TUTORES\TUTORES.iOS\bin\iPhone\Debug\TUTORES.pdb
 E:\DEV23\TUTORES\TUTORES.iOS\obj\iPhone\Debug\TUTORES.iOS.csproj.CopyComplete
 E:\DEV23\TUTORES\TUTORES.iOS\obj\iPhone\Debug\TUTORES.iOS.exe
 E:\DEV23\TUTORES\TUTORES.iOS\obj\iPhone\Debug\TUTORES.iOS.pdb
+E:\DEV23\TUTORES\TUTORES.iOS\bin\iPhone\Debug\Xamarin.CommunityToolkit.dll
+E:\DEV23\TUTORES\TUTORES.iOS\bin\iPhone\Debug\MagicGradients.dll
+E:\DEV23\TUTORES\TUTORES.iOS\bin\iPhone\Debug\SkiaSharp.dll
+E:\DEV23\TUTORES\TUTORES.iOS\bin\iPhone\Debug\SkiaSharp.Views.iOS.dll
+E:\DEV23\TUTORES\TUTORES.iOS\bin\iPhone\Debug\SkiaSharp.Views.Forms.dll

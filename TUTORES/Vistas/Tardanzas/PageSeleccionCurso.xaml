@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TUTORES.Vistas.Tardanzas.PageSeleccionCurso"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients">
+    <Grid>
+        <magic:GradientView>
+            <magic:GradientView.GradientSource>
+                <magic:LinearGradient Angle="353">
+                    <magic:GradientStop Offset="0" Color="#020024" />
+                    <magic:GradientStop Offset="0.14" Color="#1206ff" />
+                    <magic:GradientStop Offset="0.52" Color="#1296a8" />
+                    <magic:GradientStop Offset="0.76" Color="#00d4ff" />
+                </magic:LinearGradient>
+            </magic:GradientView.GradientSource>
+        </magic:GradientView>
+        <Grid Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <magic:GradientView
+                Grid.RowSpan="8"
+                Grid.ColumnSpan="3"
+                VerticalOptions="FillAndExpand">
+                <magic:GradientView.GradientSource>
+                    <magic:LinearGradient Angle="353">
+                        <magic:GradientStop Offset="0" Color="#020024" />
+                        <magic:GradientStop Offset="0.14" Color="#1206ff" />
+                        <magic:GradientStop Offset="0.52" Color="#1296a8" />
+                        <magic:GradientStop Offset="0.76" Color="#00d4ff" />
+                    </magic:LinearGradient>
+                </magic:GradientView.GradientSource>
+            </magic:GradientView>
+
+
+            <Frame
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Grid.Column="0"
+                Margin="4"
+                CornerRadius="20">
+                <Label
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Text="ASISTENCIA"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                        <GradientStop Offset="0" Color="#052400" />
+                        <GradientStop Offset="0.35" Color="#097909" />
+                        <GradientStop Offset="1.0" Color="#00ffde" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+            <Frame
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Grid.Column="1"
+                Margin="4"
+                BackgroundColor="Green"
+                CornerRadius="20">
+                <Label
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Text="FALTAS"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                        <GradientStop Offset="0" Color="#661f04" />
+                        <GradientStop Offset="0.35" Color="#797409" />
+                        <GradientStop Offset="1.0" Color="#d1ff00" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+            <Frame
+                Grid.Row="0"
+                Grid.RowSpan="2"
+                Grid.Column="2"
+                Margin="4"
+                BackgroundColor="Green"
+                CornerRadius="20">
+                <Label
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Text="TARDANZAS"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+                <Frame.Background>
+                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+                        <GradientStop Offset="0.1" Color="#11305E" />
+                        <GradientStop Offset="0.1" Color="#4768AD" />
+                        <GradientStop Offset="1.0" Color="#4D5085" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+
+
+            <Frame
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Margin=".5"
+                Padding="0"
+                CornerRadius="10">
+
+
+                <StackLayout Orientation="Horizontal">
+                    <Frame
+                        Margin="0"
+                        Padding="0"
+                        BackgroundColor="Green"
+                        HeightRequest="50"
+                        WidthRequest="10" />
+
+                    <Label
+                        Margin="10,0,0,0"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        Text="4to 1ra"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+
+            <Frame
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Margin=".5"
+                Padding="0"
+                CornerRadius="10">
+
+
+                <StackLayout Orientation="Horizontal">
+                    <Frame
+                        Margin="0"
+                        Padding="0"
+                        BackgroundColor="Red"
+                        HeightRequest="50"
+                        WidthRequest="10" />
+
+                    <Label
+                        Margin="10,0,0,0"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        Text="5to 1ra"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+
+            <Frame
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Margin=".5"
+                Padding="0"
+                CornerRadius="10">
+
+
+                <StackLayout Orientation="Horizontal">
+                    <Frame
+                        Margin="0"
+                        Padding="0"
+                        BackgroundColor="Yellow"
+                        HeightRequest="50"
+                        WidthRequest="10" />
+
+                    <Label
+                        Margin="10,0,0,0"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        Text="6to 1ra"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+
+            <Frame
+                Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Margin=".5"
+                Padding="0"
+                CornerRadius="10">
+
+
+                <StackLayout Orientation="Horizontal">
+                    <Frame
+                        Margin="0"
+                        Padding="0"
+                        BackgroundColor="Blue"
+                        HeightRequest="50"
+                        WidthRequest="10" />
+
+                    <Label
+                        Margin="10,0,0,0"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        Text="3to 2da"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+
+            <Frame
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Margin=".5"
+                Padding="0"
+                CornerRadius="10">
+
+
+                <StackLayout Orientation="Horizontal">
+                    <Frame
+                        Margin="0"
+                        Padding="0"
+                        BackgroundColor="DarkSlateBlue"
+                        HeightRequest="50"
+                        WidthRequest="10" />
+
+                    <Label
+                        Margin="10,0,0,0"
+                        FontSize="Large"
+                        HorizontalOptions="Center"
+                        Text="1to 1ra"
+                        TextColor="Black"
+                        VerticalOptions="Center" />
+                </StackLayout>
+            </Frame>
+
+
+        </Grid>
+    </Grid>
+
+</ContentPage>

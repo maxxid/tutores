@@ -16,6 +16,8 @@ namespace TUTORES.VistaModelo
         public String Selection { get; set; }
         private String _username;
         private String _bienvenido;
+        private String _cargoSeleccionado;
+        private String _selectionRadioButton;
         #region CONTRUCTOR
         public SelectionPageVM(INavigation navigation, String UserRecived)
         {
@@ -31,8 +33,12 @@ namespace TUTORES.VistaModelo
             InitProducts();
 
         }
-
-
+        public string SelectionRadioButton
+        {
+            get { return _selectionRadioButton; }
+            set { _selectionRadioButton = value; }
+        }
+        
         public string User
         {
             get { return _username; }
@@ -42,6 +48,11 @@ namespace TUTORES.VistaModelo
         {
             get { return _bienvenido; }
             set { _bienvenido = value; }
+        }
+        public string CargoSelecionado
+        {
+            get { return _cargoSeleccionado; }
+            set { _cargoSeleccionado = value; }
         }
 
         private void InitProducts()
@@ -78,11 +89,26 @@ namespace TUTORES.VistaModelo
             };
         }
 
+
+
+        private void RadioButton_OnCheckedChangedNew(object sender, CheckedChangedEventArgs e)
+        {
+            RadioButton radioButton = sender as RadioButton;
+            if (radioButton.IsChecked)
+            {
+                CargoSelecionado = radioButton.ContentAsString();
+            }
+        }
+
+
+
+
+
         #region PROCEDIMIENTOS
 
         public async Task PushSelectionPage()
         {
-            await Navigation.PushAsync(new A_PaginaContenedora());
+            await Navigation.PushAsync(new A_PaginaContenedora(SelectionRadioButton));
         }
 
 
@@ -91,6 +117,8 @@ namespace TUTORES.VistaModelo
 
         #region COMANDOS
         public ICommand PushSelectionCommand => new Command(async () => await PushSelectionPage());
+
+        //public ICommand RadioButton_OnCheckedChangedCommand => new Command(RadioButton_OnCheckedChangedNew();
 
 
         #endregion
