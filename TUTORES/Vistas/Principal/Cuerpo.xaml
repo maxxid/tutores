@@ -45,7 +45,7 @@
                         Grid.Column="1"
                         FontSize="15"
                         HorizontalOptions="FillAndExpand"
-                        Text="Bienvenido Hector! &#10;Hoy es Martes 25 de Abril"
+                        Text="Bienvenido Hector! &#10;Hoy es Miercoles 9 de Mayo"
                         TextColor="White" />
                     <Image
                         Grid.Column="2"
@@ -56,7 +56,7 @@
                 <Label
                     Margin="5,10,0,10"
                     FontSize="13"
-                    Text="Ultima Actualizacion: 14/04/2023"
+                    Text="Ultima Actualizacion: 09/05/2023"
                     TextColor="White" />
                 <Grid ColumnSpacing="10">
                     <Grid.RowDefinitions>
@@ -70,9 +70,12 @@
                             <Label
                                 FontSize="13"
                                 HorizontalOptions="Center"
-                                Text="Mod offline"
+                                Text="{Binding StringEstadoOffline}"
                                 TextColor="#0d7680" />
                         </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Button_offlineCommand}" />
+                        </Frame.GestureRecognizers>
                     </Frame>
                     <Frame
                         Grid.Column="1"
@@ -103,6 +106,9 @@
                                 Text="Asistencias"
                                 TextColor="#0d7680" />
                         </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Button_AsistenciaPorCursoCommand}" />
+                        </Frame.GestureRecognizers>
                     </Frame>
                 </Grid>
 

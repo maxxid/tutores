@@ -2227,23 +2227,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MAXI\\.nuget\\packages\\": {},
+    "C:\\Users\\maxib\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DEV23\\TUTORES\\TUTORES\\TUTORES.csproj",
+      "projectUniqueName": "E:\\MOB\\TUTORES\\tutores\\TUTORES\\TUTORES.csproj",
       "projectName": "TUTORES",
-      "projectPath": "E:\\DEV23\\TUTORES\\TUTORES\\TUTORES.csproj",
-      "packagesPath": "C:\\Users\\MAXI\\.nuget\\packages\\",
-      "outputPath": "E:\\DEV23\\TUTORES\\TUTORES\\obj\\",
+      "projectPath": "E:\\MOB\\TUTORES\\tutores\\TUTORES\\TUTORES.csproj",
+      "packagesPath": "C:\\Users\\maxib\\.nuget\\packages\\",
+      "outputPath": "E:\\MOB\\TUTORES\\tutores\\TUTORES\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\MAXI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\maxib\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2305,7 +2305,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

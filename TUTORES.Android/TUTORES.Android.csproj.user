@@ -4,6 +4,6 @@
     <SelectedDevice>Samsung SM-G985F</SelectedDevice>
     <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
     <ActiveDebugProfile>Samsung SM-G985F %28Android 13.0 - API 33%29</ActiveDebugProfile>
-    <DefaultDevice>pixel_5_-_api_25</DefaultDevice>
+    <DefaultDevice>pixel_5_-_api_30</DefaultDevice>
   </PropertyGroup>
 </Project>

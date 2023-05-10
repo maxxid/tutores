@@ -28,10 +28,12 @@
     <Folder Include="Colores\" />
     <Folder Include="Fuentes\" />
     <Folder Include="Vistas\Ajustes\" />
-    <Folder Include="Vistas\Asistencias\" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Vistas\Asistencias\PageAsistenciasPorCurso.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Vistas\Emergentes\PageEmergente_Fail.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
