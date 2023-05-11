@@ -17,7 +17,7 @@
                 <Frame Margin="10"
                           Padding="5"
                           CornerRadius="10"
-                          BackgroundColor="DarkGreen"
+                          BackgroundColor="LightBlue"
                           IsClippedToBounds="False">
 
                     <Grid HeightRequest="50">
