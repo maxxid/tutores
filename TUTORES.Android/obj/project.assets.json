@@ -3798,24 +3798,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\maxib\\.nuget\\packages\\": {},
+    "C:\\Users\\MAXI\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MOB\\TUTORES\\tutores\\TUTORES.Android\\TUTORES.Android.csproj",
+      "projectUniqueName": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.Android\\TUTORES.Android.csproj",
       "projectName": "TUTORES.Android",
-      "projectPath": "E:\\MOB\\TUTORES\\tutores\\TUTORES.Android\\TUTORES.Android.csproj",
-      "packagesPath": "C:\\Users\\maxib\\.nuget\\packages\\",
-      "outputPath": "E:\\MOB\\TUTORES\\tutores\\TUTORES.Android\\obj\\",
+      "projectPath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.Android\\TUTORES.Android.csproj",
+      "packagesPath": "C:\\Users\\MAXI\\.nuget\\packages\\",
+      "outputPath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\maxib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MAXI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3829,8 +3829,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "E:\\MOB\\TUTORES\\tutores\\TUTORES\\TUTORES.csproj": {
-              "projectPath": "E:\\MOB\\TUTORES\\tutores\\TUTORES\\TUTORES.csproj"
+            "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES\\TUTORES.csproj": {
+              "projectPath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES\\TUTORES.csproj"
             }
           }
         }
