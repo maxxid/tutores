@@ -2,11 +2,49 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TUTORES.Vistas.Asistencias.PageAsistenciasPorCurso">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+
+
+    <CollectionView ItemsSource="{Binding AlumnosList}">
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout Orientation="Vertical"    
+                                   SnapPointsType="MandatorySingle"
+                                   SnapPointsAlignment="Start"
+                                   ItemSpacing="10"/>
+        </CollectionView.ItemsLayout>
+        <CollectionView.ItemTemplate >
+            <DataTemplate >
+
+                <Frame Margin="10"
+                          Padding="5"
+                          CornerRadius="10"
+                          BackgroundColor="DarkGreen"
+                          IsClippedToBounds="False">
+
+                    <Grid HeightRequest="50">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".3*"/>
+                            <ColumnDefinition Width=".7*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height=".5*"/>
+                            <RowDefinition Height=".5*"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding Nombre}" TextColor="AliceBlue" FontAttributes="Bold" FontSize="Medium"/>
+                        <Label Grid.Row="1" Grid.Column="1" Text="{Binding Price}" TextColor="AliceBlue"/>
+                        <Image Grid.RowSpan="2" Grid.Column="0" Source="{Binding Image}" HorizontalOptions="Start"/>
+                    </Grid>
+
+
+                </Frame>
+
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+        <CollectionView.EmptyView>
+            <DataTemplate>
+                <Label Grid.Row="0" Grid.Column="1" Text="aaaaa" TextColor="AliceBlue" FontAttributes="Bold" FontSize="Medium"/>
+
+            </DataTemplate>
+        </CollectionView.EmptyView>
+    </CollectionView>
+
 </ContentPage>

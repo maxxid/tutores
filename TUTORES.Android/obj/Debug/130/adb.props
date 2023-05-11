@@ -1,2 +1,2 @@
-AdbTarget=-s R58N30GMANT
+AdbTarget=-s 192.168.22.92:40117
 AdbOptions=

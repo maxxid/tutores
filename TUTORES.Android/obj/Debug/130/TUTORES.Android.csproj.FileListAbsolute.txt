@@ -1386,3 +1386,5 @@ E:\MOB\TUTORES\tutores\TUTORES.Android\obj\Debug\130\stamp\_ConvertResourcesCase
 E:\MOB\TUTORES\tutores\TUTORES.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 E:\MOB\TUTORES\tutores\TUTORES.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 E:\MOB\TUTORES\tutores\TUTORES.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
+E:\MOB\TUTORES\tutores\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_sinconexionon.png
+E:\MOB\TUTORES\tutores\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_sinconexionoff.png
