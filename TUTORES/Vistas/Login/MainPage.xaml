@@ -8,15 +8,6 @@
     <Grid>
         
         <Frame Padding="0">
-            <Frame.Background>
-                <!--<LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                    <GradientStop Offset="0.1" Color="#11305E" />
-                    <GradientStop Offset="0.1" Color="#4768AD" />
-                    <GradientStop Offset="1.0" Color="#4D5085" />
-                </LinearGradientBrush>-->
-                
-            </Frame.Background>
-
             <Grid>
                 <Image Source="wallpaper_init2.png" Aspect="AspectFill"></Image>
                 <StackLayout VerticalOptions="End" Padding="15">

@@ -7,277 +7,327 @@
     <Grid>
 
         <Frame
-            Padding="15,30,15,10"
+            Padding="0"
             CornerRadius="0"
             HasShadow="True"
             HeightRequest="1200"
             WidthRequest="120">
-            <Frame.Background>
-                <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
-                    <GradientStop Offset="0.1" Color="#11305E" />
-                    <GradientStop Offset="0.1" Color="#4768AD" />
-                    <GradientStop Offset="1.0" Color="#4D5085" />
-                </LinearGradientBrush>
-            </Frame.Background>
 
+            <Grid>
 
-            <StackLayout
-                Padding="1"
-                BackgroundColor="Transparent"
-                VerticalOptions="FillAndExpand">
-                <Grid ColumnSpacing="10">
-                    <Grid.RowDefinitions>
-                        <RowDefinition />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="45" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="45" />
-
-                    </Grid.ColumnDefinitions>
-                    <Image
-                        Grid.Row="0"
-                        Grid.Column="0"
-                        HeightRequest="45"
-                        HorizontalOptions="Start"
-                        Source="icon_A_usuario.png" />
-                    <Label
-                        Grid.Column="1"
-                        FontSize="15"
-                        HorizontalOptions="FillAndExpand"
-                        Text="Bienvenido Hector! &#10;Hoy es Miercoles 9 de Mayo"
-                        TextColor="White" />
-                    <Image
-                        Grid.Column="2"
-                        HeightRequest="40"
-                        HorizontalOptions="End"
-                        Source="icon_A_menu.png" />
-                </Grid>
-                <Label
-                    Margin="5,10,0,10"
-                    FontSize="13"
-                    Text="Ultima Actualizacion: 09/05/2023"
-                    TextColor="White" />
-                <Grid ColumnSpacing="10">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="140" />
-                    </Grid.RowDefinitions>
-                    <Frame Grid.Column="0" CornerRadius="15">
-
-                        <StackLayout Orientation="Vertical" VerticalOptions="Center">
-
-                            <Image HeightRequest="45" Source="icon_A_sinConexion.png" />
-                            <Label
-                                FontSize="13"
-                                HorizontalOptions="Center"
-                                Text="{Binding StringEstadoOffline}"
-                                TextColor="#0d7680" />
-                        </StackLayout>
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding Button_offlineCommand}" />
-                        </Frame.GestureRecognizers>
-                    </Frame>
-                    <Frame
-                        Grid.Column="1"
-                        CornerRadius="15"
-                        HasShadow="True">
-                        <StackLayout VerticalOptions="CenterAndExpand">
-                            <Image HeightRequest="45" Source="icon_A_tardanza2.png" />
-                            <Label
-                                FontSize="13"
-                                HorizontalOptions="Center"
-                                Text="Tardanzas"
-                                TextColor="#0d7680" />
-                        </StackLayout>
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding PushSelectionCommand}" />
-                        </Frame.GestureRecognizers>
-                    </Frame>
-                    <Frame
-                        Grid.Column="2"
-                        Padding="10"
-                        CornerRadius="15"
-                        HasShadow="True">
-                        <StackLayout VerticalOptions="Center">
-                            <Image HeightRequest="45" Source="icon_A_asistencia.png" />
-                            <Label
-                                FontSize="13"
-                                HorizontalOptions="Center"
-                                Text="Asistencias"
-                                TextColor="#0d7680" />
-                        </StackLayout>
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding Button_AsistenciaPorCursoCommand}" />
-                        </Frame.GestureRecognizers>
-                    </Frame>
-                </Grid>
-
-
-                <Frame
-                    Grid.Column="0"
-                    Margin="0,15"
-                    BorderColor="GreenYellow"
-                    CornerRadius="15">
-
-                    <StackLayout Orientation="Vertical" VerticalOptions="Center">
-
-                        <Image HeightRequest="45" Source="icon_A_sincronizar.png" />
+                <Image Aspect="AspectFill" Source="wallpaper_init2.png" />
+                <StackLayout
+                    Padding="15,30,15,10"
+                    BackgroundColor="Transparent"
+                    VerticalOptions="FillAndExpand">
+                    <Grid ColumnSpacing="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="45" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="45" />
+                        </Grid.ColumnDefinitions>
+                        <Image
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            HeightRequest="45"
+                            HorizontalOptions="Start"
+                            Source="icon_A_usuario.png" />
+                        <Label
+                            Grid.Column="1"
+                            FontSize="15"
+                            HorizontalOptions="FillAndExpand"
+                            Text="Bienvenido Hector! &#10;Hoy es Miercoles 9 de Mayo"
+                            TextColor="White" />
+                        <Image
+                            Grid.Column="2"
+                            HeightRequest="40"
+                            HorizontalOptions="End"
+                            Source="icon_A_menu.png" />
+                    </Grid>
+                    <StackLayout Margin="5,10,0,10" Orientation="Horizontal">
                         <Label
                             FontSize="13"
-                            Text="Sincronizar Ahora"
-                            TextColor="#0d7680" />
-                        <Label
-                            FontSize="11"
-                            Text="Ult. Sincronizacion: 14/02/2023"
-                            TextColor="#0d7680" />
+                            Text="Rol: Profesor - Escuela de Minas"
+                            TextColor="White" />
+                        <Image Source="icon_cambioRol.png" WidthRequest="20" />
+
 
                     </StackLayout>
-                </Frame>
+                    <Grid ColumnSpacing="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="140" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Frame
+                            Grid.Column="0"
+                            Padding="10"
+                            CornerRadius="15"
+                            HasShadow="True">
+                            <StackLayout VerticalOptions="Center">
+                                <Image HeightRequest="45" Source="icon_A_asistencia.png" />
+                                <Label
+                                    FontSize="13"
+                                    HorizontalOptions="Center"
+                                    Text="Asistencias"
+                                    TextColor="#0d7680" />
+                            </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Button_AsistenciaPorCursoCommand}" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                        <Frame
+                            Grid.Column="1"
+                            CornerRadius="15"
+                            HasShadow="True">
+                            <StackLayout VerticalOptions="CenterAndExpand">
+                                <Image HeightRequest="45" Source="icon_A_tardanza2.png" />
+                                <Label
+                                    FontSize="13"
+                                    HorizontalOptions="Center"
+                                    Text="Tardanzas"
+                                    TextColor="#0d7680" />
+                            </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding PushSelectionCommand}" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                        <Frame
+                            Grid.Column="2"
+                            Padding="10"
+                            CornerRadius="15"
+                            HasShadow="True">
+                            <StackLayout VerticalOptions="Center">
+                                <Image HeightRequest="45" Source="icon_A_inasistenciasFaltas.png" />
+                                <Label
+                                    FontSize="13"
+                                    HorizontalOptions="Center"
+                                    Text="     Faltas y &#10;justificaciones"
+                                    TextColor="#0d7680" />
+                            </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Button_AsistenciaPorCursoCommand}" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </Grid>
 
-                <Frame
-                    Margin="0"
-                    Padding="0"
-                    BackgroundColor="RoyalBlue"
-                    CornerRadius="10"
-                    IsVisible="False">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Frame
+                            Grid.Column="0"
+                            Grid.ColumnSpan="2"
+                            Margin="0,15"
+                            BackgroundColor="White"
+                            BorderColor="GreenYellow"
+                            CornerRadius="15">
 
-                    <StackLayout
-                        Padding="5"
-                        HorizontalOptions="CenterAndExpand"
-                        Orientation="Horizontal"
-                        Spacing="10"
-                        VerticalOptions="CenterAndExpand">
+                            <StackLayout Orientation="Vertical" VerticalOptions="Center">
+
+                                <Image HeightRequest="45" Source="icon_A_sincronizar.png" />
+                                <Label
+                                    FontSize="13"
+                                    Text="Sincronizar Ahora"
+                                    TextColor="#0d7680" />
+                                <Label
+                                    FontSize="11"
+                                    Text="Ult. Sincronizacion: 14/02/2023"
+                                    TextColor="#0d7680" />
+
+                            </StackLayout>
+                        </Frame>
 
 
-                        <Frame CornerRadius="15">
+                        <Frame
+                            Grid.Column="2"
+                            Margin="0,15"
+                            Padding="0"
+                            CornerRadius="15">
 
                             <StackLayout
-                                BackgroundColor="Transparent"
+                                Margin="0"
                                 Orientation="Vertical"
                                 VerticalOptions="Center">
 
                                 <Image HeightRequest="45" Source="icon_A_sinConexion.png" />
                                 <Label
                                     FontSize="13"
-                                    Text="Modo offline"
+                                    HorizontalOptions="Center"
+                                    Text="{Binding StringEstadoOffline}"
                                     TextColor="#0d7680" />
                             </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Button_offlineCommand}" />
+                            </Frame.GestureRecognizers>
                         </Frame>
 
 
 
-                        <Frame CornerRadius="15">
-                            <StackLayout VerticalOptions="CenterAndExpand">
-                                <Image HeightRequest="45" Source="icon_A_sincronizar.png" />
-                                <Label
-                                    FontSize="13"
-                                    Text="Sincronizar"
-                                    TextColor="#0d7680" />
-                            </StackLayout>
-                        </Frame>
-
-
-                        <Frame
-                            Padding="33"
-                            CornerRadius="15"
-                            HasShadow="True">
-                            <StackLayout VerticalOptions="Center">
-                                <Image HeightRequest="45" Source="icon_B_cursos.png" />
-                                <Label
-                                    FontSize="13"
-                                    Text="Cursos"
-                                    TextColor="#0d7680" />
-                            </StackLayout>
-                        </Frame>
-                    </StackLayout>
-                </Frame>
-
-
-                <Frame
-                    Margin="0,0,0,0"
-                    Padding="15,12,15,5"
-                    BackgroundColor="#0e5174"
-                    CornerRadius="15"
-                    HasShadow="True"
-                    HorizontalOptions="Center"
-                    IsClippedToBounds="True"
-                    VerticalOptions="EndAndExpand">
-                    <Grid
-                        BackgroundColor="#0e5174"
-                        HeightRequest="80"
-                        VerticalOptions="End">
-
-                        <Frame
-                            BackgroundColor="#3094FF"
-                            CornerRadius="60"
-                            HeightRequest="45"
-                            HorizontalOptions="Center"
-                            TranslationX="5"
-                            TranslationY="-10"
-                            VerticalOptions="Center"
-                            WidthRequest="45">
-                            <Frame.Background>
-                                <LinearGradientBrush EndPoint="0,5">
-                                    <GradientStop Offset="0.1" Color="Transparent" />
-                                    <GradientStop Offset="1.1" Color="#152124" />
-                                </LinearGradientBrush>
-                            </Frame.Background>
-                            <Image HeightRequest="15" Source="icon_B_home.png" />
-                        </Frame>
-                        <StackLayout
-                            Margin="0,0"
-                            HorizontalOptions="CenterAndExpand"
-                            Orientation="Horizontal"
-                            Spacing="29">
-                            <StackLayout VerticalOptions="CenterAndExpand">
-                                <Image HeightRequest="25" Source="icon_B_alumnos.png" />
-                                <Label
-                                    FontSize="11"
-                                    Text="Alumnos"
-                                    TextColor="White" />
-                            </StackLayout>
-                            <StackLayout
-                                Margin="0"
-                                Padding="0"
-                                VerticalOptions="CenterAndExpand">
-                                <Image HeightRequest="25" Source="icon_B_informes" />
-                                <Label
-                                    FontSize="11"
-                                    Text="Informes"
-                                    TextColor="White" />
-                            </StackLayout>
-
-
-                            <BoxView BackgroundColor="Transparent" HorizontalOptions="Center" />
-
-                            <StackLayout
-                                Margin="0"
-                                Padding="0"
-                                VerticalOptions="CenterAndExpand">
-                                <Image HeightRequest="25" Source="icon_B_cursos.png" />
-                                <Label
-                                    FontSize="11"
-                                    Text="Cursos"
-                                    TextColor="White" />
-                            </StackLayout>
-
-                            <StackLayout
-                                Margin="0"
-                                Padding="0"
-                                VerticalOptions="CenterAndExpand">
-                                <Image HeightRequest="25" Source="icon_B_ajustes.png" />
-                                <Label
-                                    FontSize="11"
-                                    Text="Ajustes"
-                                    TextColor="White" />
-                            </StackLayout>
-
-
-                        </StackLayout>
                     </Grid>
 
-                </Frame>
-            </StackLayout>
+
+                    <Frame
+                        Margin="0"
+                        Padding="0"
+                        BackgroundColor="RoyalBlue"
+                        CornerRadius="10"
+                        IsVisible="False">
+
+                        <StackLayout
+                            Padding="5"
+                            HorizontalOptions="CenterAndExpand"
+                            Orientation="Horizontal"
+                            Spacing="10"
+                            VerticalOptions="CenterAndExpand">
+
+
+                            <Frame CornerRadius="15">
+
+                                <StackLayout
+                                    BackgroundColor="Transparent"
+                                    Orientation="Vertical"
+                                    VerticalOptions="Center">
+
+                                    <Image HeightRequest="45" Source="icon_A_sinConexion.png" />
+                                    <Label
+                                        FontSize="13"
+                                        Text="Modo offline"
+                                        TextColor="#0d7680" />
+                                </StackLayout>
+                            </Frame>
+
+
+
+                            <Frame CornerRadius="15">
+                                <StackLayout VerticalOptions="CenterAndExpand">
+                                    <Image HeightRequest="45" Source="icon_A_sincronizar.png" />
+                                    <Label
+                                        FontSize="13"
+                                        Text="Sincronizar"
+                                        TextColor="#0d7680" />
+                                </StackLayout>
+                            </Frame>
+
+
+                            <Frame
+                                Padding="33"
+                                CornerRadius="15"
+                                HasShadow="True">
+                                <StackLayout VerticalOptions="Center">
+                                    <Image HeightRequest="45" Source="icon_B_cursos.png" />
+                                    <Label
+                                        FontSize="13"
+                                        Text="Cursos"
+                                        TextColor="#0d7680" />
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+                    </Frame>
+
+
+                    <Frame
+                        Margin="0,0,0,0"
+                        Padding="15,12,15,5"
+                        BackgroundColor="#0e5174"
+                        CornerRadius="15"
+                        HasShadow="True"
+                        HorizontalOptions="Center"
+                        IsClippedToBounds="True"
+                        VerticalOptions="EndAndExpand">
+                        <Grid
+                            BackgroundColor="#0e5174"
+                            HeightRequest="80"
+                            VerticalOptions="End">
+
+                            <Frame
+                                BackgroundColor="#3094FF"
+                                CornerRadius="60"
+                                HeightRequest="70"
+                                HorizontalOptions="Center"
+                                TranslationX="5"
+                                TranslationY="-15"
+                                VerticalOptions="Center"
+                                WidthRequest="70"
+                                Padding="7"
+                                >
+                                <Frame.Background>
+                                    <LinearGradientBrush EndPoint="0,5">
+                                        <GradientStop Offset="0.1" Color="Transparent" />
+                                        <GradientStop Offset="1.1" Color="#152124" />
+                                    </LinearGradientBrush>
+                                </Frame.Background>
+                                <Image Aspect="AspectFill" Source="icon_gobjujuy.png" />
+                            </Frame>
+
+
+
+                            <StackLayout
+                                Margin="0,0"
+                                HorizontalOptions="CenterAndExpand"
+                                Orientation="Horizontal"
+                                Spacing="29">
+                                <StackLayout VerticalOptions="CenterAndExpand">
+                                    <Image HeightRequest="25" Source="icon_B_alumnos.png" />
+                                    <Label
+                                        FontSize="11"
+                                        Text="Alumnos"
+                                        TextColor="White" />
+                                </StackLayout>
+                                <StackLayout
+                                    Margin="0"
+                                    Padding="0"
+                                    VerticalOptions="CenterAndExpand">
+                                    <Image HeightRequest="25" Source="icon_B_informes" />
+                                    <Label
+                                        FontSize="11"
+                                        Text="Informes"
+                                        TextColor="White" />
+                                </StackLayout>
+
+
+                                <BoxView BackgroundColor="Transparent" HorizontalOptions="Center" />
+
+                                <StackLayout
+                                    Margin="0"
+                                    Padding="0"
+                                    VerticalOptions="CenterAndExpand">
+                                    <Image HeightRequest="25" Source="icon_B_cursos.png" />
+                                    <Label
+                                        FontSize="11"
+                                        Text="Cursos"
+                                        TextColor="White" />
+                                </StackLayout>
+
+                                <StackLayout
+                                    Margin="0"
+                                    Padding="0"
+                                    VerticalOptions="CenterAndExpand">
+                                    <Image HeightRequest="25" Source="icon_B_ajustes.png" />
+                                    <Label
+                                        FontSize="11"
+                                        Text="Ajustes"
+                                        TextColor="White" />
+                                </StackLayout>
+
+
+                            </StackLayout>
+                        </Grid>
+
+                    </Frame>
+                </StackLayout>
+
+            </Grid>
+
+
 
         </Frame>
     </Grid>

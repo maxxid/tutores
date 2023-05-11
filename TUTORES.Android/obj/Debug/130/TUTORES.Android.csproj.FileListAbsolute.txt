@@ -2084,3 +2084,7 @@ E:\DEV23\TUTORES 2\tutores\TUTORES.Android\obj\Debug\130\stamp\_ConvertResources
 E:\DEV23\TUTORES 2\tutores\TUTORES.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 E:\DEV23\TUTORES 2\tutores\TUTORES.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 E:\DEV23\TUTORES 2\tutores\TUTORES.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
+E:\DEV23\TUTORES 2\tutores\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_usuario2.png
+E:\DEV23\TUTORES 2\tutores\TUTORES.Android\obj\Debug\130\res\drawable\icon_cambiorol.png
+E:\DEV23\TUTORES 2\tutores\TUTORES.Android\obj\Debug\130\res\drawable\icon_gobjujuy.png
+E:\DEV23\TUTORES 2\tutores\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_inasistenciasfaltas.png
