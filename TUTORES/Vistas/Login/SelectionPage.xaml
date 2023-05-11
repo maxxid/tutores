@@ -59,7 +59,8 @@
                                 CheckedChanged="RadioButton_OnCheckedChanged"
                                 Content="{Binding Concat}"
                                 CornerRadius="10"
-                                GroupName="Roles" />
+                                GroupName="Roles" 
+                                TextColor="Black"/>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>

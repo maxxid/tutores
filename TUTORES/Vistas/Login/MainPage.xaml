@@ -50,12 +50,12 @@
                         FontSize="Medium"
                         Text="Nombre de Usuario"
                         TextColor="White" />
-                        <Entry Placeholder="ejemplo@gmail.com" Text="{Binding User}" IsTextPredictionEnabled="True" TextColor="Azure"/>
+                        <Entry Placeholder="ejemplo@gmail.com" PlaceholderColor="DarkGray" Text="{Binding User}" IsTextPredictionEnabled="True" TextColor="Azure"/>
                         <Label
                         FontSize="Medium"
                         Text="Contraseña"
                         TextColor="White" />
-                        <Entry Placeholder="* * * * * * * " Text="{Binding Password}" IsPassword="true" TextColor="Azure"/>
+                        <Entry Placeholder="* * * * * * * " PlaceholderColor="DarkGray" Text="{Binding Password}" IsPassword="true" TextColor="Azure"/>
                         <Frame CornerRadius="10">
                             <Label
                             HorizontalOptions="Center"
