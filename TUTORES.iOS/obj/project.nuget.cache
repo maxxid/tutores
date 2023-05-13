@@ -1,17 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "dOPecJ3OPSfzng/MZTFZxcSrLtuYqU9p7wFLBwMiyKSWtIPWIszyfsDqiiROwGAxbpOoNpagIgoEe7/+4K1hLw==",
+  "dgSpecHash": "58tSIXjjF+xQYtLiwsG4BWeqOGu1ZcPtyAos7fthkUutek44ii/Ui7l+whpU1payG2l3zdbiTRBr0vln+lzYaw==",
   "success": true,
-  "projectFilePath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.iOS\\TUTORES.iOS.csproj",
+  "projectFilePath": "E:\\MOB\\TUTORES\\tutores\\TUTORES.iOS\\TUTORES.iOS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MAXI\\.nuget\\packages\\magicgradients\\1.3.1\\magicgradients.1.3.1.nupkg.sha512",
-    "C:\\Users\\MAXI\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
-    "C:\\Users\\MAXI\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",
-    "C:\\Users\\MAXI\\.nuget\\packages\\skiasharp.views.forms\\1.68.1.1\\skiasharp.views.forms.1.68.1.1.nupkg.sha512",
-    "C:\\Users\\MAXI\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.communitytoolkit\\1.3.2\\xamarin.communitytoolkit.1.3.2.nupkg.sha512",
-    "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\maxib\\.nuget\\packages\\magicgradients\\1.3.1\\magicgradients.1.3.1.nupkg.sha512",
+    "C:\\Users\\maxib\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\maxib\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\maxib\\.nuget\\packages\\skiasharp.views.forms\\1.68.1.1\\skiasharp.views.forms.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\maxib\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\maxib\\.nuget\\packages\\xamarin.communitytoolkit\\1.3.2\\xamarin.communitytoolkit.1.3.2.nupkg.sha512",
+    "C:\\Users\\maxib\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\maxib\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
   ],
   "logs": []
 }
