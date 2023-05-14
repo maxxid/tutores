@@ -1,50 +1,124 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TUTORES.Vistas.Asistencias.PageAsistenciasPorCurso">
+             x:Class="TUTORES.Vistas.Asistencias.PageAsistenciasPorCurso"
+             xmlns:segmented="clr-namespace:Plugin.Segmented.Control;assembly=Plugin.Segmented"
+             xmlns:system="clr-namespace:System;assembly=netstandard"
+             xmlns:control="clr-namespace:Plugin.Segmented.Control;assembly=Plugin.Segmented"
+             NavigationPage.HasNavigationBar="false">
 
 
-    <CollectionView ItemsSource="{Binding AlumnosList}">
-        <CollectionView.ItemsLayout>
-            <LinearItemsLayout Orientation="Vertical"    
-                                   SnapPointsType="MandatorySingle"
-                                   SnapPointsAlignment="Start"
-                                   ItemSpacing="10"/>
-        </CollectionView.ItemsLayout>
-        <CollectionView.ItemTemplate >
-            <DataTemplate >
-
-                <Frame Margin="10"
-                          Padding="5"
-                          CornerRadius="10"
-                          BackgroundColor="LightBlue"
-                          IsClippedToBounds="False">
-
-                    <Grid HeightRequest="50">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width=".3*"/>
-                            <ColumnDefinition Width=".7*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height=".5*"/>
-                            <RowDefinition Height=".5*"/>
-                        </Grid.RowDefinitions>
-                        <Label Grid.Row="0" Grid.Column="1" Text="{Binding Nombre}" TextColor="AliceBlue" FontAttributes="Bold" FontSize="Medium"/>
-                        <Label Grid.Row="1" Grid.Column="1" Text="{Binding Price}" TextColor="AliceBlue"/>
-                        <Image Grid.RowSpan="2" Grid.Column="0" Source="{Binding Image}" HorizontalOptions="Start"/>
-                    </Grid>
 
 
-                </Frame>
+    <Grid RowSpacing="0" BackgroundColor="#1e2838">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
 
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-        <CollectionView.EmptyView>
-            <DataTemplate>
-                <Label Grid.Row="0" Grid.Column="1" Text="aaaaa" TextColor="AliceBlue" FontAttributes="Bold" FontSize="Medium"/>
+            <Frame BackgroundColor="#1e2838" Grid.Row="0"></Frame>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".11*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Source="icon_B_atras.png" HeightRequest="12" Margin="5,0,0,0"></Image>
+                <Label Grid.Column="1" Text="4TO GRADO B" HorizontalOptions="Center" VerticalOptions="Center" TextTransform="Uppercase" TextColor="White" />
+            </Grid>
+        
+        
 
-            </DataTemplate>
-        </CollectionView.EmptyView>
-    </CollectionView>
+
+
+        <CollectionView ItemsSource="{Binding AlumnosList}" Grid.Row="1">
+
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"    
+                               ItemSpacing="0"/>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate >
+                <DataTemplate >
+
+                    <StackLayout Margin="0,0,0,1" BackgroundColor="#008ADF">
+
+                        <Frame Margin="0"
+                               Padding="5"
+                               CornerRadius="0"
+                               BackgroundColor="#1e2838"
+                               IsClippedToBounds="False"
+                               HasShadow="False">
+
+                            <Grid HeightRequest="50"
+                              BackgroundColor="Transparent"
+                              Margin="0"
+                              >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height=".5*"/>
+                                    <RowDefinition Height=".5*"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Apellido}" TextColor="AliceBlue" FontAttributes="Bold" FontSize="Medium" Margin="0,0,0,0"/>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Nombre}" TextColor="AliceBlue"/>
+
+                                <Image Grid.RowSpan="2" Grid.Column="0" Source="icon_B_info.png" HorizontalOptions="Start" HeightRequest="35" />
+
+
+                                <control:SegmentedControl Grid.Column="2" Grid.RowSpan="2" WidthRequest="120" TintColor="#0B78FF"      
+                                                          BorderWidth="1.0"
+                                                          SelectedTextColor="White"
+                                                          TextColor="#0B78FF"
+                                                          FontSize="Small"   
+                                                          VerticalOptions="Center"
+                                                      
+                                >
+                                    <control:SegmentedControl.Children>
+                                        <segmented:SegmentedControlOption Text="PRESENTE"/>
+                                        <segmented:SegmentedControlOption Text="AUSENTE"/>
+                                    </control:SegmentedControl.Children>
+
+                                </control:SegmentedControl>
+
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+
+
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            <CollectionView.EmptyView>
+                <DataTemplate>
+                    <Label Grid.Row="0" Grid.Column="1" Text="aaaaa" TextColor="AliceBlue" FontAttributes="Bold" FontSize="Medium"/>
+
+                </DataTemplate>
+            </CollectionView.EmptyView>
+        </CollectionView>
+
+
+
+
+
+
+
+
+
+
+        <Frame BackgroundColor="#008ADF" Grid.Row="2"></Frame>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Column="0" Text="CURSO ANTERIOR" MinimumWidthRequest="50" MinimumHeightRequest="50" />
+                <Button Grid.Column="1" Text="CURSO SIGUIENTE" MinimumWidthRequest="50" MinimumHeightRequest="50" />
+            </Grid>
+    </Grid>
+
+
 
 </ContentPage>

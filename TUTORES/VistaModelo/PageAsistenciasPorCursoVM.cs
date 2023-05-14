@@ -25,28 +25,28 @@ namespace TUTORES.VistaModelo
             {
                 new Model_Alumnos
                 {
-                    Nombre = "Anabel Perez",
-                    Apellido = "Perez",
+                    Nombre = "Anabel",
+                    Apellido = "Ascabicar",
                     Icono = "monkey.png",
                     Estado_Asistencia = "P",
                     Fecha = ""
                 },
                 new Model_Alumnos
                 {
-                    Nombre = "Belen Maroni",
-                    Apellido = "Maroni",
+                    Nombre = "Antonella",
+                    Apellido = "Barrera",
                     Icono = "monkey.png",
                     Estado_Asistencia = "P",
                     Fecha = ""
                 },
                 new Model_Alumnos
                 {
-                    Nombre = "Candela Pieroni",
+                    Nombre = "Candela",
                     Apellido = "Pieroni",
                     Icono = "monkey.png", Estado_Asistencia = "P", Fecha = ""
                 },
                 new Model_Alumnos
-                {Nombre = "Daniela Benakovic",
+                {Nombre = "Daniela",
                     Apellido = "Benakovic", 
                     Icono = "monkey.png", Estado_Asistencia = "P", Fecha = ""
 
