@@ -47,10 +47,64 @@ namespace TUTORES.VistaModelo
                 },
                 new Model_Alumnos
                 {Nombre = "Daniela",
-                    Apellido = "Benakovic", 
+                    Apellido = "Benakovic",
                     Icono = "monkey.png", Estado_Asistencia = "P", Fecha = ""
 
-                }
+                },new Model_Alumnos
+                {Nombre = "Ana",
+                    Apellido = "Bolivar",
+                    Icono = "monkey.png", Estado_Asistencia = "P", Fecha = ""
+
+                },
+                new Model_Alumnos
+                {
+                    Nombre = "Maira",
+                    Apellido = "Damontini",
+                    Icono = "monkey.png", Estado_Asistencia = "P", Fecha = ""
+                },
+                new Model_Alumnos
+                {
+                    Nombre = "Micaela",
+                    Apellido = "Gaite",
+                    Icono = "monkey.png", Estado_Asistencia = "P", Fecha = ""
+                },
+                new Model_Alumnos
+                {
+                    Nombre = "Lorenzo",
+                    Apellido = "Pizarro",
+                    Icono = "monkey.png", Estado_Asistencia = "P", Fecha = ""
+                },
+                new Model_Alumnos
+                {
+                    Nombre = "Emma",
+                    Apellido = "Ruiz",
+                    Icono = "monkey.png", Estado_Asistencia = "P", Fecha = ""
+                },
+                new Model_Alumnos
+                {
+                    Nombre = "Pricila",
+                    Apellido = "Cruz",
+                    Icono = "monkey.png", Estado_Asistencia = "P", Fecha = ""
+                },
+                new Model_Alumnos
+                {
+                    Nombre = "Cadeluchi",
+                    Apellido = "Giemenes",
+                    Icono = "monkey.png", Estado_Asistencia = "P", Fecha = ""
+                },
+                new Model_Alumnos
+                {
+                    Nombre = "Violeta",
+                    Apellido = "Rcoa",
+                    Icono = "monkey.png", Estado_Asistencia = "P", Fecha = ""
+                },
+                new Model_Alumnos
+                {
+                    Nombre = "Nadia",
+                    Apellido = "Villanueva",
+                    Icono = "monkey.png", Estado_Asistencia = "P", Fecha = ""
+                },
+
             };
         }
     }

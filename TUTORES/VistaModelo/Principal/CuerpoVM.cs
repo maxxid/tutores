@@ -49,6 +49,12 @@ namespace TUTORES.VistaModelo.Principal
         {
             await Navigation.PushAsync(new PageAsistenciasPorCurso());
         }
+        public async Task Button_TardanzaPorCursoFunction()
+        {
+            await Navigation.PushAsync(new PaseTardanzasPorCurso());
+        }
+
+
         public async Task Button_offlineFunction()
         {
             if (EstadoOffline)
@@ -70,6 +76,7 @@ namespace TUTORES.VistaModelo.Principal
         public ICommand Button_offlineCommand => new Command(async () => await Button_offlineFunction());
         public ICommand Button_AsistenciaPorCursoCommand => new Command(async () => await Button_AsistenciaPorCursoFunction());
 
+        public ICommand Button_TardanzaPorCursoCommand => new Command(async () => await Button_TardanzaPorCursoFunction());
 
 
 
