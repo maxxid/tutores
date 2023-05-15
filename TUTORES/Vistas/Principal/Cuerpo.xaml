@@ -144,6 +144,9 @@
                                     TextColor="#0d7680" />
 
                             </StackLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding ActivityCommand}" />
+                            </Frame.GestureRecognizers>
                         </Frame>
 
 
@@ -265,7 +268,12 @@
                                         <GradientStop Offset="1.1" Color="#152124" />
                                     </LinearGradientBrush>
                                 </Frame.Background>
-                                <Image Aspect="AspectFill" Source="icon_gobjujuy.png" />
+                                <Image Aspect="AspectFill" Source="icon_gobjujuy.png">
+                                
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding EjecutarCargaActivityIndicator}" />
+                                    </Image.GestureRecognizers>
+                                </Image>
                             </Frame>
 
 
@@ -327,7 +335,7 @@
 
             </Grid>
 
-
+            
 
         </Frame>
     </Grid>

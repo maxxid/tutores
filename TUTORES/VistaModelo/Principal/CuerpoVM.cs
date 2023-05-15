@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Acr.UserDialogs;
 using TUTORES.Modelo;
 using TUTORES.Vistas.Asistencias;
 using TUTORES.Vistas.Tardanzas;
@@ -21,12 +22,12 @@ namespace TUTORES.VistaModelo.Principal
 
         #endregion
 
-
         public CuerpoVM(INavigation navigation)
         {
             Navigation = navigation;
             EstadoOffline = false;
             StringEstadoOffline = "Modo offline";
+
         }
 
         private Boolean EstadoOffline
@@ -54,6 +55,14 @@ namespace TUTORES.VistaModelo.Principal
             await Navigation.PushAsync(new PaseTardanzasPorCurso());
         }
 
+        public async Task activityCargando()
+        {
+            UserDialogs.Instance.ShowLoading("Sincronizando");
+            await Task.Delay(2000);
+            UserDialogs.Instance.HideLoading();
+            await  App.Current.MainPage.DisplayAlert("Sincronizacion", "Exitosa", "Ok");
+
+        }
 
         public async Task Button_offlineFunction()
         {
@@ -77,6 +86,8 @@ namespace TUTORES.VistaModelo.Principal
         public ICommand Button_AsistenciaPorCursoCommand => new Command(async () => await Button_AsistenciaPorCursoFunction());
 
         public ICommand Button_TardanzaPorCursoCommand => new Command(async () => await Button_TardanzaPorCursoFunction());
+        public ICommand ActivityCommand => new Command(async () => await activityCargando());
+
 
 
 

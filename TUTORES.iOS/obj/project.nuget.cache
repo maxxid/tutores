@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "QcBfxHtkRk3jpVszB8Bu3EelFvy6jPg7aj9KoQcpOPb38NI8VbP8k9u/CGeRtFCPIwtKSXYz4km+5dTB7Nhvtg==",
+  "dgSpecHash": "VEwGNsSjAYvNns7CIFRrtAr117TmZZ2eKRL2nmqYsEEmLhynePIEWMqjKqZFLBzKNMTEdDFQ+lj0t8TcRMQ7gQ==",
   "success": true,
   "projectFilePath": "E:\\DESARROLLO\\TUTORES3\\TUTORES.iOS\\TUTORES.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\maxib\\.nuget\\packages\\acr.userdialogs\\7.2.0.564\\acr.userdialogs.7.2.0.564.nupkg.sha512",
+    "C:\\Users\\maxib\\.nuget\\packages\\btprogresshud\\1.3.5\\btprogresshud.1.3.5.nupkg.sha512",
     "C:\\Users\\maxib\\.nuget\\packages\\magicgradients\\1.3.1\\magicgradients.1.3.1.nupkg.sha512",
     "C:\\Users\\maxib\\.nuget\\packages\\plugin.segmentedcontrol.netstandard\\5.4.5\\plugin.segmentedcontrol.netstandard.5.4.5.nupkg.sha512",
     "C:\\Users\\maxib\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
@@ -12,7 +14,7 @@
     "C:\\Users\\maxib\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\maxib\\.nuget\\packages\\xamarin.communitytoolkit\\1.3.2\\xamarin.communitytoolkit.1.3.2.nupkg.sha512",
     "C:\\Users\\maxib\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\maxib\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+    "C:\\Users\\maxib\\.nuget\\packages\\xamarin.forms\\5.0.0.2578\\xamarin.forms.5.0.0.2578.nupkg.sha512"
   ],
   "logs": []
 }

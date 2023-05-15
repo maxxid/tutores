@@ -33,7 +33,7 @@ namespace TUTORES.Vistas.Login
             {
                 _cargoSeleccionado = radioButton.ContentAsString();
 
-                DisplayAlert("Seleccionado", _cargoSeleccionado, "ok");
+                //DisplayAlert("Seleccionado", _cargoSeleccionado, "ok");
             }
 
         }

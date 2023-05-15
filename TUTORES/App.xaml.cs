@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Acr.UserDialogs;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -8,6 +9,7 @@ namespace TUTORES
     {
         public App()
         {
+            
             InitializeComponent();
 
             MainPage = new NavigationPage(new MainPage());
