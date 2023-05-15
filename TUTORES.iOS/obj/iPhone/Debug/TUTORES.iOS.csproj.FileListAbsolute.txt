@@ -277,3 +277,10 @@ E:\DESARROLLO\TUTORES3\TUTORES.iOS\bin\iPhone\Debug\Plugin.Segmented.pdb
 E:\DESARROLLO\TUTORES3\TUTORES.iOS\bin\iPhone\Debug\Acr.UserDialogs.dll
 E:\DESARROLLO\TUTORES3\TUTORES.iOS\bin\iPhone\Debug\BTProgressHUD.dll
 E:\DESARROLLO\TUTORES3\TUTORES.iOS\bin\iPhone\Debug\BTProgressHUD.pdb
+E:\DEV23\TUTORES 2\tutores\TUTORES.iOS\bin\iPhone\Debug\Acr.UserDialogs.dll
+E:\DEV23\TUTORES 2\tutores\TUTORES.iOS\bin\iPhone\Debug\BTProgressHUD.dll
+E:\DEV23\TUTORES 2\tutores\TUTORES.iOS\bin\iPhone\Debug\BTProgressHUD.pdb
+E:\DEV23\TUTORES 2\tutores\TUTORES.iOS\bin\iPhone\Debug\Plugin.Segmented.Control.iOS.dll
+E:\DEV23\TUTORES 2\tutores\TUTORES.iOS\bin\iPhone\Debug\Plugin.Segmented.Control.iOS.pdb
+E:\DEV23\TUTORES 2\tutores\TUTORES.iOS\bin\iPhone\Debug\Plugin.Segmented.dll
+E:\DEV23\TUTORES 2\tutores\TUTORES.iOS\bin\iPhone\Debug\Plugin.Segmented.pdb

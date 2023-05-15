@@ -55,6 +55,8 @@ namespace TUTORES.VistaModelo.Principal
             await Navigation.PushAsync(new PaseTardanzasPorCurso());
         }
 
+        
+
         public async Task activityCargando()
         {
             UserDialogs.Instance.ShowLoading("Sincronizando");
@@ -68,25 +70,31 @@ namespace TUTORES.VistaModelo.Principal
         {
             if (EstadoOffline)
             {
-                DisplayAlert("Modo", "Sin Conexion activo", "ok");
+                await DisplayAlert("Modo", "Sin Conexion activo", "ok");
                 EstadoOffline =!EstadoOffline;
                 StringEstadoOffline = "Modo online";
             }
             else
             {
-                DisplayAlert("Modo", "Sin Conexion desactivado", "ok");
+                await DisplayAlert("Modo", "Sin Conexion desactivado", "ok");
                 EstadoOffline = !EstadoOffline;
                 StringEstadoOffline = "Modo offline";
 
             }
         }
-
+        public async Task Button_Volver()
+        {
+            await Navigation.PopAsync();
+        }
+        public ICommand VolverCommand => new Command(async () => await Button_Volver());
         public ICommand PushSelectionCommand => new Command(async () => await PushSelectionPage());
         public ICommand Button_offlineCommand => new Command(async () => await Button_offlineFunction());
         public ICommand Button_AsistenciaPorCursoCommand => new Command(async () => await Button_AsistenciaPorCursoFunction());
 
         public ICommand Button_TardanzaPorCursoCommand => new Command(async () => await Button_TardanzaPorCursoFunction());
         public ICommand ActivityCommand => new Command(async () => await activityCargando());
+       
+
 
 
 

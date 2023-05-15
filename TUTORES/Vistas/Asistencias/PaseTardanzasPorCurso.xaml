@@ -23,7 +23,11 @@
                 <ColumnDefinition Width=".11*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Image Grid.Column="0" Source="icon_B_atras.png" HeightRequest="12" Margin="5,0,0,0"></Image>
+            <Image Grid.Column="0" Source="icon_B_atras.png" HeightRequest="12" Margin="5,0,0,0">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                </Image.GestureRecognizers>
+            </Image>
             <Label Grid.Column="1" Text="4TO GRADO B" HorizontalOptions="Center" VerticalOptions="Center" TextTransform="Uppercase" TextColor="White" />
         </Grid>
 

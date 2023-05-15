@@ -1902,24 +1902,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\maxib\\.nuget\\packages\\": {},
+    "C:\\Users\\MAXI\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DESARROLLO\\TUTORES3\\TUTORES.iOS\\TUTORES.iOS.csproj",
+      "projectUniqueName": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.iOS\\TUTORES.iOS.csproj",
       "projectName": "TUTORES.iOS",
-      "projectPath": "E:\\DESARROLLO\\TUTORES3\\TUTORES.iOS\\TUTORES.iOS.csproj",
-      "packagesPath": "C:\\Users\\maxib\\.nuget\\packages\\",
-      "outputPath": "E:\\DESARROLLO\\TUTORES3\\TUTORES.iOS\\obj\\",
+      "projectPath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.iOS\\TUTORES.iOS.csproj",
+      "packagesPath": "C:\\Users\\MAXI\\.nuget\\packages\\",
+      "outputPath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\maxib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MAXI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1933,8 +1933,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "E:\\DESARROLLO\\TUTORES3\\TUTORES\\TUTORES.csproj": {
-              "projectPath": "E:\\DESARROLLO\\TUTORES3\\TUTORES\\TUTORES.csproj"
+            "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES\\TUTORES.csproj": {
+              "projectPath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES\\TUTORES.csproj"
             }
           }
         }

@@ -52,7 +52,13 @@
                             FontSize="13"
                             Text="Rol: Profesor - Escuela de Minas"
                             TextColor="White" />
-                        <Image Source="icon_cambioRol.png" WidthRequest="20" />
+
+                        <Image Source="icon_cambioRol.png" WidthRequest="20">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                            </Image.GestureRecognizers>
+
+                        </Image>
 
 
                     </StackLayout>
@@ -252,6 +258,7 @@
                             VerticalOptions="End">
 
                             <Frame
+                                Padding="7"
                                 BackgroundColor="#3094FF"
                                 CornerRadius="60"
                                 HeightRequest="70"
@@ -259,9 +266,7 @@
                                 TranslationX="5"
                                 TranslationY="-15"
                                 VerticalOptions="Center"
-                                WidthRequest="70"
-                                Padding="7"
-                                >
+                                WidthRequest="70">
                                 <Frame.Background>
                                     <LinearGradientBrush EndPoint="0,5">
                                         <GradientStop Offset="0.1" Color="Transparent" />
@@ -269,7 +274,7 @@
                                     </LinearGradientBrush>
                                 </Frame.Background>
                                 <Image Aspect="AspectFill" Source="icon_gobjujuy.png">
-                                
+
                                     <Image.GestureRecognizers>
                                         <TapGestureRecognizer Command="{Binding EjecutarCargaActivityIndicator}" />
                                     </Image.GestureRecognizers>
@@ -335,7 +340,7 @@
 
             </Grid>
 
-            
+
 
         </Frame>
     </Grid>

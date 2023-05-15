@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
 using TUTORES.Modelo;
 using Xamarin.Forms;
 
@@ -54,7 +56,11 @@ namespace TUTORES.VistaModelo.Principal
         }
 
 
-
+        public async Task Button_Volver()
+        {
+            await Navigation.PopAsync();
+        }
+        public ICommand VolverCommand => new Command(async () => await Button_Volver());
 
 
     }

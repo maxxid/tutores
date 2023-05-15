@@ -114,3 +114,4 @@ E:\DESARROLLO\TUTORES3\TUTORES\obj\Debug\netstandard2.0\refint\TUTORES.dll
 E:\DESARROLLO\TUTORES3\TUTORES\obj\Debug\netstandard2.0\TUTORES.pdb
 E:\DESARROLLO\TUTORES3\TUTORES\obj\Debug\netstandard2.0\ref\TUTORES.dll
 E:\DESARROLLO\TUTORES3\TUTORES\obj\Debug\netstandard2.0\Vistas\Asistencias\PaseTardanzasPorCurso.xaml.g.cs
+E:\DEV23\TUTORES 2\tutores\TUTORES\obj\Debug\netstandard2.0\Vistas\Asistencias\PaseTardanzasPorCurso.xaml.g.cs
