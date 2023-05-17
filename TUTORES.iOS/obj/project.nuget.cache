@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4aLDBWI9fA7O+dp9bezzPsuCSUTaYHtADSV6jWdy9G6PxZpuTUIhOhuOsajB+k68Pc8aylgDtYdtEAJo3amikw==",
+  "dgSpecHash": "ub5V8zYiDkZUU7z4PYvC+mK0AlX2h5iOIveznMzC+RplhhWppu/DOvk2x00TK8+bjYEPoH96Dc0WSWVPNTWpDg==",
   "success": true,
-  "projectFilePath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.iOS\\TUTORES.iOS.csproj",
+  "projectFilePath": "E:\\APP.TUTORES\\TUTORES.iOS\\TUTORES.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MAXI\\.nuget\\packages\\acr.userdialogs\\7.2.0.564\\acr.userdialogs.7.2.0.564.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\btprogresshud\\1.3.5\\btprogresshud.1.3.5.nupkg.sha512",

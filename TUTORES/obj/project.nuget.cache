@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "km5o4MyJ30me1bJvdv/mymfdLdOmzp4zwEPjaIYdnBmpItmsspefmXUjGwwVDEBqWsHeW60X+87cMArMdePcNQ==",
+  "dgSpecHash": "tZuTTJeWYfVcctWcwL4UeY1T+Ve/kzONd2QO9VgpVoNC0zA2jh43JjzeF3VIr9aRCOnGEdcf7U29jsoXr5vIMg==",
   "success": true,
-  "projectFilePath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES\\TUTORES.csproj",
+  "projectFilePath": "E:\\APP.TUTORES\\TUTORES\\TUTORES.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MAXI\\.nuget\\packages\\acr.userdialogs\\7.2.0.564\\acr.userdialogs.7.2.0.564.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\magicgradients\\1.3.1\\magicgradients.1.3.1.nupkg.sha512",

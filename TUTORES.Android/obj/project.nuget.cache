@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KKY9vvgRrd7spUYyj2D12Slaj1ZlIEvh7y3+puTZ833IqYRhWZtcDhlWvqahg07Z2fuD1cOfjRf6LHXzuGySYg==",
+  "dgSpecHash": "tRHeRGF7YOoT8+hhNtzCc/xBtJGa1H1zZLtU06JBUwlgYVP96AtlWeV1hUbjpJ6aKYaMGNcn9gj1hwMv9zlinQ==",
   "success": true,
-  "projectFilePath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.Android\\TUTORES.Android.csproj",
+  "projectFilePath": "E:\\APP.TUTORES\\TUTORES.Android\\TUTORES.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MAXI\\.nuget\\packages\\acr.userdialogs\\7.2.0.564\\acr.userdialogs.7.2.0.564.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\andhud\\1.4.3\\andhud.1.4.3.nupkg.sha512",

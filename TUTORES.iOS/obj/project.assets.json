@@ -1908,11 +1908,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.iOS\\TUTORES.iOS.csproj",
+      "projectUniqueName": "E:\\APP.TUTORES\\TUTORES.iOS\\TUTORES.iOS.csproj",
       "projectName": "TUTORES.iOS",
-      "projectPath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.iOS\\TUTORES.iOS.csproj",
+      "projectPath": "E:\\APP.TUTORES\\TUTORES.iOS\\TUTORES.iOS.csproj",
       "packagesPath": "C:\\Users\\MAXI\\.nuget\\packages\\",
-      "outputPath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.iOS\\obj\\",
+      "outputPath": "E:\\APP.TUTORES\\TUTORES.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1933,8 +1933,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES\\TUTORES.csproj": {
-              "projectPath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES\\TUTORES.csproj"
+            "E:\\APP.TUTORES\\TUTORES\\TUTORES.csproj": {
+              "projectPath": "E:\\APP.TUTORES\\TUTORES\\TUTORES.csproj"
             }
           }
         }

@@ -4046,11 +4046,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.Android\\TUTORES.Android.csproj",
+      "projectUniqueName": "E:\\APP.TUTORES\\TUTORES.Android\\TUTORES.Android.csproj",
       "projectName": "TUTORES.Android",
-      "projectPath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.Android\\TUTORES.Android.csproj",
+      "projectPath": "E:\\APP.TUTORES\\TUTORES.Android\\TUTORES.Android.csproj",
       "packagesPath": "C:\\Users\\MAXI\\.nuget\\packages\\",
-      "outputPath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES.Android\\obj\\",
+      "outputPath": "E:\\APP.TUTORES\\TUTORES.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -4071,8 +4071,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES\\TUTORES.csproj": {
-              "projectPath": "E:\\DEV23\\TUTORES 2\\tutores\\TUTORES\\TUTORES.csproj"
+            "E:\\APP.TUTORES\\TUTORES\\TUTORES.csproj": {
+              "projectPath": "E:\\APP.TUTORES\\TUTORES\\TUTORES.csproj"
             }
           }
         }
