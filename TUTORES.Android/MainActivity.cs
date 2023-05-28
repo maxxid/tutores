@@ -7,6 +7,7 @@ using Android.OS;
 using Acr.UserDialogs;
 using Android.Widget;
 using TUTORES.Vistas.Principal;
+using Plugin.CurrentActivity;
 
 namespace TUTORES.Droid
 {
@@ -16,7 +17,7 @@ namespace TUTORES.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
+            CrossCurrentActivity.Current.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             UserDialogs.Init(this);

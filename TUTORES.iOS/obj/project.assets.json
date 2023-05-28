@@ -379,6 +379,22 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.InputKit/4.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.InputKit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.InputKit.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "TUTORES/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -390,7 +406,8 @@
           "Rg.Plugins.Popup": "2.1.0",
           "Xamarin.CommunityToolkit": "1.3.2",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2578"
+          "Xamarin.Forms": "5.0.0.2578",
+          "Xamarin.Forms.InputKit": "4.0.1"
         },
         "compile": {
           "bin/placeholder/TUTORES.dll": {}
@@ -756,6 +773,22 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.InputKit/4.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.InputKit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.InputKit.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "TUTORES/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -767,7 +800,8 @@
           "Rg.Plugins.Popup": "2.1.0",
           "Xamarin.CommunityToolkit": "1.3.2",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2578"
+          "Xamarin.Forms": "5.0.0.2578",
+          "Xamarin.Forms.InputKit": "4.0.1"
         },
         "compile": {
           "bin/placeholder/TUTORES.dll": {}
@@ -1136,6 +1170,22 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.InputKit/4.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.InputKit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.InputKit.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "TUTORES/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1147,7 +1197,8 @@
           "Rg.Plugins.Popup": "2.1.0",
           "Xamarin.CommunityToolkit": "1.3.2",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2578"
+          "Xamarin.Forms": "5.0.0.2578",
+          "Xamarin.Forms.InputKit": "4.0.1"
         },
         "compile": {
           "bin/placeholder/TUTORES.dll": {}
@@ -1516,6 +1567,22 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Forms.InputKit/4.0.1": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Plugin.InputKit.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/xamarinios10/Plugin.InputKit.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "TUTORES/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1527,7 +1594,8 @@
           "Rg.Plugins.Popup": "2.1.0",
           "Xamarin.CommunityToolkit": "1.3.2",
           "Xamarin.Essentials": "1.7.0",
-          "Xamarin.Forms": "5.0.0.2578"
+          "Xamarin.Forms": "5.0.0.2578",
+          "Xamarin.Forms.InputKit": "4.0.1"
         },
         "compile": {
           "bin/placeholder/TUTORES.dll": {}
@@ -2195,6 +2263,33 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Forms.InputKit/4.0.1": {
+      "sha512": "Aya90+vufA6g0tFOLI5JFd7QvL90Evq8GJ8aM1nLhahujM13YS2HDGoQfmXZXeNz9dLG+qXyFPetzl47dOHqbQ==",
+      "type": "package",
+      "path": "xamarin.forms.inputkit/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/monoandroid10.0/Plugin.InputKit.dll",
+        "lib/monoandroid10.0/Plugin.InputKit.xml",
+        "lib/monoandroid11.0/Plugin.InputKit.dll",
+        "lib/monoandroid11.0/Plugin.InputKit.xml",
+        "lib/monoandroid12.0/Plugin.InputKit.dll",
+        "lib/monoandroid12.0/Plugin.InputKit.xml",
+        "lib/monoandroid90/Plugin.InputKit.dll",
+        "lib/monoandroid90/Plugin.InputKit.xml",
+        "lib/netstandard2.0/Plugin.InputKit.dll",
+        "lib/netstandard2.0/Plugin.InputKit.xml",
+        "lib/uap10.0.19041/Plugin.InputKit.dll",
+        "lib/uap10.0.19041/Plugin.InputKit.pri",
+        "lib/uap10.0.19041/Plugin.InputKit.xml",
+        "lib/xamarinios10/Plugin.InputKit.dll",
+        "lib/xamarinios10/Plugin.InputKit.xml",
+        "xamarin.forms.inputkit.4.0.1.nupkg.sha512",
+        "xamarin.forms.inputkit.nuspec"
+      ]
+    },
     "TUTORES/1.0.0": {
       "type": "project",
       "path": "../TUTORES/TUTORES.csproj",
@@ -2211,7 +2306,8 @@
       "TUTORES >= 1.0.0",
       "Xamarin.CommunityToolkit >= 1.3.2",
       "Xamarin.Essentials >= 1.7.0",
-      "Xamarin.Forms >= 5.0.0.2578"
+      "Xamarin.Forms >= 5.0.0.2578",
+      "Xamarin.Forms.InputKit >= 4.0.1"
     ]
   },
   "packageFolders": {
@@ -2287,6 +2383,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[5.0.0.2578, )"
+          },
+          "Xamarin.Forms.InputKit": {
+            "target": "Package",
+            "version": "[4.0.1, )"
           }
         }
       }
