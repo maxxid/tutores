@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Acr.UserDialogs;
 using TUTORES.Modelo;
+using TUTORES.Vistas.Ajustes;
 using TUTORES.Vistas.Asistencias;
+using TUTORES.Vistas.Emergentes;
 using TUTORES.Vistas.Tardanzas;
 using Xamarin.Forms;
 
@@ -86,10 +88,30 @@ namespace TUTORES.VistaModelo.Principal
         {
             await Navigation.PopAsync();
         }
+
+        public async Task Button_AnimOk()
+        {
+            await Navigation.PushAsync(new PageEmergente_OK());
+        }
+        public async Task Button_AnimFail()
+        {
+            await Navigation.PushAsync(new PageEmergente_Fail());
+        }
+        public async Task Button_Usuario()
+        {
+            await Navigation.PushAsync(new PageUsuario());
+        }
+
         public ICommand VolverCommand => new Command(async () => await Button_Volver());
         public ICommand PushSelectionCommand => new Command(async () => await PushSelectionPage());
         public ICommand Button_offlineCommand => new Command(async () => await Button_offlineFunction());
         public ICommand Button_AsistenciaPorCursoCommand => new Command(async () => await Button_AsistenciaPorCursoFunction());
+
+        public ICommand Button_AnimOkCommand => new Command(async () => await Button_AnimOk());
+
+        public ICommand Button_AnimFailCommand => new Command(async () => await Button_AnimFail());
+
+        public ICommand Button_PageUsuarioCommand => new Command(async () => await Button_Usuario());
 
         public ICommand Button_TardanzaPorCursoCommand => new Command(async () => await Button_TardanzaPorCursoFunction());
         public ICommand ActivityCommand => new Command(async () => await activityCargando());

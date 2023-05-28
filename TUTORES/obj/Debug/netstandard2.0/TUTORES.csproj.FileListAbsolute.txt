@@ -145,3 +145,4 @@ E:\APP.TUTORES\TUTORES\obj\Debug\netstandard2.0\TUTORES.dll
 E:\APP.TUTORES\TUTORES\obj\Debug\netstandard2.0\refint\TUTORES.dll
 E:\APP.TUTORES\TUTORES\obj\Debug\netstandard2.0\TUTORES.pdb
 E:\APP.TUTORES\TUTORES\obj\Debug\netstandard2.0\ref\TUTORES.dll
+E:\APP.TUTORES\TUTORES\obj\Debug\netstandard2.0\Vistas\Ajustes\PageUsuario.xaml.g.cs

@@ -1,15 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "tZuTTJeWYfVcctWcwL4UeY1T+Ve/kzONd2QO9VgpVoNC0zA2jh43JjzeF3VIr9aRCOnGEdcf7U29jsoXr5vIMg==",
+  "dgSpecHash": "gkiSMep+kW5OrtjvqcXBf7DBWFEyTPmFpmMd3PQaP7SJcV6lHVNYvtKBqm7tsrs5sXj0TePcxgSox039b1Au5A==",
   "success": true,
   "projectFilePath": "E:\\APP.TUTORES\\TUTORES\\TUTORES.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MAXI\\.nuget\\packages\\acr.userdialogs\\7.2.0.564\\acr.userdialogs.7.2.0.564.nupkg.sha512",
+    "C:\\Users\\MAXI\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.1.0\\com.airbnb.xamarin.forms.lottie.4.1.0.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\magicgradients\\1.3.1\\magicgradients.1.3.1.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\plugin.segmentedcontrol.netstandard\\5.4.5\\plugin.segmentedcontrol.netstandard.5.4.5.nupkg.sha512",
+    "C:\\Users\\MAXI\\.nuget\\packages\\rg.plugins.popup\\2.1.0\\rg.plugins.popup.2.1.0.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\skiasharp.views.forms\\1.68.1.1\\skiasharp.views.forms.1.68.1.1.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",

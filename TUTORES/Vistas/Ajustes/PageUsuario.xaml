@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TUTORES.Vistas.Ajustes.PageUsuario"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="4*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Frame
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                BackgroundColor="#0E2A47"
+                CornerRadius="0" />
+            <Image
+                Grid.Row="0"
+                Grid.Column="0"
+                Margin="10"
+                HeightRequest="35"
+                HorizontalOptions="CenterAndExpand"
+                Source="icon_B_atras.png"
+                VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                </Image.GestureRecognizers>
+            </Image>
+
+
+
+            <Frame
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                BackgroundColor="#08192B"
+                CornerRadius="0" />
+
+
+
+            <ScrollView
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                Padding="15,15,15,5"
+                VerticalOptions="Start">
+
+
+
+                <StackLayout Spacing="0" VerticalOptions="Start">
+
+                    <Image HeightRequest="60" Source="monkey.png" />
+                    <StackLayout
+                        Margin="5,20,0,10"
+                        HorizontalOptions="Center"
+                        Orientation="Horizontal">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            Text="Nombre"
+                            TextColor="White" />
+
+                        <Image Source="icon_edit.png" WidthRequest="20">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                            </Image.GestureRecognizers>
+
+                        </Image>
+                    </StackLayout>
+                    <StackLayout Margin="5,60,0,10" Orientation="Horizontal">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            Text="Instituciones"
+                            TextColor="White" />
+
+                        <Image Source="icon_edit.png" WidthRequest="20">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                            </Image.GestureRecognizers>
+
+                        </Image>
+                    </StackLayout>
+                    <StackLayout Margin="5,10,0,10" Orientation="Horizontal">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            Text="Email"
+                            TextColor="White" />
+
+                        <Image Source="icon_edit.png" WidthRequest="20">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                            </Image.GestureRecognizers>
+
+                        </Image>
+                    </StackLayout>
+                    <StackLayout Margin="5,10,0,10" Orientation="Horizontal">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            Text="Contraseña"
+                            TextColor="White" />
+
+                        <Image Source="icon_edit.png" WidthRequest="20">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                            </Image.GestureRecognizers>
+
+                        </Image>
+                    </StackLayout>
+                    <StackLayout
+                        Margin="5,50,0,10"
+                        HorizontalOptions="Center"
+                        Orientation="Horizontal">
+                        <Label
+                            FontAttributes="Bold"
+                            FontSize="20"
+                            Text="Cerrar Sesion"
+                            TextColor="White" />
+
+                        <Image Source="icon_edit.png" WidthRequest="20">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                            </Image.GestureRecognizers>
+
+                        </Image>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

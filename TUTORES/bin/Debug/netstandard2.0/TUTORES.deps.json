@@ -10,9 +10,11 @@
       "TUTORES/1.0.0": {
         "dependencies": {
           "Acr.UserDialogs": "7.2.0.564",
+          "Com.Airbnb.Xamarin.Forms.Lottie": "4.1.0",
           "MagicGradients": "1.3.1",
           "NETStandard.Library": "2.0.3",
           "Plugin.SegmentedControl.Netstandard": "5.4.5",
+          "Rg.Plugins.Popup": "2.1.0",
           "Xamarin.CommunityToolkit": "1.3.2",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2578"
@@ -26,6 +28,17 @@
           "lib/netstandard2.0/Acr.UserDialogs.dll": {
             "assemblyVersion": "7.2.0.0",
             "fileVersion": "7.2.0.0"
+          }
+        }
+      },
+      "Com.Airbnb.Xamarin.Forms.Lottie/4.1.0": {
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2578"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Lottie.Forms.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
           }
         }
       },
@@ -56,6 +69,17 @@
           "lib/netstandard2.0/Plugin.Segmented.dll": {
             "assemblyVersion": "5.4.5.0",
             "fileVersion": "5.4.1.0"
+          }
+        }
+      },
+      "Rg.Plugins.Popup/2.1.0": {
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2578"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Rg.Plugins.Popup.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
           }
         }
       },
@@ -326,6 +350,13 @@
       "path": "acr.userdialogs/7.2.0.564",
       "hashPath": "acr.userdialogs.7.2.0.564.nupkg.sha512"
     },
+    "Com.Airbnb.Xamarin.Forms.Lottie/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-me1BrWHvNPz3UQYXK0K5BZTbBIEYpbE5JbkUsO38tnvacLLMo8vBjmf11A6so2b3sCKtj4P3ixKu9EnZEjGs5g==",
+      "path": "com.airbnb.xamarin.forms.lottie/4.1.0",
+      "hashPath": "com.airbnb.xamarin.forms.lottie.4.1.0.nupkg.sha512"
+    },
     "MagicGradients/1.3.1": {
       "type": "package",
       "serviceable": true,
@@ -360,6 +391,13 @@
       "sha512": "sha512-68P/FNSKWa/jnQngija+9gr8zX4yuxwWw+5YOediZkBmv7cRcXcemmF74B0BKjSzbuLu1Eb/C2GfKB4NksXI2w==",
       "path": "plugin.segmentedcontrol.netstandard/5.4.5",
       "hashPath": "plugin.segmentedcontrol.netstandard.5.4.5.nupkg.sha512"
+    },
+    "Rg.Plugins.Popup/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-caKjkvimzpUqk4pO/WSFn3uOX43uZNW5rPWCx7eXkOlGG9Br90MTwNVS1nxhtyypB69uUe/0GQPEC3rz+kscbA==",
+      "path": "rg.plugins.popup/2.1.0",
+      "hashPath": "rg.plugins.popup.2.1.0.nupkg.sha512"
     },
     "SkiaSharp/1.68.1.1": {
       "type": "package",

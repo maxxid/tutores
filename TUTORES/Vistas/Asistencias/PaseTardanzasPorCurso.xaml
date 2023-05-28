@@ -44,7 +44,7 @@
             <CollectionView.ItemTemplate >
                 <DataTemplate >
 
-                    <StackLayout Margin="0,0,0,1" BackgroundColor="#D07507">
+                    <StackLayout Margin="0,0,0,1" BackgroundColor="#0B78FF">
 
                         <Frame Margin="0"
                                Padding="5"
@@ -72,10 +72,10 @@
                                 <Image Grid.RowSpan="2" Grid.Column="0" Source="icon_B_info.png" HorizontalOptions="Start" HeightRequest="35" />
 
 
-                                <control:SegmentedControl Grid.Column="2" Grid.RowSpan="2" WidthRequest="120" TintColor="DarkOrange"      
+                                <control:SegmentedControl Grid.Column="2" Grid.RowSpan="2" WidthRequest="120" TintColor="#0B78FF"      
                                                           BorderWidth="1.0"
                                                           SelectedTextColor="White"
-                                                          TextColor="DarkOrange"
+                                                          TextColor="#0B78FF"
                                                           FontSize="Small"   
                                                           VerticalOptions="Center"
                                                       
@@ -104,7 +104,7 @@
         </CollectionView>
 
 
-        <Frame BackgroundColor="#D07507" Grid.Row="2"></Frame>
+        <Frame BackgroundColor="#0B78FF" Grid.Row="2"></Frame>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>

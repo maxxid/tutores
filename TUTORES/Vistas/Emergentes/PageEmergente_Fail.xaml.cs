@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using TUTORES.VistaModelo;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +15,8 @@ namespace TUTORES.Vistas.Emergentes
 		public PageEmergente_Fail ()
 		{
 			InitializeComponent ();
-		}
-	}
+            BindingContext = new VMPageEmergente(Navigation);
+
+        }
+    }
 }
