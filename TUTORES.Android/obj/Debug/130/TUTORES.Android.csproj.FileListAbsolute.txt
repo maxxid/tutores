@@ -3677,3 +3677,12 @@ E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\android\src\crc64dbf290ea7e69bd26\C
 E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\android\src\crc64dbf290ea7e69bd26\EmptyEntryRenderer.java
 E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\android\src\crc64dbf290ea7e69bd26\NewIconViewRenderer.java
 E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\android\src\crc64dbf290ea7e69bd26\StatefulStackLayoutRenderer.java
+E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\res\drawable\tucan.png
+E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_logout.png
+E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_edit.png
+E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_ok.png
+E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_not.png
+E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_google.png
+E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_phone.png
+E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_password.png
+E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_notification.png
