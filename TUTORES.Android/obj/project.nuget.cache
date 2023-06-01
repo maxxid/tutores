@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BrDttQ7ogok49cClECnFR85PwlKWzIm+CULu5XlTDFLm8/GFoZONyo5yX9+pArdQF3XS13YN+o3CGABlQS2zng==",
+  "dgSpecHash": "LFg0/K2N50zzfF6eHdslmo7uKwTvXbTjSzPqsrv8S1wUSmhxXwl75cjlO8bqKWjib12Et9hU8D5lX70mUEcTvw==",
   "success": true,
   "projectFilePath": "E:\\APP.TUTORES\\TUTORES.Android\\TUTORES.Android.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\MAXI\\.nuget\\packages\\com.airbnb.android.lottie\\4.2.2\\com.airbnb.android.lottie.4.2.2.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.1.0\\com.airbnb.xamarin.forms.lottie.4.1.0.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\magicgradients\\1.3.1\\magicgradients.1.3.1.nupkg.sha512",
+    "C:\\Users\\MAXI\\.nuget\\packages\\plugin.currentactivity\\2.1.0.4\\plugin.currentactivity.2.1.0.4.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\plugin.segmentedcontrol.netstandard\\5.4.5\\plugin.segmentedcontrol.netstandard.5.4.5.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\rg.plugins.popup\\2.1.0\\rg.plugins.popup.2.1.0.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
@@ -77,6 +78,7 @@
     "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.communitytoolkit\\1.3.2\\xamarin.communitytoolkit.1.3.2.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.forms\\5.0.0.2578\\xamarin.forms.5.0.0.2578.nupkg.sha512",
+    "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.forms.inputkit\\4.0.1\\xamarin.forms.inputkit.4.0.1.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.4\\xamarin.google.android.material.1.4.0.4.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],

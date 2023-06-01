@@ -365,3 +365,4 @@ E:\APP.TUTORES\TUTORES.iOS\obj\iPhone\Debug\TUTORES.iOS.csproj.CoreCompileInputs
 E:\APP.TUTORES\TUTORES.iOS\obj\iPhone\Debug\TUTORES.iOS.csproj.CopyComplete
 E:\APP.TUTORES\TUTORES.iOS\obj\iPhone\Debug\TUTORES.iOS.exe
 E:\APP.TUTORES\TUTORES.iOS\obj\iPhone\Debug\TUTORES.iOS.pdb
+E:\APP.TUTORES\TUTORES.iOS\bin\iPhone\Debug\Plugin.InputKit.dll

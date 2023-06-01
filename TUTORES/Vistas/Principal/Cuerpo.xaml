@@ -45,6 +45,7 @@
                             Grid.Column="2"
                             HeightRequest="40"
                             HorizontalOptions="End"
+                            IsVisible="False"
                             Source="icon_A_menu.png" />
                     </Grid>
                     <StackLayout Margin="5,10,0,10" Orientation="Horizontal">

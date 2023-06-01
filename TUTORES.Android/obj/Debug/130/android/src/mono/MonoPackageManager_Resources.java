@@ -9,6 +9,8 @@ public class MonoPackageManager_Resources {
 		"Lottie.Android.dll",
 		"Lottie.Forms.dll",
 		"MagicGradients.dll",
+		"Plugin.CurrentActivity.dll",
+		"Plugin.InputKit.dll",
 		"Plugin.Segmented.Control.Droid.dll",
 		"Plugin.Segmented.dll",
 		"Rg.Plugins.Popup.dll",

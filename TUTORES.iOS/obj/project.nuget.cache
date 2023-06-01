@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WDBPVpnw+1C/1IihpWwlRhzL2sxIF2HAiRFAFCutzBIXw3wP95yrVUt6Em8ChNkTQaNZwnhvro7EpaK26GAUnQ==",
+  "dgSpecHash": "LvLuNJcZ0Ph06qPF8AIY2aSKFQlD7en48hxQHXyTtLKqmFhv4qyc3l96dnVqUHLFRHWQGD71scZ8MRTXDmFwHw==",
   "success": true,
   "projectFilePath": "E:\\APP.TUTORES\\TUTORES.iOS\\TUTORES.iOS.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,8 @@
     "C:\\Users\\MAXI\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.communitytoolkit\\1.3.2\\xamarin.communitytoolkit.1.3.2.nupkg.sha512",
     "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.forms\\5.0.0.2578\\xamarin.forms.5.0.0.2578.nupkg.sha512"
+    "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.forms\\5.0.0.2578\\xamarin.forms.5.0.0.2578.nupkg.sha512",
+    "C:\\Users\\MAXI\\.nuget\\packages\\xamarin.forms.inputkit\\4.0.1\\xamarin.forms.inputkit.4.0.1.nupkg.sha512"
   ],
   "logs": []
 }

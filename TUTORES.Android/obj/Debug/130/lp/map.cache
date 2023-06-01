@@ -3,6 +3,8 @@ AndHUD.dll
 FormsViewGroup.dll
 Lottie.Android.dll
 Lottie.Forms.dll
+Plugin.CurrentActivity.dll
+Plugin.InputKit.dll
 Plugin.Segmented.Control.Droid.dll
 Rg.Plugins.Popup.dll
 SkiaSharp.dll
