@@ -6,7 +6,9 @@
     xmlns:controls="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
     NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
+
         <Grid RowSpacing="0">
+
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="4*" />
@@ -21,7 +23,7 @@
                 Grid.Row="0"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
-                BackgroundColor="#0E2A47"
+                BackgroundColor="#08192B"
                 CornerRadius="0" />
             <Image
                 Grid.Row="0"
@@ -37,7 +39,11 @@
             </Image>
 
 
-            <StackLayout Grid.Column="2" BackgroundColor="Transparent">
+
+            <StackLayout
+                Grid.Column="2"
+                BackgroundColor="Transparent"
+                IsVisible="{Binding EstadoActivoBotonEditar}">
                 <Image
                     Grid.Row="0"
                     Grid.Column="2"
@@ -47,13 +53,16 @@
                     Source="icon_A_EDIT.png"
                     VerticalOptions="CenterAndExpand">
                     <Image.GestureRecognizers>
-                        <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                        <TapGestureRecognizer Command="{Binding HabilitarEditarCommand}" />
                     </Image.GestureRecognizers>
                 </Image>
                 <Label
                     HorizontalOptions="Center"
                     Text="EDITAR"
                     TextColor="White" />
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding HabilitarEditarCommand}" />
+                </StackLayout.GestureRecognizers>
             </StackLayout>
 
 
@@ -65,217 +74,245 @@
                 CornerRadius="0" />
 
 
-
-            <ScrollView
-                Grid.Row="1"
-                Grid.Column="0"
-                Grid.ColumnSpan="3"
-                Padding="15,15,15,5"
-                VerticalOptions="Start">
+            <Grid Grid.Row="1" Grid.ColumnSpan="3">
+                <Image Aspect="AspectFill" Source="wallpaper_init2.png" />
+                <ScrollView VerticalOptions="Start">
 
 
+                    <Grid>
 
-                <StackLayout Spacing="0" VerticalOptions="Start">
+                        <StackLayout
+                            Padding="15,15,15,5"
+                            Spacing="0"
+                            VerticalOptions="Start">
 
-                    <Image HeightRequest="60" Source="tucan.png" />
-                    <StackLayout
-                        Margin="5,20,0,10"
-                        HorizontalOptions="Start"
-                        Orientation="Horizontal">
-                        <Label
-                            FontAttributes="Bold"
-                            FontSize="20"
-                            Text="Nombre"
-                            TextColor="White" />
-
-                        <Image
-                            IsVisible="False"
-                            Source="icon_A_EDIT.png"
-                            WidthRequest="20">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding VolverCommand}" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                    </StackLayout>
-                    <controls:AdvancedEntry
-                        AnnotationColor="LightGreen"
-                        BackgroundColor="Black"
-                        IconColor="Aqua"
-                        IsAnnotated="True"
-                        IsRequired="True"
-                        Placeholder="Segovia Hector"
-                        PlaceholderColor="WhiteSmoke"
-                        RegexPattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"
-                        TextColor="WhiteSmoke"
-                        TitleColor="White"
-                        ValidationMessage="Este dato no se modifico." />
-
-                    <StackLayout
-                        Margin="5,20,0,10"
-                        HorizontalOptions="Start"
-                        Orientation="Horizontal">
-                        <Label
-                            FontAttributes="Bold"
-                            FontSize="20"
-                            Text="Telefono"
-                            TextColor="White" />
-
-                        <Image
-                            IsVisible="False"
-                            Source="icon_A_EDIT.png"
-                            WidthRequest="20">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding VolverCommand}" />
-                            </Image.GestureRecognizers>
-
-                        </Image>
-                    </StackLayout>
-                    <controls:AdvancedEntry
-                        AnnotationColor="LightGreen"
-                        BackgroundColor="Black"
-                        IconColor="Aqua"
-                        IsAnnotated="True"
-                        IsRequired="True"
-                        Placeholder="+543884562644"
-                        PlaceholderColor="WhiteSmoke"
-                        RegexPattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"
-                        TextColor="WhiteSmoke"
-                        ValidationMessage="Este dato no se modifico." />
-
-
-
-
-                    <StackLayout Margin="5,10,0,10" Orientation="Horizontal">
-                        <Label
-                            FontAttributes="Bold"
-                            FontSize="20"
-                            Text="Email"
-                            TextColor="White" />
-
-                        <Image Source="icon_edit.png" WidthRequest="20">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding VolverCommand}" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                    </StackLayout>
-                    <controls:AdvancedEntry
-                        AnnotationColor="LightGreen"
-                        BackgroundColor="Black"
-                        IconColor="Aqua"
-                        IsAnnotated="True"
-                        IsRequired="True"
-                        Placeholder="test@siarh.com.ar"
-                        PlaceholderColor="WhiteSmoke"
-                        RegexPattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"
-                        TextColor="WhiteSmoke"
-                        ValidationMessage="Este dato no se modifico." />
-
-
-                    <StackLayout Margin="5,10,0,10" Orientation="Horizontal">
-                        <Label
-                            FontAttributes="Bold"
-                            FontSize="20"
-                            Text="Contraseña"
-                            TextColor="White" />
-
-                        <Image Source="icon_edit.png" WidthRequest="20">
-                            <Image.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding VolverCommand}" />
-                            </Image.GestureRecognizers>
-                        </Image>
-                    </StackLayout>
-                    <controls:AdvancedEntry
-                        AnnotationColor="Red"
-                        BackgroundColor="Black"
-                        IconColor="Aqua"
-                        IsAnnotated="True"
-                        IsEnabled="{Binding _estadoEditar}"
-                        IsRequired="True"
-                        Placeholder="*****************"
-                        PlaceholderColor="WhiteSmoke"
-                        RegexPattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"
-                        TextColor="WhiteSmoke"
-                        ValidationMessage="El campo no puede estar vacio!" />
-
-
-
-
-                    <Grid Margin="15">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                        </Grid.ColumnDefinitions>
-                        <Frame
-                            Grid.Column="0"
-                            Padding="10"
-                            BackgroundColor="#0E2A47"
-                            BorderColor="Red"
-                            CornerRadius="15"
-                            HasShadow="True">
-                            <StackLayout VerticalOptions="Center">
-                                <Image HeightRequest="35" Source="icon_A_NOT.png" />
+                            <Image HeightRequest="60" Source="tucan.png" />
+                            <StackLayout
+                                Margin="5,20,0,10"
+                                HorizontalOptions="Start"
+                                Orientation="Horizontal">
                                 <Label
-                                    FontSize="13"
-                                    HorizontalOptions="Center"
-                                    Text="DESCARTAR"
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    Text="Nombre"
                                     TextColor="White" />
+
+                                <Image
+                                    IsVisible="False"
+                                    Source="icon_A_EDIT.png"
+                                    WidthRequest="20">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                                    </Image.GestureRecognizers>
+                                </Image>
                             </StackLayout>
-                            <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding Button_AsistenciaPorCursoCommand}" />
-                            </Frame.GestureRecognizers>
-                        </Frame>
-                        <Frame
-                            Grid.Column="1"
-                            Padding="10"
-                            BackgroundColor="#0E2A47"
-                            BorderColor="GreenYellow"
-                            CornerRadius="15"
-                            HasShadow="True">
-                            <StackLayout VerticalOptions="Center">
-                                <Image HeightRequest="35" Source="icon_A_OK.png" />
+                            <controls:AdvancedEntry
+                                AnnotationColor="LightGreen"
+                                BackgroundColor="{Binding BackgroundPlaceholder}"
+                                BorderColor="{Binding ColorBorder}"
+                                CornerRadius="10"
+                                IconColor="{Binding ColorIcon}"
+                                IconImage="{Binding NameIcon}"
+                                IsAnnotated="True"
+                                IsEnabled="{Binding EstadoActivo}"
+                                IsRequired="True"
+                                Placeholder="Segovia Hector"
+                                PlaceholderColor="WhiteSmoke"
+                                RegexPattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"
+                                TextColor="WhiteSmoke"
+                                TitleColor="White"
+                                ValidationMessage="Este dato no se modifico." />
+
+                            <StackLayout
+                                Margin="5,20,0,10"
+                                HorizontalOptions="Start"
+                                Orientation="Horizontal">
                                 <Label
-                                    FontSize="13"
-                                    HorizontalOptions="Center"
-                                    Text="GUARDAR"
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    Text="Telefono"
                                     TextColor="White" />
+
+                                <Image
+                                    IsVisible="False"
+                                    Source="icon_A_EDIT.png"
+                                    WidthRequest="20">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                                    </Image.GestureRecognizers>
+
+                                </Image>
                             </StackLayout>
-                            <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding ActivityCommand}" />
-                            </Frame.GestureRecognizers>
-                        </Frame>
+                            <controls:AdvancedEntry
+                                AnnotationColor="LightGreen"
+                                BackgroundColor="{Binding BackgroundPlaceholder}"
+                                BorderColor="{Binding ColorBorder}"
+                                CornerRadius="10"
+                                IconColor="{Binding ColorIcon}"
+                                IconImage="{Binding NameIcon}"
+                                IsAnnotated="True"
+                                IsEnabled="{Binding EstadoActivo}"
+                                IsRequired="True"
+                                Placeholder="+543884562644"
+                                PlaceholderColor="WhiteSmoke"
+                                RegexPattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"
+                                TextColor="WhiteSmoke"
+                                ValidationMessage="Este dato no se modifico." />
+
+
+
+
+                            <StackLayout Margin="5,10,0,10" Orientation="Horizontal">
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    Text="Email"
+                                    TextColor="White" />
+
+                                <Image Source="icon_edit.png" WidthRequest="20">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                                    </Image.GestureRecognizers>
+                                </Image>
+                            </StackLayout>
+                            <controls:AdvancedEntry
+                                AnnotationColor="LightGreen"
+                                BackgroundColor="{Binding BackgroundPlaceholder}"
+                                BorderColor="{Binding ColorBorder}"
+                                CornerRadius="10"
+                                IconColor="{Binding ColorIcon}"
+                                IconImage="{Binding NameIcon}"
+                                IsAnnotated="True"
+                                IsEnabled="{Binding EstadoActivo}"
+                                IsRequired="True"
+                                Placeholder="test@siarh.com.ar"
+                                PlaceholderColor="WhiteSmoke"
+                                RegexPattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"
+                                TextColor="WhiteSmoke"
+                                ValidationMessage="Este dato no se modifico." />
+
+
+                            <StackLayout
+                                Margin="5,10,0,10"
+                                IsVisible="{Binding EstadoActivo}"
+                                Orientation="Horizontal">
+                                <Label
+                                    FontAttributes="Bold"
+                                    FontSize="20"
+                                    Text="Contraseña Actual"
+                                    TextColor="White" />
+
+                                <Image Source="icon_edit.png" WidthRequest="20">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                                    </Image.GestureRecognizers>
+                                </Image>
+                            </StackLayout>
+                            <controls:AdvancedEntry
+                                Padding="0,0,0,0"
+                                AnnotationColor="Red"
+                                BackgroundColor="{Binding BackgroundPlaceholder}"
+                                BorderColor="{Binding ColorBorder}"
+                                CornerRadius="10"
+                                IconColor="WhiteSmoke"
+                                IconImage="icon_A_PASSWORD.png"
+                                IsAnnotated="True"
+                                IsEnabled="{Binding EstadoActivo}"
+                                IsPassword="True"
+                                IsRequired="True"
+                                IsVisible="{Binding EstadoActivo}"
+                                Placeholder="**********"
+                                PlaceholderColor="WhiteSmoke"
+                                RegexPattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"
+                                TextColor="WhiteSmoke"
+                                ValidationMessage="Es necesario ingresar la contraseña!" />
+
+
+
+
+                            <Grid Margin="15">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <Frame
+                                    Grid.Column="0"
+                                    Padding="10"
+                                    BackgroundColor="#0E2A47"
+                                    BorderColor="#091b2e"
+                                    CornerRadius="15"
+                                    HasShadow="True"
+                                    IsVisible="{Binding EstadoActivo}">
+                                    <StackLayout VerticalOptions="Center">
+                                        <Image HeightRequest="35" Source="icon_A_NOT.png" />
+                                        <Label
+                                            FontSize="13"
+                                            HorizontalOptions="Center"
+                                            Text="DESCARTAR"
+                                            TextColor="White" />
+                                    </StackLayout>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding HabilitarEditarCommand}" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                                <Frame
+                                    Grid.Column="1"
+                                    Padding="10"
+                                    BackgroundColor="#0E2A47"
+                                    BorderColor="#091b2e"
+                                    CornerRadius="15"
+                                    HasShadow="True"
+                                    IsVisible="{Binding EstadoActivo}">
+                                    <StackLayout VerticalOptions="Center">
+                                        <Image HeightRequest="35" Source="icon_A_OK.png" />
+                                        <Label
+                                            FontSize="13"
+                                            HorizontalOptions="Center"
+                                            Text="GUARDAR"
+                                            TextColor="White" />
+                                    </StackLayout>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding ActivityCommand}" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </Grid>
+
+
+                            <Frame
+                                Padding="10"
+                                BackgroundColor="#0E2A47"
+                                BorderColor="SkyBlue"
+                                CornerRadius="15"
+                                HasShadow="True">
+                                <StackLayout
+                                    HorizontalOptions="Center"
+                                    Orientation="Horizontal"
+                                    VerticalOptions="Center">
+                                    <Image
+                                        Margin="0,0,20,0"
+                                        HeightRequest="25"
+                                        Source="icon_A_LOGOUT.png" />
+                                    <Label
+                                        FontSize="13"
+                                        HorizontalOptions="Center"
+                                        Text="CERRAR SESION"
+                                        TextColor="White"
+                                        VerticalOptions="Center" />
+                                </StackLayout>
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding HabilitarEditarCommand}" />
+                                </Frame.GestureRecognizers>
+                            </Frame>
+
+
+
+                        </StackLayout>
                     </Grid>
 
-
-                    <Frame
-                        Padding="10"
-                        BackgroundColor="#0E2A47"
-                        BorderColor="SkyBlue"
-                        CornerRadius="15"
-                        HasShadow="True">
-                        <StackLayout
-                            HorizontalOptions="Center"
-                            Orientation="Horizontal"
-                            VerticalOptions="Center">
-                            <Image
-                                Margin="0,0,20,0"
-                                HeightRequest="25"
-                                Source="icon_A_LOGOUT.png" />
-                            <Label
-                                FontSize="13"
-                                HorizontalOptions="Center"
-                                Text="CERRAR SESION"
-                                TextColor="White"
-                                VerticalOptions="Center" />
-                        </StackLayout>
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding Button_AsistenciaPorCursoCommand}" />
-                        </Frame.GestureRecognizers>
-                    </Frame>
+                </ScrollView>
+            </Grid>
 
 
-
-                </StackLayout>
-            </ScrollView>
 
         </Grid>
     </ContentPage.Content>

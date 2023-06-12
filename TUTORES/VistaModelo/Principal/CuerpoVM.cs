@@ -20,17 +20,41 @@ namespace TUTORES.VistaModelo.Principal
 
         private Boolean _estadoOffline;
         private string _stringEstadoOffline;
-
+        private string _fechaHoy;
 
         #endregion
 
         public CuerpoVM(INavigation navigation)
         {
+            ObtenerFechaActual("Hector");
             Navigation = navigation;
             EstadoOffline = false;
             StringEstadoOffline = "Modo offline";
-
+      
         }
+        public void ObtenerFechaActual(string nombre)
+        {
+            var culturaEspañol = new System.Globalization.CultureInfo("es-ES");
+            System.Threading.Thread.CurrentThread.CurrentCulture = culturaEspañol;
+            System.Threading.Thread.CurrentThread.CurrentUICulture = culturaEspañol;
+
+
+            DateTime fechaActual = DateTime.Now;
+            string fechaFormateada = fechaActual.ToString("dddd d 'de' MMMM yyyy");
+            FechaHoy = "Bienvenido " + nombre + "! \nHoy es " + fechaFormateada;
+        }
+
+        public String FechaHoy
+        {
+            get { return _fechaHoy;}
+            set
+            {
+                _fechaHoy = value;
+                OnpropertyChanged(FechaHoy.ToString());
+            }
+        }
+
+
 
         private Boolean EstadoOffline
         {

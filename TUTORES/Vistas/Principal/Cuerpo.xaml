@@ -35,12 +35,14 @@
                             HeightRequest="45"
                             HorizontalOptions="Start"
                             Source="icon_A_usuario.png" />
+
                         <Label
                             Grid.Column="1"
                             FontSize="15"
                             HorizontalOptions="FillAndExpand"
-                            Text="Bienvenido Hector! &#10;Hoy es Miercoles 9 de Mayo"
+                            Text="{Binding FechaHoy}"
                             TextColor="White" />
+
                         <Image
                             Grid.Column="2"
                             HeightRequest="40"
