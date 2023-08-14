@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.Segmented.Control;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
@@ -6,6 +7,8 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using TUTORES.Modelo;
 using Xamarin.Forms;
+ 
+
 
 namespace TUTORES.VistaModelo
 {
@@ -19,6 +22,12 @@ namespace TUTORES.VistaModelo
         {
             Navigation = navigation;
             InitProducts();
+
+        }
+
+        public void SegmentedChangedFunction()
+        {
+            
         }
 
         private void InitProducts()
@@ -114,5 +123,7 @@ namespace TUTORES.VistaModelo
             await Navigation.PopAsync();
         }
         public ICommand VolverCommand => new Command(async () => await Button_Volver());
+        
+        public ICommand SegmentChangedCommand => new Command(SegmentedChangedFunction);
     }
 }

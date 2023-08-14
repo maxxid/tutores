@@ -86,7 +86,7 @@
                             Spacing="0"
                             VerticalOptions="Start">
 
-                            <Image HeightRequest="60" Source="tucan.png" />
+                            <Image HeightRequest="60" Source="equipo.png" />
                             <StackLayout
                                 Margin="5,20,0,10"
                                 HorizontalOptions="Start"
@@ -116,7 +116,7 @@
                                 IsAnnotated="True"
                                 IsEnabled="{Binding EstadoActivo}"
                                 IsRequired="True"
-                                Placeholder="Segovia Hector"
+                                Placeholder="Carlos Duarte"
                                 PlaceholderColor="WhiteSmoke"
                                 RegexPattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"
                                 TextColor="WhiteSmoke"
@@ -185,7 +185,7 @@
                                 IsAnnotated="True"
                                 IsEnabled="{Binding EstadoActivo}"
                                 IsRequired="True"
-                                Placeholder="test@siarh.com.ar"
+                                Placeholder="siarh.qa@jujuy.edu.ar"
                                 PlaceholderColor="WhiteSmoke"
                                 RegexPattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"
                                 TextColor="WhiteSmoke"

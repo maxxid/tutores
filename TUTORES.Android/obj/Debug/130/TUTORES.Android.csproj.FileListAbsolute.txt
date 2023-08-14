@@ -3686,3 +3686,4 @@ E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_google.png
 E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_phone.png
 E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_password.png
 E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\res\drawable\icon_a_notification.png
+E:\APP.TUTORES\TUTORES.Android\obj\Debug\130\res\drawable\equipo.png

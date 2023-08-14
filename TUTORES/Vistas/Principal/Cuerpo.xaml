@@ -149,7 +149,7 @@
                                     TextColor="#0d7680" />
                                 <Label
                                     FontSize="11"
-                                    Text="Ult. Sincronizacion: 14/02/2023"
+                                    Text="Ult. Sincronizacion: 6/7/2023"
                                     TextColor="#0d7680" />
 
                             </StackLayout>
@@ -292,6 +292,9 @@
                                 Orientation="Horizontal"
                                 Spacing="29">
                                 <StackLayout VerticalOptions="CenterAndExpand">
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding Button_PageAlumnoCommand}" />
+                                    </StackLayout.GestureRecognizers>
                                     <Image HeightRequest="25" Source="icon_B_alumnos.png" />
                                     <Label
                                         FontSize="11"

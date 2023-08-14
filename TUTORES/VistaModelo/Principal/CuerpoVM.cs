@@ -8,6 +8,7 @@ using TUTORES.Modelo;
 using TUTORES.Vistas.Ajustes;
 using TUTORES.Vistas.Asistencias;
 using TUTORES.Vistas.Emergentes;
+using TUTORES.Vistas.Principal;
 using TUTORES.Vistas.Tardanzas;
 using Xamarin.Forms;
 
@@ -26,7 +27,7 @@ namespace TUTORES.VistaModelo.Principal
 
         public CuerpoVM(INavigation navigation)
         {
-            ObtenerFechaActual("Hector");
+            ObtenerFechaActual("Preceptor");
             Navigation = navigation;
             EstadoOffline = false;
             StringEstadoOffline = "Modo offline";
@@ -125,6 +126,10 @@ namespace TUTORES.VistaModelo.Principal
         {
             await Navigation.PushAsync(new PageUsuario());
         }
+        public async Task Button_Alumno()
+        {
+            await Navigation.PushAsync(new PageAlumnos());
+        }
 
         public ICommand VolverCommand => new Command(async () => await Button_Volver());
         public ICommand PushSelectionCommand => new Command(async () => await PushSelectionPage());
@@ -136,6 +141,9 @@ namespace TUTORES.VistaModelo.Principal
         public ICommand Button_AnimFailCommand => new Command(async () => await Button_AnimFail());
 
         public ICommand Button_PageUsuarioCommand => new Command(async () => await Button_Usuario());
+
+        public ICommand Button_PageAlumnoCommand => new Command(async () => await Button_Alumno());
+
 
         public ICommand Button_TardanzaPorCursoCommand => new Command(async () => await Button_TardanzaPorCursoFunction());
         public ICommand ActivityCommand => new Command(async () => await activityCargando());

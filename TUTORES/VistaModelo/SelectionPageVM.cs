@@ -64,13 +64,13 @@ namespace TUTORES.VistaModelo
                 {
                     Institucion = "Esc. de Minas",
                     Cargo = "Preceptor",
-                    Concat = "Esc. de Minas - Preceptor"
+                    Concat = "Esc. de Minas - Preceptor T:Mañana"
                 },
                 new Rol
                 {
-                    Institucion = "Esc. de Comercio Nº1",
-                    Cargo = "Docente",
-                    Concat = "Esc. de Comercio Nº1 - Docente"
+                    Institucion = "Esc. de Minas",
+                    Cargo = "Preceptor",
+                    Concat = "Esc. de Minas - Preceptor T:Tarde"
                 },
                 new Rol
                 {
@@ -82,8 +82,8 @@ namespace TUTORES.VistaModelo
                 new Rol
                 {
                     Institucion = "Esc. Nacional Nº2 ",
-                    Cargo = "Docente",
-                    Concat = "Esc. Nacional Nº2 - Docente"
+                    Cargo = "Proceptor",
+                    Concat = "Esc. Nacional Nº2 - Preceptor"
                 }
 
             };
