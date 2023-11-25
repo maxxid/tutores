@@ -13,11 +13,26 @@ namespace TUTORES.Vistas.Asistencias
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PaseTardanzasPorCurso : ContentPage
 	{
-		public PaseTardanzasPorCurso ()
+
+        private Button miBoton;
+        public PaseTardanzasPorCurso ()
 		{
 			InitializeComponent ();
             BindingContext = new PageTardanzaPorCursoVM(Navigation);
 
+        }
+
+        
+
+        private async void i(object sender, EventArgs e)
+        {
+            bool resultado = await DisplayAlert("Confirmación", "¿Deseas desactivar el botón?", "Sí", "No");
+
+            if (resultado)
+            {
+                // Cambia el estado del botón a desactivado
+                miBoton.IsEnabled = false;
+            }
         }
     }
 }

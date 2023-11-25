@@ -34,7 +34,7 @@
             <Label
                 Grid.Column="1"
                 HorizontalOptions="Center"
-                Text="4TO GRADO B"
+                Text="Compañeros - 1er Año B"
                 TextColor="White"
                 TextTransform="Uppercase"
                 VerticalOptions="Center" />
@@ -44,7 +44,7 @@
 
 
 
-        <CollectionView Grid.Row="1" ItemsSource="{Binding AlumnosList}">
+        <CollectionView Grid.Row="1" ItemsSource="{Binding AlumnosList}" Grid.RowSpan="2">
 
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout ItemSpacing="0" Orientation="Vertical" />
@@ -145,8 +145,8 @@
 
 
 
-        <Frame Grid.Row="2" BackgroundColor="#008ADF" />
-        <Grid Grid.Row="2">
+        <Frame Grid.Row="2" BackgroundColor="#008ADF" IsVisible="false"/>
+        <Grid Grid.Row="2" IsVisible="false">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />

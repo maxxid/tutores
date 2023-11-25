@@ -69,26 +69,27 @@
 
                     <!--  Payment status label  -->
                     <Label
-                        Margin="0,40,0,0"
+                        Margin="0,0,0,0"
+                        Padding="30,20"
                         FontSize="20"
                         HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
                         LineHeight="{OnPlatform Android=1.25,
                                                 Default=-1}"
-                        Text="No se realizo la operacion"
+                        Text="OH! Esta opcion se encuentra en desarrollo. "
                         TextColor="White" />
 
 
                     <forms:AnimationView
                         x:Name="animationView"
                         Margin="0,0,0,0"
-                        Animation="anim_fail.json"
+                        Animation="animation_programming.json"
                         AnimationSource="AssetOrBundle"
                         Command="{Binding ClickCommand}"
                         HeightRequest="200"
                         HorizontalOptions="FillAndExpand"
-                        MaxFrame="19"
-                        RepeatCount="0"
-                        RepeatMode="Restart"
+                        RepeatCount="3"
+                        RepeatMode="Infinite"
                         VerticalOptions="FillAndExpand"
                         WidthRequest="200" />
 
@@ -100,10 +101,9 @@
                         HorizontalOptions="Center"
                         LineHeight="{OnPlatform Android=1.25,
                                                 Default=-1}"
-                        Text="Error: "
+                        Text=""
                         TextColor="White" />
-                    <Button Text="VOLVER" VerticalOptions="Start" />
-
+                    <Button Text="MENU PRINCIPAL" VerticalOptions="Start" Padding="10,10" Margin="20" CornerRadius="10" Command="{Binding VolverCommand}"/>
 
 
                 </StackLayout>

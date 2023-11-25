@@ -64,26 +64,20 @@ namespace TUTORES.VistaModelo
                 {
                     Institucion = "Esc. de Minas",
                     Cargo = "Preceptor",
-                    Concat = "Esc. de Minas - Preceptor T:Mañana"
+                    Concat = "Maria Quiroga - 1er Año - Esc. de Minas"
+
                 },
                 new Rol
                 {
                     Institucion = "Esc. de Minas",
                     Cargo = "Preceptor",
-                    Concat = "Esc. de Minas - Preceptor T:Tarde"
+                    Concat = "Juan Quiroga - 7mo Grado - Esc. Belgrano"
                 },
                 new Rol
                 {
                     Institucion = "Esc. Tecnica Provincial ",
                     Cargo = "Preceptor",
-                    Concat = "Esc. Tecnica Provincial - Preceptor"
-                },
-               
-                new Rol
-                {
-                    Institucion = "Esc. Nacional Nº2 ",
-                    Cargo = "Proceptor",
-                    Concat = "Esc. Nacional Nº2 - Preceptor"
+                    Concat = "Luciana Quiroga - 1er Grado - Esc. Belgrano"
                 }
 
             };
@@ -117,6 +111,9 @@ namespace TUTORES.VistaModelo
 
         #region COMANDOS
         public ICommand PushSelectionCommand => new Command(async () => await PushSelectionPage());
+
+        public string Institucion { get; private set; }
+        public string Cargo { get; private set; }
 
         //public ICommand RadioButton_OnCheckedChangedCommand => new Command(RadioButton_OnCheckedChangedNew();
 

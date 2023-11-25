@@ -7,6 +7,8 @@ using Acr.UserDialogs;
 using TUTORES.Modelo;
 using TUTORES.Vistas.Ajustes;
 using TUTORES.Vistas.Asistencias;
+using TUTORES.Vistas.ConstanciaAlum;
+using TUTORES.Vistas.Cursos;
 using TUTORES.Vistas.Emergentes;
 using TUTORES.Vistas.Principal;
 using TUTORES.Vistas.Tardanzas;
@@ -27,7 +29,7 @@ namespace TUTORES.VistaModelo.Principal
 
         public CuerpoVM(INavigation navigation)
         {
-            ObtenerFechaActual("Preceptor");
+            ObtenerFechaActual("Tutor");
             Navigation = navigation;
             EstadoOffline = false;
             StringEstadoOffline = "Modo offline";
@@ -115,13 +117,28 @@ namespace TUTORES.VistaModelo.Principal
         }
 
         public async Task Button_AnimOk()
-        {
+        { 
+
+            UserDialogs.Instance.ShowLoading("Buscando Solicitudes");
+            await Task.Delay(2000);
+            UserDialogs.Instance.HideLoading();
+            //await App.Current.MainPage.DisplayAlert("Solitud Nueva", "Exitosa", "Ok");
+
             await Navigation.PushAsync(new PageEmergente_OK());
         }
         public async Task Button_AnimFail()
         {
             await Navigation.PushAsync(new PageEmergente_Fail());
         }
+
+        public async Task Button_Constancias()
+        {
+            await Navigation.PushAsync(new PageConstancias());
+        }
+
+
+
+
         public async Task Button_Usuario()
         {
             await Navigation.PushAsync(new PageUsuario());
@@ -130,6 +147,14 @@ namespace TUTORES.VistaModelo.Principal
         {
             await Navigation.PushAsync(new PageAlumnos());
         }
+
+        public async Task Button_NotasTrimestrales()
+        {
+            await Navigation.PushAsync(new PageVistaNotasTrimestrales());
+        }
+
+
+        public ICommand Button_NotastrimestralesCommand => new Command(async () => await Button_NotasTrimestrales());
 
         public ICommand VolverCommand => new Command(async () => await Button_Volver());
         public ICommand PushSelectionCommand => new Command(async () => await PushSelectionPage());
@@ -143,8 +168,9 @@ namespace TUTORES.VistaModelo.Principal
         public ICommand Button_PageUsuarioCommand => new Command(async () => await Button_Usuario());
 
         public ICommand Button_PageAlumnoCommand => new Command(async () => await Button_Alumno());
+        public ICommand PageConstanciasCommand => new Command(async () => await Button_Constancias());
 
-
+        
         public ICommand Button_TardanzaPorCursoCommand => new Command(async () => await Button_TardanzaPorCursoFunction());
         public ICommand ActivityCommand => new Command(async () => await activityCargando());
        

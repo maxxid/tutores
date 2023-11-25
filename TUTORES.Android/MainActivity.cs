@@ -8,6 +8,7 @@ using Acr.UserDialogs;
 using Android.Widget;
 using TUTORES.Vistas.Principal;
 using Plugin.CurrentActivity;
+using Android.Views;
 
 namespace TUTORES.Droid
 {
@@ -17,6 +18,13 @@ namespace TUTORES.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            if (Build.VERSION.SdkInt >= BuildVersionCodes.Lollipop)
+            {
+                Window window = this.Window;
+                window.AddFlags(WindowManagerFlags.DrawsSystemBarBackgrounds);
+                window.ClearFlags(WindowManagerFlags.TranslucentStatus);
+                window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#761780"));
+            }
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

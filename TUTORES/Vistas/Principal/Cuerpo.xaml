@@ -34,7 +34,7 @@
                             Grid.Column="0"
                             HeightRequest="45"
                             HorizontalOptions="Start"
-                            Source="icon_A_usuario.png" />
+                            Source="family1.png" />
 
                         <Label
                             Grid.Column="1"
@@ -53,7 +53,7 @@
                     <StackLayout Margin="5,10,0,10" Orientation="Horizontal">
                         <Label
                             FontSize="13"
-                            Text="Rol: Profesor - Escuela de Minas"
+                            Text="Alumno/a: Maria Quiroga - 1er Año - Esc. de Minas"
                             TextColor="White" />
 
                         <Image Source="icon_cambioRol.png" WidthRequest="20">
@@ -96,15 +96,15 @@
                             CornerRadius="15"
                             HasShadow="True">
                             <StackLayout VerticalOptions="CenterAndExpand">
-                                <Image HeightRequest="45" Source="icon_A_tardanza2.png" />
+                                <Image HeightRequest="45" Source="alumReg.png" />
                                 <Label
                                     FontSize="13"
                                     HorizontalOptions="Center"
-                                    Text="Tardanzas"
+                                    Text="Constancia Alum Reg"
                                     TextColor="#0d7680" />
                             </StackLayout>
                             <Frame.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding PushSelectionCommand}" />
+                                <TapGestureRecognizer Command="{Binding PageConstanciasCommand}" />
                             </Frame.GestureRecognizers>
                         </Frame>
                         <Frame
@@ -126,7 +126,68 @@
                         </Frame>
                     </Grid>
 
+                    <Button Text="Resumen Asistencias Anual" Clicked="MostrarFrame_Clicked" CornerRadius="13" BackgroundColor="White" TextColor="Black"/>
+
                     <Grid>
+
+
+                        <Frame x:Name="miFrame" WidthRequest="200"  IsVisible="False" CornerRadius="15" BackgroundColor="#0e5174" BorderColor="#3094FF">
+                            <!-- Contenido del Frame -->
+                            <StackLayout>
+                                <Frame BackgroundColor="#3094FF" CornerRadius="10" BorderColor="#3094FF" >
+                                    <Grid ColumnSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="8*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image HeightRequest="25" Source="correct.png" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Start"/>
+                                        <Label Text="Asistencias: 15" Grid.Column="1" HorizontalOptions="Start" TextColor="White"></Label>
+
+                                    </Grid>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding Button_AsistenciaPorCursoCommand}" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+
+
+                                <Frame BackgroundColor="#3094FF" CornerRadius="10" BorderColor="#3094FF">
+                                    <Grid ColumnSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="8*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image HeightRequest="25" Source="aTardanza.png" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Start"/>
+                                        <Label Text="Tardanzas: 1" Grid.Column="1" HorizontalOptions="Start" TextColor="White"></Label>
+
+                                    </Grid>
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding Button_AsistenciaPorCursoCommand}" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+
+
+                                <Frame BackgroundColor="#3094FF" CornerRadius="10" BorderColor="#3094FF">
+                                    <Grid ColumnSpacing="0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*" />
+                                            <ColumnDefinition Width="8*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Image HeightRequest="25" Source="failed.png" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Start"/>
+                                        <Label Text="Inasistencias: 2" Grid.Column="1" HorizontalOptions="Start" TextColor="White"></Label>
+
+                                    </Grid>
+                                     <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding Button_TardanzaPorCursoCommand}" />
+                                    </Frame.GestureRecognizers>
+                                </Frame>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                   
+
+
+
+                    <Grid IsVisible="false">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
@@ -293,7 +354,7 @@
                                 Spacing="29">
                                 <StackLayout VerticalOptions="CenterAndExpand">
                                     <StackLayout.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding Button_PageAlumnoCommand}" />
+                                        <TapGestureRecognizer Command="{Binding VolverCommand}" />
                                     </StackLayout.GestureRecognizers>
                                     <Image HeightRequest="25" Source="icon_B_alumnos.png" />
                                     <Label
@@ -306,7 +367,7 @@
                                     Padding="0"
                                     VerticalOptions="CenterAndExpand">
                                     <StackLayout.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding Button_PageUsuarioCommand}" />
+                                        <TapGestureRecognizer Command="{Binding Button_AnimFailCommand}" />
                                     </StackLayout.GestureRecognizers>
                                     <Image HeightRequest="25" Source="icon_B_informes" />
                                     <Label
@@ -323,12 +384,12 @@
                                     Padding="0"
                                     VerticalOptions="CenterAndExpand">
                                     <StackLayout.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding Button_AnimFailCommand}" />
+                                        <TapGestureRecognizer Command="{Binding Button_NotastrimestralesCommand}" />
                                     </StackLayout.GestureRecognizers>
                                     <Image HeightRequest="25" Source="icon_B_cursos.png" />
                                     <Label
                                         FontSize="11"
-                                        Text="Cursos"
+                                        Text="Notas"
                                         TextColor="White" />
                                 </StackLayout>
 
@@ -336,8 +397,9 @@
                                     Margin="0"
                                     Padding="0"
                                     VerticalOptions="CenterAndExpand">
+                                    
                                     <StackLayout.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding Button_AnimOkCommand}" />
+                                        <TapGestureRecognizer Command="{Binding Button_PageUsuarioCommand}" />
                                     </StackLayout.GestureRecognizers>
                                     <Image HeightRequest="25" Source="icon_B_ajustes.png" />
                                     <Label
@@ -359,4 +421,15 @@
 
         </Frame>
     </Grid>
+    <!-- //COMMAND   PAGINA EN DESARROLLO     Button_AnimFailCommand -->
+    <!-- //COMMAND AJUSTES DE USUARIO/CERRAR SESION     Button_PageUsuarioCommand
+ -->
+    <!-- //ACTIVITY EjecutarCargaActivityIndicator
+ -->
+    <!-- // NOTAS TRIMESTRALES  Binding Button_NotastrimestralesCommand   Button_AnimOkCommand PAGINA OK CONSTANCIA
+ -->
+    
 </ContentView>
+
+
+    

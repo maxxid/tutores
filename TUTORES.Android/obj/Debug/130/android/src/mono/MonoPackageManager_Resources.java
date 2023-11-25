@@ -19,6 +19,7 @@ public class MonoPackageManager_Resources {
 		"SkiaSharp.Views.Forms.dll",
 		"Square.OkIO.dll",
 		"TUTORES.dll",
+		"Xalendar.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

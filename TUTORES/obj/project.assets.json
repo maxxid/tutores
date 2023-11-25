@@ -467,6 +467,21 @@
           }
         }
       },
+      "Xalendar/1.1.0-pre1545": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "4.8.0.1821"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xalendar.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xalendar.dll": {}
+        },
+        "build": {
+          "build/Xalendar.targets": {}
+        }
+      },
       "Xamarin.CommunityToolkit/1.3.2": {
         "type": "package",
         "dependencies": {
@@ -2133,6 +2148,22 @@
         "version.txt"
       ]
     },
+    "Xalendar/1.1.0-pre1545": {
+      "sha512": "lJq/f0AgwZMOKm92edzt9uZqV+QLDRTMF2D7U0qQPzP7j6ouFpPJqIPJHYlzCBo7AoPbWTxataOC5ZUJNz/O1g==",
+      "type": "package",
+      "path": "xalendar/1.1.0-pre1545",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/PreserveXalendar.cs",
+        "build/Xalendar.targets",
+        "lib/netstandard2.0/Xalendar.dll",
+        "standalone-logo.png",
+        "xalendar.1.1.0-pre1545.nupkg.sha512",
+        "xalendar.nuspec"
+      ]
+    },
     "Xamarin.CommunityToolkit/1.3.2": {
       "sha512": "Sqkdzm3VX/XKAZ0RhJ6vD0SnKOso/rkQBtlEwRFjjeG+TeUwF3Lqu7IcK6/TLUHjWiclX3+piSmTg/FIt1twuw==",
       "type": "package",
@@ -2470,6 +2501,7 @@
       "NETStandard.Library >= 2.0.3",
       "Plugin.SegmentedControl.Netstandard >= 5.4.5",
       "Rg.Plugins.Popup >= 2.1.0",
+      "Xalendar >= 1.1.0-pre1545",
       "Xamarin.CommunityToolkit >= 1.3.2",
       "Xamarin.Essentials >= 1.7.0",
       "Xamarin.Forms >= 5.0.0.2578",
@@ -2477,23 +2509,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MAXI\\.nuget\\packages\\": {},
+    "C:\\Users\\maxib\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\APP.TUTORES\\TUTORES\\TUTORES.csproj",
+      "projectUniqueName": "C:\\Users\\maxib\\source\\repos\\tutores2\\TUTORES\\TUTORES.csproj",
       "projectName": "TUTORES",
-      "projectPath": "E:\\APP.TUTORES\\TUTORES\\TUTORES.csproj",
-      "packagesPath": "C:\\Users\\MAXI\\.nuget\\packages\\",
-      "outputPath": "E:\\APP.TUTORES\\TUTORES\\obj\\",
+      "projectPath": "C:\\Users\\maxib\\source\\repos\\tutores2\\TUTORES\\TUTORES.csproj",
+      "packagesPath": "C:\\Users\\maxib\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\maxib\\source\\repos\\tutores2\\TUTORES\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\MAXI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\maxib\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2547,6 +2579,10 @@
             "target": "Package",
             "version": "[2.1.0, )"
           },
+          "Xalendar": {
+            "target": "Package",
+            "version": "[1.1.0-pre1545, )"
+          },
           "Xamarin.CommunityToolkit": {
             "target": "Package",
             "version": "[1.3.2, )"
@@ -2575,7 +2611,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -38,11 +38,7 @@
                 </Image.GestureRecognizers>
             </Image>
 
-            <Frame
-                Grid.Row="1"
-                Grid.Column="0"
-                Grid.ColumnSpan="3"
-                BackgroundColor="Black" />
+      
 
 
 
@@ -60,7 +56,9 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
                 HorizontalOptions="Center"
-                VerticalOptions="Center">
+                VerticalOptions="Center"
+                Padding="20,00"
+                TranslationY="-20">
                 <StackLayout
                     HorizontalOptions="Center"
                     Spacing="0"
@@ -75,7 +73,7 @@
                         HorizontalOptions="Center"
                         LineHeight="{OnPlatform Android=1.25,
                                                 Default=-1}"
-                        Text="CARGA CORRECTA"
+                        Text="SOLICITUD CARGADA"
                         TextColor="White" />
 
 
@@ -85,10 +83,10 @@
                         Animation="done90.json"
                         AnimationSource="AssetOrBundle"
                         Command="{Binding ClickCommand}"
-                        HeightRequest="200"
+                        HeightRequest="220"
                         HorizontalOptions="FillAndExpand"
                         MaxFrame="90"
-                        RepeatCount="1"
+                        RepeatCount="2"
                         RepeatMode="Restart"
                         VerticalOptions="FillAndExpand"
                         WidthRequest="200" />
@@ -99,11 +97,12 @@
                         Margin="17,8"
                         FontFamily="Montserrat-Medium"
                         HorizontalOptions="Center"
+                        HorizontalTextAlignment="Center"
                         LineHeight="{OnPlatform Android=1.25,
                                                 Default=-1}"
-                        Text="Se ha cargado correctamente"
+                        Text="No tenia ninguna constancia vigente. Por lo tanto se ha solicitado una contancia nueva. Cuando su solicitud sea aprobada, podra descargar su PDF firmado"
                         TextColor="White" />
-                    <Button Text="LISTO" VerticalOptions="Start" />
+                    <Button Text="OK" VerticalOptions="Start" Command="{Binding VolverCommand}"/>
 
 
 
