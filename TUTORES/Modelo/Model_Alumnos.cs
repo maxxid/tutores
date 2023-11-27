@@ -10,6 +10,10 @@ namespace TUTORES.Modelo
         public string Apellido{ get; set; }
         public string Icono { get; set; }
         public string Estado_Asistencia { get; set; }
+
+        public int TotalInasistencias { get; set; }
+        public int TotalTardanzas { get; set; }
+        public int TotalAsistencias { get; set; }
         public string Fecha { get; set; }
     }
 }
