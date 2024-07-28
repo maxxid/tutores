@@ -3,7 +3,7 @@
   <PropertyGroup>
     <SelectedDevice>Samsung SM-G998B</SelectedDevice>
     <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
-    <ActiveDebugProfile>Samsung SM-G998B %28Android 13.0 - API 33%29</ActiveDebugProfile>
+    <ActiveDebugProfile>Samsung SM-G998B</ActiveDebugProfile>
     <DefaultDevice>pixel_5_-_api_25</DefaultDevice>
   </PropertyGroup>
 </Project>

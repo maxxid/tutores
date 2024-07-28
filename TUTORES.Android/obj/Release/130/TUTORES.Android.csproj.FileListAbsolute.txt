@@ -634,7 +634,6 @@ C:\Users\maxib\source\repos\tutores2\TUTORES.Android\obj\Release\130\stamp\_Reso
 C:\Users\maxib\source\repos\tutores2\TUTORES.Android\obj\Release\130\res\drawable\exam.png
 C:\Users\maxib\source\repos\tutores2\TUTORES.Android\obj\Release\130\res\drawable\report.png
 C:\Users\maxib\source\repos\tutores2\TUTORES.Android\obj\Release\130\android\assets\Xalendar.dll
-C:\Users\maxib\source\repos\tutores2\TUTORES.Android\obj\Release\130\android\src\com\nexo\tutores\R.java
 C:\Users\maxib\source\repos\tutores2\TUTORES.Android\bin\Release\com.nexo.tutores2.apk
 C:\Users\maxib\source\repos\tutores2\TUTORES.Android\bin\Release\com.nexo.tutores2.aab
 C:\Users\maxib\source\repos\tutores2\TUTORES.Android\bin\Release\com.nexo.tutores2-Signed.aab

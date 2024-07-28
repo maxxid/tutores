@@ -1071,7 +1071,17 @@ target triple = "armv7-unknown-linux-android"
 
 
 ; module11_managed_to_java
-@module11_managed_to_java = internal constant [4 x %struct.TypeMapModuleEntry] [
+@module11_managed_to_java = internal constant [1 x %struct.TypeMapModuleEntry] [
+	; 0
+	%struct.TypeMapModuleEntry {
+		i32 33554435, ; type_token_id
+		i32 1369; java_map_index
+	}
+], align 4; end of 'module11_managed_to_java' array
+
+
+; module12_managed_to_java
+@module12_managed_to_java = internal constant [4 x %struct.TypeMapModuleEntry] [
 	; 0
 	%struct.TypeMapModuleEntry {
 		i32 33554456, ; type_token_id
@@ -1092,11 +1102,11 @@ target triple = "armv7-unknown-linux-android"
 		i32 33554461, ; type_token_id
 		i32 19; java_map_index
 	}
-], align 4; end of 'module11_managed_to_java' array
+], align 4; end of 'module12_managed_to_java' array
 
 
-; module11_managed_to_java_duplicates
-@module11_managed_to_java_duplicates = internal constant [2 x %struct.TypeMapModuleEntry] [
+; module12_managed_to_java_duplicates
+@module12_managed_to_java_duplicates = internal constant [2 x %struct.TypeMapModuleEntry] [
 	; 0
 	%struct.TypeMapModuleEntry {
 		i32 33554458, ; type_token_id
@@ -1107,17 +1117,7 @@ target triple = "armv7-unknown-linux-android"
 		i32 33554460, ; type_token_id
 		i32 191; java_map_index
 	}
-], align 4; end of 'module11_managed_to_java_duplicates' array
-
-
-; module12_managed_to_java
-@module12_managed_to_java = internal constant [1 x %struct.TypeMapModuleEntry] [
-	; 0
-	%struct.TypeMapModuleEntry {
-		i32 33554435, ; type_token_id
-		i32 1369; java_map_index
-	}
-], align 4; end of 'module12_managed_to_java' array
+], align 4; end of 'module12_managed_to_java_duplicates' array
 
 
 ; module13_managed_to_java
@@ -9646,8 +9646,8 @@ target triple = "armv7-unknown-linux-android"
 @__TypeMapModule_assembly_name.8 = internal constant [23 x i8] c"Plugin.CurrentActivity\00", align 1
 @__TypeMapModule_assembly_name.9 = internal constant [34 x i8] c"Xamarin.AndroidX.Lifecycle.Common\00", align 1
 @__TypeMapModule_assembly_name.10 = internal constant [27 x i8] c"Xamarin.AndroidX.ViewPager\00", align 1
-@__TypeMapModule_assembly_name.11 = internal constant [36 x i8] c"Xamarin.AndroidX.SwipeRefreshLayout\00", align 1
-@__TypeMapModule_assembly_name.12 = internal constant [16 x i8] c"TUTORES.Android\00", align 1
+@__TypeMapModule_assembly_name.11 = internal constant [16 x i8] c"TUTORES.Android\00", align 1
+@__TypeMapModule_assembly_name.12 = internal constant [36 x i8] c"Xamarin.AndroidX.SwipeRefreshLayout\00", align 1
 @__TypeMapModule_assembly_name.13 = internal constant [26 x i8] c"Xamarin.AndroidX.Activity\00", align 1
 @__TypeMapModule_assembly_name.14 = internal constant [17 x i8] c"Rg.Plugins.Popup\00", align 1
 @__TypeMapModule_assembly_name.15 = internal constant [28 x i8] c"Xamarin.AndroidX.SavedState\00", align 1
@@ -9811,24 +9811,24 @@ target triple = "armv7-unknown-linux-android"
 	}, 
 	; 11
 	%struct.TypeMapModule {
-		[16 x i8] c"/\DB$\E8T}LO\A1Xl\8F\8E\DAD\CF", ; module_uuid: e824db2f-7d54-4f4c-a158-6c8f8eda44cf
-		i32 4, ; entry_count
-		i32 2, ; duplicate_count
-		%struct.TypeMapModuleEntry* getelementptr inbounds ([4 x %struct.TypeMapModuleEntry], [4 x %struct.TypeMapModuleEntry]* @module11_managed_to_java, i32 0, i32 0), ; map
-		%struct.TypeMapModuleEntry* getelementptr inbounds ([2 x %struct.TypeMapModuleEntry], [2 x %struct.TypeMapModuleEntry]* @module11_managed_to_java_duplicates, i32 0, i32 0), ; duplicate_map
-		i8* getelementptr inbounds ([36 x i8], [36 x i8]* @__TypeMapModule_assembly_name.11, i32 0, i32 0), ; assembly_name: Xamarin.AndroidX.SwipeRefreshLayout
+		[16 x i8] c"&\88\83\8C\952\8EM\AAr\C7\85\DAy\03\8B", ; module_uuid: 8c838826-3295-4d8e-aa72-c785da79038b
+		i32 1, ; entry_count
+		i32 0, ; duplicate_count
+		%struct.TypeMapModuleEntry* getelementptr inbounds ([1 x %struct.TypeMapModuleEntry], [1 x %struct.TypeMapModuleEntry]* @module11_managed_to_java, i32 0, i32 0), ; map
+		%struct.TypeMapModuleEntry* null, ; duplicate_map
+		i8* getelementptr inbounds ([16 x i8], [16 x i8]* @__TypeMapModule_assembly_name.11, i32 0, i32 0), ; assembly_name: TUTORES.Android
 		%struct.MonoImage* null, ; image
 		i32 0, ; java_name_width
 		i8* null; java_map
 	}, 
 	; 12
 	%struct.TypeMapModule {
-		[16 x i8] c"6}/\CA\E2\84\16@\BE3\0D>\D9\E4\AFF", ; module_uuid: ca2f7d36-84e2-4016-be33-0d3ed9e4af46
-		i32 1, ; entry_count
-		i32 0, ; duplicate_count
-		%struct.TypeMapModuleEntry* getelementptr inbounds ([1 x %struct.TypeMapModuleEntry], [1 x %struct.TypeMapModuleEntry]* @module12_managed_to_java, i32 0, i32 0), ; map
-		%struct.TypeMapModuleEntry* null, ; duplicate_map
-		i8* getelementptr inbounds ([16 x i8], [16 x i8]* @__TypeMapModule_assembly_name.12, i32 0, i32 0), ; assembly_name: TUTORES.Android
+		[16 x i8] c"/\DB$\E8T}LO\A1Xl\8F\8E\DAD\CF", ; module_uuid: e824db2f-7d54-4f4c-a158-6c8f8eda44cf
+		i32 4, ; entry_count
+		i32 2, ; duplicate_count
+		%struct.TypeMapModuleEntry* getelementptr inbounds ([4 x %struct.TypeMapModuleEntry], [4 x %struct.TypeMapModuleEntry]* @module12_managed_to_java, i32 0, i32 0), ; map
+		%struct.TypeMapModuleEntry* getelementptr inbounds ([2 x %struct.TypeMapModuleEntry], [2 x %struct.TypeMapModuleEntry]* @module12_managed_to_java_duplicates, i32 0, i32 0), ; duplicate_map
+		i8* getelementptr inbounds ([36 x i8], [36 x i8]* @__TypeMapModule_assembly_name.12, i32 0, i32 0), ; assembly_name: Xamarin.AndroidX.SwipeRefreshLayout
 		%struct.MonoImage* null, ; image
 		i32 0, ; java_name_width
 		i8* null; java_map
@@ -10268,9 +10268,9 @@ target triple = "armv7-unknown-linux-android"
 	}, 
 	; 19
 	%struct.TypeMapJava {
-		i32 11, ; module_index
+		i32 12, ; module_index
 		i32 33554461, ; type_token_id
-		i32 144; java_name_index
+		i32 145; java_name_index
 	}, 
 	; 20
 	%struct.TypeMapJava {
@@ -11300,9 +11300,9 @@ target triple = "armv7-unknown-linux-android"
 	}, 
 	; 191
 	%struct.TypeMapJava {
-		i32 11, ; module_index
+		i32 12, ; module_index
 		i32 0, ; type_token_id
-		i32 143; java_name_index
+		i32 144; java_name_index
 	}, 
 	; 192
 	%struct.TypeMapJava {
@@ -14876,9 +14876,9 @@ target triple = "armv7-unknown-linux-android"
 	}, 
 	; 787
 	%struct.TypeMapJava {
-		i32 11, ; module_index
+		i32 12, ; module_index
 		i32 33554456, ; type_token_id
-		i32 141; java_name_index
+		i32 142; java_name_index
 	}, 
 	; 788
 	%struct.TypeMapJava {
@@ -16184,9 +16184,9 @@ target triple = "armv7-unknown-linux-android"
 	}, 
 	; 1005
 	%struct.TypeMapJava {
-		i32 11, ; module_index
+		i32 12, ; module_index
 		i32 0, ; type_token_id
-		i32 142; java_name_index
+		i32 143; java_name_index
 	}, 
 	; 1006
 	%struct.TypeMapJava {
@@ -18368,9 +18368,9 @@ target triple = "armv7-unknown-linux-android"
 	}, 
 	; 1369
 	%struct.TypeMapJava {
-		i32 12, ; module_index
+		i32 11, ; module_index
 		i32 33554435, ; type_token_id
-		i32 145; java_name_index
+		i32 141; java_name_index
 	}, 
 	; 1370
 	%struct.TypeMapJava {
@@ -20036,11 +20036,11 @@ target triple = "armv7-unknown-linux-android"
 @__java_type_names.138 = internal constant [57 x i8] c"androidx/viewpager/widget/ViewPager$OnPageChangeListener\00", align 1
 @__java_type_names.139 = internal constant [73 x i8] c"mono/androidx/viewpager/widget/ViewPager_OnPageChangeListenerImplementor\00", align 1
 @__java_type_names.140 = internal constant [52 x i8] c"androidx/viewpager/widget/ViewPager$PageTransformer\00", align 1
-@__java_type_names.141 = internal constant [54 x i8] c"androidx/swiperefreshlayout/widget/SwipeRefreshLayout\00", align 1
-@__java_type_names.142 = internal constant [78 x i8] c"androidx/swiperefreshlayout/widget/SwipeRefreshLayout$OnChildScrollUpCallback\00", align 1
-@__java_type_names.143 = internal constant [72 x i8] c"androidx/swiperefreshlayout/widget/SwipeRefreshLayout$OnRefreshListener\00", align 1
-@__java_type_names.144 = internal constant [88 x i8] c"mono/androidx/swiperefreshlayout/widget/SwipeRefreshLayout_OnRefreshListenerImplementor\00", align 1
-@__java_type_names.145 = internal constant [35 x i8] c"crc642338571e6291d963/MainActivity\00", align 1
+@__java_type_names.141 = internal constant [35 x i8] c"crc642338571e6291d963/MainActivity\00", align 1
+@__java_type_names.142 = internal constant [54 x i8] c"androidx/swiperefreshlayout/widget/SwipeRefreshLayout\00", align 1
+@__java_type_names.143 = internal constant [78 x i8] c"androidx/swiperefreshlayout/widget/SwipeRefreshLayout$OnChildScrollUpCallback\00", align 1
+@__java_type_names.144 = internal constant [72 x i8] c"androidx/swiperefreshlayout/widget/SwipeRefreshLayout$OnRefreshListener\00", align 1
+@__java_type_names.145 = internal constant [88 x i8] c"mono/androidx/swiperefreshlayout/widget/SwipeRefreshLayout_OnRefreshListenerImplementor\00", align 1
 @__java_type_names.146 = internal constant [36 x i8] c"androidx/activity/ComponentActivity\00", align 1
 @__java_type_names.147 = internal constant [47 x i8] c"androidx/activity/OnBackPressedDispatcherOwner\00", align 1
 @__java_type_names.148 = internal constant [40 x i8] c"androidx/activity/OnBackPressedCallback\00", align 1
@@ -21429,11 +21429,11 @@ target triple = "armv7-unknown-linux-android"
 	i8* getelementptr inbounds ([57 x i8], [57 x i8]* @__java_type_names.138, i32 0, i32 0),
 	i8* getelementptr inbounds ([73 x i8], [73 x i8]* @__java_type_names.139, i32 0, i32 0),
 	i8* getelementptr inbounds ([52 x i8], [52 x i8]* @__java_type_names.140, i32 0, i32 0),
-	i8* getelementptr inbounds ([54 x i8], [54 x i8]* @__java_type_names.141, i32 0, i32 0),
-	i8* getelementptr inbounds ([78 x i8], [78 x i8]* @__java_type_names.142, i32 0, i32 0),
-	i8* getelementptr inbounds ([72 x i8], [72 x i8]* @__java_type_names.143, i32 0, i32 0),
-	i8* getelementptr inbounds ([88 x i8], [88 x i8]* @__java_type_names.144, i32 0, i32 0),
-	i8* getelementptr inbounds ([35 x i8], [35 x i8]* @__java_type_names.145, i32 0, i32 0),
+	i8* getelementptr inbounds ([35 x i8], [35 x i8]* @__java_type_names.141, i32 0, i32 0),
+	i8* getelementptr inbounds ([54 x i8], [54 x i8]* @__java_type_names.142, i32 0, i32 0),
+	i8* getelementptr inbounds ([78 x i8], [78 x i8]* @__java_type_names.143, i32 0, i32 0),
+	i8* getelementptr inbounds ([72 x i8], [72 x i8]* @__java_type_names.144, i32 0, i32 0),
+	i8* getelementptr inbounds ([88 x i8], [88 x i8]* @__java_type_names.145, i32 0, i32 0),
 	i8* getelementptr inbounds ([36 x i8], [36 x i8]* @__java_type_names.146, i32 0, i32 0),
 	i8* getelementptr inbounds ([47 x i8], [47 x i8]* @__java_type_names.147, i32 0, i32 0),
 	i8* getelementptr inbounds ([40 x i8], [40 x i8]* @__java_type_names.148, i32 0, i32 0),
