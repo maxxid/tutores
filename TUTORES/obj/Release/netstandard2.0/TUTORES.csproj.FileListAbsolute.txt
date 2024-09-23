@@ -32,3 +32,4 @@ C:\Users\maxib\source\repos\tutores2\TUTORES\obj\Release\netstandard2.0\refint\T
 C:\Users\maxib\source\repos\tutores2\TUTORES\obj\Release\netstandard2.0\TUTORES.pdb
 C:\Users\maxib\source\repos\tutores2\TUTORES\obj\Release\netstandard2.0\ref\TUTORES.dll
 C:\Users\maxib\source\repos\tutores2\TUTORES\obj\Release\netstandard2.0\Vistas\ConstanciaAlum\PageConstancias.xaml.g.cs
+C:\Users\maxib\source\repos\tutores2\TUTORES\obj\Release\netstandard2.0\Vistas\Asistencias\AttendancePage.xaml.g.cs

@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Globalization;
-using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using TUTORES.Modelo;
@@ -10,15 +8,32 @@ using Xamarin.Forms;
 
 namespace TUTORES.VistaModelo
 {
-    class PageVistaNotasTrimestralesVM : BaseViewModel
+    public class PageVistaNotasTrimestralesVM : BaseViewModel
     {
+        public INavigation Navigation { get; set; }
+
+        public ObservableCollection<Model_NotaTrimestral> NotasTrimestralesList { get; set; }
+        public ObservableCollection<Model_NotaTrimestral> NotasFiltradas { get; set; }
+
+        private int _trimestre;
+        public int Trimestre
+        {
+            get => _trimestre;
+            set
+            {
+                _trimestre = value;
+                OnPropertyChanged();
+                FiltrarNotasPorTrimestre();
+            }
+        }
+
         public PageVistaNotasTrimestralesVM(INavigation navigation)
         {
             Navigation = navigation;
+            NotasFiltradas = new ObservableCollection<Model_NotaTrimestral>();
             InitProducts();
-
+            Trimestre = 1; // Inicializa el trimestre en 1
         }
-        public ObservableCollection<Model_NotaTrimestral> NotasTrimestralesList{ get; set; }
 
         private void InitProducts()
         {
@@ -26,7 +41,7 @@ namespace TUTORES.VistaModelo
             {
                 new Model_NotaTrimestral
                 {
-                    Materia = "Matematicas",
+                    Materia = "Matemáticas",
                     NotaA = 8,
                     NotaB = 3,
                     NotaC = 5,
@@ -45,105 +60,89 @@ namespace TUTORES.VistaModelo
                     NotaB = 4,
                     NotaC = 10,
                 },
-                                   
                 new Model_NotaTrimestral
                 {
-                    Materia = "Geografia",
+                    Materia = "Geografía",
                     NotaA = 4,
                     NotaB = 7,
-                    NotaC = 7 
+                    NotaC = 7
                 },
                 new Model_NotaTrimestral
                 {
-                    Materia = "Dibujo Tecnico",
+                    Materia = "Dibujo Técnico",
                     NotaA = 6,
                     NotaB = 5,
                     NotaC = 6
                 },
                 new Model_NotaTrimestral
                 {
-                    Materia = "Programacion",
+                    Materia = "Programación",
                     NotaA = 8,
                     NotaB = 7,
                     NotaC = 8
                 }
-
-
             };
 
+            FiltrarNotasPorTrimestre();
+        }
 
-            foreach (var materia in NotasTrimestralesList)
+        private void FiltrarNotasPorTrimestre()
+        {
+            NotasFiltradas.Clear();
+
+            switch (Trimestre)
             {
-               //calcula promedio y le agrega el texto previo
-                double prom = (materia.NotaA + materia.NotaB + materia.NotaC ) / 3;
-                materia.Promedio = "Promedio: "+prom;
-
-                //asigna un icono de acuerdo a la nota 
-                if (materia.NotaA >= 6)
-                {
-                    materia.IconoA = "correct.png";}
-                else
-                { 
-                    if (materia.NotaA < 5)
-                    { materia.IconoA = "failed.png"; }
-                    else 
-                    { materia.IconoA = "report.png"; } 
-                }
-
-
-
-                if (materia.NotaB >= 6)
-                {materia.IconoB = "correct.png"; } 
-                else { if (materia.NotaB == 5) { materia.IconoB = "report.png"; } else { materia.IconoB = "failed.png"; } }
-                
-                
-                
-                if (materia.NotaC >= 6){materia.IconoC = "correct.png"; } else { if (materia.NotaC == 5) { materia.IconoC = "report.png"; } else { materia.IconoC = "failed.png"; } }
+                case 1:
+                    foreach (var materia in NotasTrimestralesList)
+                    {
+                        NotasFiltradas.Add(new Model_NotaTrimestral
+                        {
+                            Materia = materia.Materia,
+                            NotaA = materia.NotaA,
+                            Promedio = materia.Promedio,
+                            IconoA = materia.IconoA
+                        });
+                    }
+                    break;
+                case 2:
+                    foreach (var materia in NotasTrimestralesList)
+                    {
+                        NotasFiltradas.Add(new Model_NotaTrimestral
+                        {
+                            Materia = materia.Materia,
+                            NotaB = materia.NotaB,
+                            Promedio = materia.Promedio,
+                            IconoB = materia.IconoB
+                        });
+                    }
+                    break;
+                case 3:
+                    foreach (var materia in NotasTrimestralesList)
+                    {
+                        NotasFiltradas.Add(new Model_NotaTrimestral
+                        {
+                            Materia = materia.Materia,
+                            NotaC = materia.NotaC,
+                            Promedio = materia.Promedio,
+                            IconoC = materia.IconoC
+                        });
+                    }
+                    break;
             }
 
-
-
+            OnPropertyChanged(nameof(NotasFiltradas));
         }
+
+        public ICommand CambiarTrimestreCommand => new Command<int>((trimestre) =>
+        {
+            Trimestre = trimestre;
+        });
 
         public async Task Button_Volver()
         {
             await Navigation.PopAsync();
         }
+
         public ICommand VolverCommand => new Command(async () => await Button_Volver());
-
-
-
-
-
-
-        private bool isBotonActivado = false;
-        public bool IsBotonActivado
-        {
-            get { return isBotonActivado; }
-            set
-            {
-                if (isBotonActivado != value)
-                {
-                    isBotonActivado = value;
-                    OnPropertyChanged(nameof(IsBotonActivado));
-                    OnPropertyChanged(nameof(IsFrameVisible)); // Notificar un cambio en la visibilidad del Frame
-                }
-            }
-        }
-
-        // Calcula la visibilidad del Frame en función del estado del botón
-        public bool IsFrameVisible => IsBotonActivado;
-
-        public ICommand DesactivarBotonCommand2 => new Command(DesactivarBoton);
-
-        private void DesactivarBoton()
-        {
-            IsBotonActivado = !IsBotonActivado; // Cambia el estado del botón
-        }
-
-
-
-
-
     }
 }

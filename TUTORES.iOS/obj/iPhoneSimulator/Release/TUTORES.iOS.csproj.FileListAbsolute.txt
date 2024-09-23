@@ -78,3 +78,5 @@ C:\Users\maxib\source\repos\tutores2\TUTORES.iOS\obj\iPhoneSimulator\Release\TUT
 C:\Users\maxib\source\repos\tutores2\TUTORES.iOS\obj\iPhoneSimulator\Release\TUTORES.iOS.csproj.CoreCompileInputs.cache
 C:\Users\maxib\source\repos\tutores2\TUTORES.iOS\obj\iPhoneSimulator\Release\TUTORES.iOS.csproj.CopyComplete
 C:\Users\maxib\source\repos\tutores2\TUTORES.iOS\obj\iPhoneSimulator\Release\TUTORES.iOS.exe
+C:\Users\maxib\source\repos\tutores2\TUTORES.iOS\bin\iPhoneSimulator\Release\Newtonsoft.Json.dll
+C:\Users\maxib\source\repos\tutores2\TUTORES.iOS\bin\iPhoneSimulator\Release\Xalendar.dll

@@ -82,6 +82,10 @@
             "Xamarin.Forms.InputKit": {
               "target": "Package",
               "version": "[4.0.1, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           }
         }
@@ -161,6 +165,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Plugin.SegmentedControl.Netstandard": {
               "target": "Package",
               "version": "[5.4.5, )"
@@ -188,6 +196,10 @@
             "Xamarin.Forms.InputKit": {
               "target": "Package",
               "version": "[4.0.1, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
