@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:TUTORES.VistaModelo"
+             xmlns:model="clr-namespace:TUTORES.Modelo"
+             NavigationPage.HasNavigationBar="false"
+             x:Class="TUTORES.Vistas.Asistencias.AttendancePage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <model:AttendanceStatusConverter x:Key="AttendanceStatusConverter" />
+            <!-- <conv:CapitalizeFirstLetterConverter x:Key="CapitalizeFirstLetterConverter" />-->
+            <!-- Define some styles for labels and buttons -->
+            <Style x:Key="TitleLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Large" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="TextColor" Value="#FFFFFF" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            <Style x:Key="SubtitleLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="TextColor" Value="#677a8e" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="RegularLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="TextColor" Value="#677a8e" />
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
+            <Style x:Key="DayLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="TextColor" Value="#FFFFFF" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+            <Style x:Key="DateLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Small" />
+                <Setter Property="TextColor" Value="#677a8e" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+            <Style x:Key="ButtonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#13304D" />
+                <Setter Property="TextColor" Value="#FFFFFF" />
+                <Setter Property="BorderColor" Value="#EE7511" />
+                <Setter Property="BorderWidth" Value="1.5" />
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="Margin" Value="5,10" />
+                <Setter Property="Padding" Value="10" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.BindingContext>
+        <vm:AttendanceViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid BackgroundColor="#1e2838" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Frame Grid.Row="0" BackgroundColor="#1e2838" Grid.RowSpan="2"/>
+            
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".11*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image
+                     Grid.Column="0"
+                     Margin="5,0,0,0"
+                     HeightRequest="12"
+                     Source="iconback_orange_v2.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                    </Image.GestureRecognizers>
+                </Image>
+                <Label
+                     Grid.Column="0" 
+                    Grid.ColumnSpan="2"
+                     HorizontalOptions="Center"
+                     Text="REGISTRO DE ASISTENCIAS "
+                     TextColor="#FFFFF0"
+                     TextTransform="Uppercase"
+                     VerticalOptions="Center" />
+            </Grid>
+
+            <StackLayout Grid.Row="1" Padding="10" BackgroundColor="#13304D">
+                <Label Text="{Binding SelectedMonth, StringFormat='{0:MMMM yyyy}'}" Style="{StaticResource TitleLabelStyle}" TextTransform="Uppercase"/>
+                <Grid x:Name="calendarGrid" ColumnSpacing="5" RowSpacing="5" Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <!-- Cambiar color de texto de los días del mes -->
+                    <Label Text="Dom" Style="{StaticResource DayLabelStyle}" Grid.Row="0" Grid.Column="0" TextColor="#FFFFF0"/>
+                    <Label Text="Lun" Style="{StaticResource DayLabelStyle}" Grid.Row="0" Grid.Column="1" TextColor="#FFFFF0"/>
+                    <Label Text="Mar" Style="{StaticResource DayLabelStyle}" Grid.Row="0" Grid.Column="2" TextColor="#FFFFF0"/>
+                    <Label Text="Mié" Style="{StaticResource DayLabelStyle}" Grid.Row="0" Grid.Column="3" TextColor="#FFFFF0"/>
+                    <Label Text="Jue" Style="{StaticResource DayLabelStyle}" Grid.Row="0" Grid.Column="4" TextColor="#FFFFF0"/>
+                    <Label Text="Vie" Style="{StaticResource DayLabelStyle}" Grid.Row="0" Grid.Column="5" TextColor="#FFFFF0"/>
+                    <Label Text="Sáb" Style="{StaticResource DayLabelStyle}" Grid.Row="0" Grid.Column="6" TextColor="#FFFFF0"/>
+                </Grid>
+
+                <!-- Referencia de colores -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="10,0">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Margin="5,0">
+                        <BoxView WidthRequest="10" HeightRequest="10" Color="#74C7AB" CornerRadius="7.5" VerticalOptions="Center" />
+                        <Label Text="Presente" TextColor="#FFFFFF" VerticalOptions="Center" Margin="5,0" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Margin="5,0">
+                        <BoxView WidthRequest="10" HeightRequest="10" Color="#ffc933" CornerRadius="7.5" VerticalOptions="Center" />
+                        <Label Text="Tardanza" TextColor="#FFFFFF" VerticalOptions="Center" Margin="5,0" />
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Margin="5,0">
+                        <BoxView WidthRequest="10" HeightRequest="10" Color="#c96973" CornerRadius="7.5" VerticalOptions="Center" />
+                        <Label Text="Ausente" TextColor="#FFFFFF" VerticalOptions="Center" Margin="5,0" />
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button Text="Mes Anterior" Command="{Binding PreviousMonthCommand}" Style="{StaticResource ButtonStyle}" />
+                    <Button Text="Mes Siguiente" Command="{Binding NextMonthCommand}" Style="{StaticResource ButtonStyle}" />
+                </StackLayout>
+                <!-- Envolver ListView en un Frame para esquinas redondeadas y contorno celeste -->
+                <Frame CornerRadius="20" BorderColor="#00AEEF" Padding="0" Margin="0,10,0,10">
+                    <ListView x:Name="attendanceList" ItemsSource="{Binding FilteredAttendances}" BackgroundColor="#e6f2ff">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal" Padding="15,5,5,0">
+                                        <Label Text="{Binding Date, StringFormat='{0:dd/MM}'}" Style="{StaticResource DateLabelStyle}" WidthRequest="70" VerticalOptions="Center"/>
+                                        <BoxView WidthRequest="10" HeightRequest="10" Color="#c96973" CornerRadius="7.5" VerticalOptions="Center" />
+                                        <Label Text="{Binding Status, Converter={StaticResource AttendanceStatusConverter}}" Style="{StaticResource RegularLabelStyle}" />
+                       
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Frame>
+                <StackLayout Orientation="Horizontal" Margin="0,2">
+                    <Label Text="{Binding SelectedMonth, StringFormat='{0:MMMM}:'}" Style="{StaticResource SubtitleLabelStyle}" />
+                    <Label Text="{Binding MonthlySummary}" Style="{StaticResource RegularLabelStyle}" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="0,10">
+                    <Label Text="{Binding SelectedMonth, StringFormat='{0:yyyy}:'}" Style="{StaticResource SubtitleLabelStyle}" />
+                    <Label Text="{Binding AnnualSummary}" Style="{StaticResource RegularLabelStyle}" />
+                </StackLayout>
+            </StackLayout>
+
+        </Grid>
+
+
+    </ContentPage.Content>
+</ContentPage>

@@ -7,10 +7,27 @@
 
     <Grid>
         
-        <Frame Padding="0">
+        
+        <Frame Padding="0" >
             <Grid>
-                <Image Source="wallpaper_init2.png" Aspect="AspectFill"></Image>
-                <StackLayout VerticalOptions="End" Padding="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".1*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                
+                
+                
+                <Image Source="wallpaper_init2.png" Aspect="AspectFill" Grid.RowSpan="2"></Image>
+
+                <Frame Grid.Row="0" Padding="20,0" CornerRadius="20" TranslationY="-11" HasShadow="True">
+                    <Image Source="gobaseguir.png" Margin="0,12,0,0"></Image>
+                </Frame>
+
+
+
+
+                <StackLayout VerticalOptions="End" Padding="15" Grid.Row="1">
 
 
                     <Frame
@@ -22,7 +39,7 @@
                         <Image
                         HeightRequest="80"
                         HorizontalOptions="Center"
-                        Source="gobaseguir.png"
+                        Source="nexoTutores.png"
                         WidthRequest="200" />
 
                     </Frame>
@@ -39,9 +56,9 @@
                     <StackLayout>
                         <Label
                         FontSize="Medium"
-                        Text="Nombre de Usuario"
+                        Text="Ingrese su CUIL sin guiones"
                         TextColor="White" />
-                        <Entry Placeholder="ejemplo@gmail.com" PlaceholderColor="DarkGray" Text="{Binding User}" IsTextPredictionEnabled="True" TextColor="Azure"/>
+                        <Entry Placeholder="* * * * * * * * *" PlaceholderColor="DarkGray" Text="{Binding User}" IsTextPredictionEnabled="True" TextColor="Azure"/>
                         <Label
                         FontSize="Medium"
                         Text="Contraseña"
@@ -50,7 +67,7 @@
                         <Frame CornerRadius="10">
                             <Label
                             HorizontalOptions="Center"
-                            Text="Iniciar Sesion con Usuario"
+                            Text="Iniciar Sesion con CUIL"
                             TextColor="Black" />
                             <Frame.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding IniciarSesionCommand}" />
@@ -61,33 +78,11 @@
                         <Frame
                         Margin="0,10"
                         Padding="0"
-                        BackgroundColor="WhiteSmoke"
+                        BackgroundColor="Transparent"
                         HeightRequest="2"
                         WidthRequest="1" />
 
-                        <Frame Padding="20,10" CornerRadius="10">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="4*" />
-                                </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
-                                <Image
-                                Grid.Column="0"
-                                Margin="0"
-                                HeightRequest="40"
-                                Source="googleaccount.png" />
-                                <Label
-                                Grid.Column="1"
-                                HorizontalOptions="Center"
-                                Text="Iniciar Sesion con Google"
-                                TextColor="Black"
-                                VerticalOptions="Center" />
-                            </Grid>
-
-                        </Frame>
+                        
                     </StackLayout>
                 </StackLayout>
             </Grid>

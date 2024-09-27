@@ -28,14 +28,14 @@
                     <TapGestureRecognizer Command="{Binding VolverCommand}" />
                 </Image.GestureRecognizers>
             </Image>
-            <Label Grid.Column="1" Text="4TO GRADO B" HorizontalOptions="Center" VerticalOptions="Center" TextTransform="Uppercase" TextColor="White" />
+            <Label Grid.Column="1" Text="MIS FALTAS" HorizontalOptions="Center" VerticalOptions="Center" TextTransform="Uppercase" TextColor="White" />
         </Grid>
 
 
 
 
 
-        <CollectionView ItemsSource="{Binding AlumnosList}" Grid.Row="1">
+        <CollectionView ItemsSource="{Binding FaltasList}" Grid.Row="1" x:Name="miCollectionView">
 
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout Orientation="Vertical"    
@@ -66,17 +66,28 @@
                                     <RowDefinition Height=".5*"/>
                                     <RowDefinition Height=".5*"/>
                                 </Grid.RowDefinitions>
-                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Apellido}" TextColor="AliceBlue" FontAttributes="Bold" FontSize="Medium" Margin="0,0,0,0"/>
-                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Nombre}" TextColor="AliceBlue"/>
+                                <Label Grid.Row="0" Grid.Column="1" Text="{Binding Dia}" TextColor="AliceBlue" FontAttributes="Bold" FontSize="Medium" Margin="0,0,0,0"/>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Fecha}" TextColor="AliceBlue"/>
 
-                                <Image Grid.RowSpan="2" Grid.Column="0" Source="icon_B_info.png" HorizontalOptions="Start" HeightRequest="35" />
+                                <Image Grid.RowSpan="2" Grid.Column="0" Source="{Binding Icono}" HorizontalOptions="Start" HeightRequest="30" Margin="0,0,5,0"/>
 
-
+                                <Button x:Name="miBoton" Text="He sido notificado" Grid.Column="2" Grid.RowSpan="2" Command="{Binding BindingContext.DesactivarBotonCommand2, Source={x:Reference miCollectionView}}" >
+                                    <Button.Triggers>
+                                        <DataTrigger TargetType="Button" Binding="{Binding IsBotonActivado}" Value="False">
+                                            <Setter Property="BackgroundColor" Value="Gray" />
+                                            <Setter Property="TextColor" Value="White" />
+                                            <Setter Property="IsEnabled" Value="{Binding IsBotonActivado}"/>
+                                        </DataTrigger>
+                                    </Button.Triggers>
+                                    <Button.GestureRecognizers>
+                                    </Button.GestureRecognizers>
+                                </Button>
                                 <control:SegmentedControl Grid.Column="2" Grid.RowSpan="2" WidthRequest="120" TintColor="#0B78FF"      
                                                           BorderWidth="1.0"
                                                           SelectedTextColor="White"
                                                           TextColor="#0B78FF"
                                                           FontSize="Small"   
+                                                          IsVisible="false"
                                                           VerticalOptions="Center"
                                                       
                                 >
@@ -104,8 +115,8 @@
         </CollectionView>
 
 
-        <Frame BackgroundColor="#0B78FF" Grid.Row="2"></Frame>
-        <Grid Grid.Row="2">
+        <Frame BackgroundColor="#0B78FF" Grid.Row="2" IsVisible="False"></Frame>
+        <Grid Grid.Row="2" IsVisible="false">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>

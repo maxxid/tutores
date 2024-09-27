@@ -6,8 +6,15 @@
     xmlns:control="clr-namespace:Plugin.Segmented.Control;assembly=Plugin.Segmented"
     xmlns:segmented="clr-namespace:Plugin.Segmented.Control;assembly=Plugin.Segmented"
     xmlns:system="clr-namespace:System;assembly=netstandard"
+    xmlns:xal="http://xalendar.com/schemas/xaml"
     NavigationPage.HasNavigationBar="false">
-
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <xal:TaskManagement 
+                x:Key="TaskManagementTheme" 
+            />
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
 
 
@@ -15,7 +22,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="50" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <Frame Grid.Row="0" BackgroundColor="#1e2838" />
@@ -36,17 +43,18 @@
             <Label
                 Grid.Column="1"
                 HorizontalOptions="Center"
-                Text="4TO GRADO B"
+                Text="MIS ASISTENCIAS "
                 TextColor="White"
                 TextTransform="Uppercase"
                 VerticalOptions="Center" />
         </Grid>
 
 
+        <Grid IsVisible="false" Grid.Row="1">
+            <xal:CalendarView Events="{Binding MyEvents}" Theme="{StaticResource TaskManagementTheme}"/>
 
-
-
-        <CollectionView Grid.Row="1" ItemsSource="{Binding AlumnosList}">
+        </Grid>
+      <CollectionView Grid.Row="1" ItemsSource="{Binding AsistenciaList}" IsVisible="true">
 
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout ItemSpacing="0" Orientation="Vertical" />
@@ -67,56 +75,43 @@
                             <Grid
                                 Margin="0"
                                 BackgroundColor="Transparent"
-                                HeightRequest="50">
+                                HeightRequest="50" 
+                                Padding="2">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="auto" />
-                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="2*" />
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height=".5*" />
-                                    <RowDefinition Height=".5*" />
-                                </Grid.RowDefinitions>
+                              
+
+
+
+                                <Image
+                                    Grid.Column="0"
+                                    HeightRequest="30"
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="CenterAndExpand"
+                                    Source="{Binding Icono}" />
                                 <Label
-                                    Grid.Row="0"
                                     Grid.Column="1"
                                     Margin="0,0,0,0"
                                     FontAttributes="Bold"
                                     FontSize="Medium"
-                                    Text="{Binding Apellido}"
-                                    TextColor="AliceBlue" />
+                                    Text="{Binding Dia_completo}"
+                                    TextColor="AliceBlue" 
+                                    VerticalOptions="Center"/>
                                 <Label
-                                    Grid.Row="1"
-                                    Grid.Column="1"
-                                    Text="{Binding Nombre}"
-                                    TextColor="AliceBlue" />
-
-                                <Image
-                                    Grid.RowSpan="2"
-                                    Grid.Column="0"
-                                    HeightRequest="35"
-                                    HorizontalOptions="Start"
-                                    Source="icon_B_info.png" />
-
-
-                                <control:SegmentedControl
-                                    x:Name="segmentedControl"
-                                    Grid.RowSpan="2"
+                                    IsVisible="true"
                                     Grid.Column="2"
-                                    BorderWidth="1.0"
-                                    FontSize="Small"
-                                    SegmentSelectedCommand="{Binding SegmentChangedCommand}"
-                                    SelectedTextColor="White"
-                                    TextColor="#0B78FF"
-                                    TintColor="#0B78FF"
+                                    Text="{Binding Estado}"
+                                    TextColor="AliceBlue" 
                                     VerticalOptions="Center"
-                                    WidthRequest="120">
-                                    <control:SegmentedControl.Children>
-                                        <segmented:SegmentedControlOption Text="PRESENTE" />
-                                        <segmented:SegmentedControlOption Text="AUSENTE" />
-                                    </control:SegmentedControl.Children>
+                                    HorizontalOptions="Start"/>
 
-                                </control:SegmentedControl>
+                                
+
+
+                               
 
                             </Grid>
                         </Frame>
@@ -126,6 +121,12 @@
 
                 </DataTemplate>
             </CollectionView.ItemTemplate>
+
+
+            
+            
+            
+            
             <CollectionView.EmptyView>
                 <DataTemplate>
                     <Label
@@ -149,23 +150,7 @@
 
 
 
-        <Frame Grid.Row="2" BackgroundColor="#008ADF" />
-        <Grid Grid.Row="2">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Button
-                Grid.Column="0"
-                MinimumHeightRequest="50"
-                MinimumWidthRequest="50"
-                Text="CURSO ANTERIOR" />
-            <Button
-                Grid.Column="1"
-                MinimumHeightRequest="50"
-                MinimumWidthRequest="50"
-                Text="CURSO SIGUIENTE" />
-        </Grid>
+        
     </Grid>
 
 

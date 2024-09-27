@@ -14,7 +14,16 @@ namespace TUTORES.Vistas.Login
     {
         private String textUser;
         public String _cargoSeleccionado=null;
-		public SelectionPage (String textUserRecived)
+
+
+        public class Role
+        {
+            public string Name { get; set; }
+        }
+
+
+
+        public SelectionPage (String textUserRecived)
 		{
 			InitializeComponent ();
             this.textUser = textUserRecived;
@@ -28,14 +37,21 @@ namespace TUTORES.Vistas.Login
         {
             RadioButton radioButton = sender as RadioButton;
 
+            if (e.Value)
+            {
+                var selectedRole = (sender as RadioButton)?.BindingContext as Role;
+                // Aquí puedes guardar el elemento seleccionado en una variable
+
+               //DisplayAlert("Seleccionado1", , "ok1");
+            }
 
             if (radioButton.IsChecked)
             {
                 _cargoSeleccionado = radioButton.ContentAsString();
 
-                //DisplayAlert("Seleccionado", _cargoSeleccionado, "ok");
-            }
-
+                //DisplayAlert("Seleccionado2", _cargoSeleccionado, "ok2");
+            } 
+             
         }
     }
 }

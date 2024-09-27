@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\APP.TUTORES\\TUTORES.Android\\TUTORES.Android.csproj": {}
+    "C:\\Users\\maxib\\source\\repos\\tutores2\\TUTORES.Android\\TUTORES.Android.csproj": {}
   },
   "projects": {
-    "E:\\APP.TUTORES\\TUTORES.Android\\TUTORES.Android.csproj": {
+    "C:\\Users\\maxib\\source\\repos\\tutores2\\TUTORES.Android\\TUTORES.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\APP.TUTORES\\TUTORES.Android\\TUTORES.Android.csproj",
+        "projectUniqueName": "C:\\Users\\maxib\\source\\repos\\tutores2\\TUTORES.Android\\TUTORES.Android.csproj",
         "projectName": "TUTORES.Android",
-        "projectPath": "E:\\APP.TUTORES\\TUTORES.Android\\TUTORES.Android.csproj",
-        "packagesPath": "C:\\Users\\MAXI\\.nuget\\packages\\",
-        "outputPath": "E:\\APP.TUTORES\\TUTORES.Android\\obj\\",
+        "projectPath": "C:\\Users\\maxib\\source\\repos\\tutores2\\TUTORES.Android\\TUTORES.Android.csproj",
+        "packagesPath": "C:\\Users\\maxib\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maxib\\source\\repos\\tutores2\\TUTORES.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MAXI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maxib\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,13 +27,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/packages": {}
         },
         "frameworks": {
           "monoandroid13.0": {
             "projectReferences": {
-              "E:\\APP.TUTORES\\TUTORES\\TUTORES.csproj": {
-                "projectPath": "E:\\APP.TUTORES\\TUTORES\\TUTORES.csproj"
+              "C:\\Users\\maxib\\source\\repos\\tutores2\\TUTORES\\TUTORES.csproj": {
+                "projectPath": "C:\\Users\\maxib\\source\\repos\\tutores2\\TUTORES\\TUTORES.csproj"
               }
             }
           }
@@ -66,6 +67,10 @@
               "target": "Package",
               "version": "[2.1.0, )"
             },
+            "Xalendar": {
+              "target": "Package",
+              "version": "[1.1.0-pre1545, )"
+            },
             "Xamarin.CommunityToolkit": {
               "target": "Package",
               "version": "[1.3.2, )"
@@ -81,25 +86,29 @@
             "Xamarin.Forms.InputKit": {
               "target": "Package",
               "version": "[4.0.1, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           }
         }
       }
     },
-    "E:\\APP.TUTORES\\TUTORES\\TUTORES.csproj": {
+    "C:\\Users\\maxib\\source\\repos\\tutores2\\TUTORES\\TUTORES.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\APP.TUTORES\\TUTORES\\TUTORES.csproj",
+        "projectUniqueName": "C:\\Users\\maxib\\source\\repos\\tutores2\\TUTORES\\TUTORES.csproj",
         "projectName": "TUTORES",
-        "projectPath": "E:\\APP.TUTORES\\TUTORES\\TUTORES.csproj",
-        "packagesPath": "C:\\Users\\MAXI\\.nuget\\packages\\",
-        "outputPath": "E:\\APP.TUTORES\\TUTORES\\obj\\",
+        "projectPath": "C:\\Users\\maxib\\source\\repos\\tutores2\\TUTORES\\TUTORES.csproj",
+        "packagesPath": "C:\\Users\\maxib\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maxib\\source\\repos\\tutores2\\TUTORES\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MAXI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maxib\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -109,7 +118,8 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/packages": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -145,6 +155,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Plugin.SegmentedControl.Netstandard": {
               "target": "Package",
               "version": "[5.4.5, )"
@@ -152,6 +166,10 @@
             "Rg.Plugins.Popup": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "Xalendar": {
+              "target": "Package",
+              "version": "[1.1.0-pre1545, )"
             },
             "Xamarin.CommunityToolkit": {
               "target": "Package",
@@ -168,6 +186,10 @@
             "Xamarin.Forms.InputKit": {
               "target": "Package",
               "version": "[4.0.1, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.9.172, )"
             }
           },
           "imports": [
@@ -181,7 +203,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

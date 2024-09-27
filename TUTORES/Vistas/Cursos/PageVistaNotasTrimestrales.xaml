@@ -1,0 +1,63 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TUTORES.VistaModelo"
+             x:Class="TUTORES.Vistas.Cursos.PageVistaNotasTrimestrales"
+             Title="Vista Notas Trimestrales">
+
+    <ContentPage.Resources>
+        <!-- Convertidor para el trimestre actual -->
+        <ResourceDictionary>
+            <local:TrimestreConverter x:Key="TrimestreConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Solapas para los trimestres -->
+        <Grid Grid.Row="0" ColumnSpacing="10" Padding="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Trimestre 1"
+                    Command="{Binding CambiarTrimestreCommand}"
+                    CommandParameter="1"
+                    BackgroundColor="{Binding Trimestre, Converter={StaticResource TrimestreConverter}, ConverterParameter=1}" />
+
+            <Button Text="Trimestre 2"
+                    Grid.Column="1"
+                    Command="{Binding CambiarTrimestreCommand}"
+                    CommandParameter="2"
+                    BackgroundColor="{Binding Trimestre, Converter={StaticResource TrimestreConverter}, ConverterParameter=2}" />
+
+            <Button Text="Trimestre 3"
+                    Grid.Column="2"
+                    Command="{Binding CambiarTrimestreCommand}"
+                    CommandParameter="3"
+                    BackgroundColor="{Binding Trimestre, Converter={StaticResource TrimestreConverter}, ConverterParameter=3}" />
+        </Grid>
+
+        <!-- ListView para mostrar las notas -->
+        <CollectionView Grid.Row="1" ItemsSource="{Binding NotasFiltradas}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" Padding="10">
+                            <Label Text="{Binding Materia}" FontSize="Medium" TextColor="Black"/>
+                            <Label Text="{Binding NotaA}" FontSize="Small" TextColor="Gray"/>
+                            <Label Text="{Binding NotaB}" FontSize="Small" TextColor="Gray"/>
+                            <Label Text="{Binding NotaC}" FontSize="Small" TextColor="Gray"/>
+                            <Label Text="{Binding Promedio}" FontSize="Small" TextColor="Gray"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

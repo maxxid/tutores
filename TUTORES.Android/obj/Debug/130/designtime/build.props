@@ -3,20 +3,20 @@ aotassemblies=false
 androidaddkeepalives=
 androidaotmode=none
 androidembedprofilers=
-androidenableprofiledaot=
+androidenableprofiledaot=false
 androiddextool=d8
 androidlinktool=
 androidlinkresources=
 androidpackageformat=apk
-embedassembliesintoapk=false
+embedassembliesintoapk=true
 androidlinkmode=none
 androidlinkskip=
 androidsdkbuildtoolsversion=32.0.0
 androidsdkpath=c:\program files (x86)\android\android-sdk\
 androidndkpath=
-javasdkpath=c:\program files\microsoft\jdk-11.0.12.7-hotspot\
+javasdkpath=c:\program files\microsoft\jdk-11.0.16.101-hotspot\
 androidsequencepointsmode=none
-xamarinandroidversion=13.1.0-1
+xamarinandroidversion=13.2.1-2
 monosymbolarchive=false
 androiduselatestplatformsdk=false
 targetframeworkversion=v13.0
@@ -25,10 +25,9 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=638212282175864799
+_nugetassetstimestamp=638607265144257312
 typemapkind=strings-asm
-androidsupportedabis=arm64-v8a
-armeabi-v7a
-x86
-x86_64
+androidsupportedabis=armeabi-v7a
+arm64-v8a
 androidmanifestplaceholders=
+projectfullpath=c:\users\maxib\source\repos\tutores2\tutores.android\tutores.android.csproj
