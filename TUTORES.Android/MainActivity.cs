@@ -23,7 +23,7 @@ namespace TUTORES.Droid
                 Window window = this.Window;
                 window.AddFlags(WindowManagerFlags.DrawsSystemBarBackgrounds);
                 window.ClearFlags(WindowManagerFlags.TranslucentStatus);
-                window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#761780"));
+                window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#EE7511"));
             }
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);

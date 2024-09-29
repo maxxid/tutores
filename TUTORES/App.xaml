@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TUTORES.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <!-- Puedes agregar aquí otros recursos si es necesario -->
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

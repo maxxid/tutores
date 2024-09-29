@@ -11,15 +11,14 @@ using Xamarin.Forms;
 
 namespace TUTORES.VistaModelo
 {
-    public class PageConstanciasVM : BaseViewModel
+    class PageConstanciasVM : BaseViewModel
     {
         public PageConstanciasVM(INavigation navigation)
         {
             Navigation = navigation;
             InitProducts();
-
-
         }
+
         private string entryText;
         public string EntryText
         {
@@ -34,8 +33,6 @@ namespace TUTORES.VistaModelo
             }
         }
 
-
-
         public ObservableCollection<Model_Constancias> ConstanciasList { get; set; }
 
         private void InitProducts()
@@ -45,11 +42,34 @@ namespace TUTORES.VistaModelo
                 new Model_Constancias
                 {
                     id= 1,
-                    fSolicitud = "Desde: 01/09/2023",
-                    fVencimiento = "Venc: 01/10/2023",
+                    fSolicitud = "Desde: 02/09/2024",
+                    fVencimiento = "Venc: 02/10/2024",
                     oRequiere = "Organismo: Policia de la Prov.",
-                    status = "false"
-
+                    status = "true"
+                },
+                new Model_Constancias
+                {
+                    id= 1,
+                    fSolicitud = "Desde: 14/09/2024",
+                    fVencimiento = "Venc: 14/10/2024",
+                    oRequiere = "Organismo: Exar SRL",
+                    status = "true"
+                },
+                new Model_Constancias
+                {
+                    id= 1,
+                    fSolicitud = "Desde: 01/12/2024",
+                    fVencimiento = "Venc: 01/12/2024",
+                    oRequiere = "Organismo: Ministerio de Educacion de Jujuy",
+                    status = "true"
+                },
+                new Model_Constancias
+                {
+                    id= 1,
+                    fSolicitud = "Desde: 15/10/2023",
+                    fVencimiento = "Venc: 15/11/2024",
+                    oRequiere = "Organismo: Colegio de Tecnicos de Jujuy",
+                    status = "true"
                 },
                 new Model_Constancias
                 {
@@ -58,16 +78,8 @@ namespace TUTORES.VistaModelo
                     fVencimiento = "Venc: 10/06/2023",
                     oRequiere = "Organismo: ANSES",
                     status = "false"
-
                 },
-
-
             };
-
-
-
-
-
         }
 
         public async Task Button_Volver()
@@ -77,12 +89,9 @@ namespace TUTORES.VistaModelo
 
         public async Task AnimNuevaSolicitud()
         {
-
             if (string.IsNullOrWhiteSpace(EntryText))
             {
                 await Application.Current.MainPage.DisplayAlert("Error", "No puede dejar el organismo a presentar vacío.", "OK");
-
-              
             }
             else
             {
@@ -91,13 +100,15 @@ namespace TUTORES.VistaModelo
                 UserDialogs.Instance.HideLoading();
                 await Navigation.PushAsync(new PageEmergente_OK());
             }
-            
-            
+        }
+        public ICommand DownloadCommand => new Command<Model_Constancias>(async (constancia) => await DownloadConstancia(constancia));
+
+        private async Task DownloadConstancia(Model_Constancias constancia)
+        {
+            // Lógica para descargar la constancia
+            await Application.Current.MainPage.DisplayAlert("Descargar", $"Descargando {constancia.oRequiere}", "OK");
         }
         public ICommand VolverCommand => new Command(async () => await Button_Volver());
-
         public ICommand NuevaConstanciaCommand => new Command(async () => await AnimNuevaSolicitud());
-
-
     }
 }

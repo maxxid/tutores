@@ -4,169 +4,102 @@
              x:Class="TUTORES.Vistas.ConstanciaAlum.PageConstancias"          
              NavigationPage.HasNavigationBar="false">
 
-    <Grid BackgroundColor="#1e2838" RowSpacing="0">
+    <Grid BackgroundColor="#1E2838" RowSpacing="0" Padding="10">
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Frame Grid.Row="0" BackgroundColor="#1e2838" Grid.RowSpan="2"/>
-        <Grid Grid.Row="0">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width=".11*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
+        <!-- Header con imagen de retorno y título -->
+        <StackLayout Orientation="Horizontal" Grid.Row="0" Spacing="10" VerticalOptions="Center" Padding="5,10" Margin="0,0,0,0">
             <Image
-             Grid.Column="0"
-             Margin="5,0,0,0"
-             HeightRequest="12"
-             Source="icon_B_atras.png">
+                Source="iconback_orange_v1.png"
+                HeightRequest="25"
+                VerticalOptions="Center">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding VolverCommand}" />
                 </Image.GestureRecognizers>
             </Image>
             <Label
-             Grid.Column="1"
-             HorizontalOptions="Center"
-             Text="CONSTANCIA SOLICITUD "
-             TextColor="White"
-             TextTransform="Uppercase"
-             VerticalOptions="Center" />
-        </Grid>
-       
-        <StackLayout Grid.Row="1" Padding="20,5">
-            <Label Text="ORGANISMO A PRESENTAR:" TextColor="White"></Label>
-            <Entry   TextColor="White" BackgroundColor="Gray" Text="{Binding EntryText}"> 
-            </Entry>
-            <Button Text="Solicitar Nueva Constancia" IsVisible="true" CornerRadius="10" Margin="0,10,0,0" Command="{Binding NuevaConstanciaCommand}"></Button>
-            <BoxView BackgroundColor="Aqua" HeightRequest="5" Margin="0,12" ></BoxView>
-            <Label Text="HISTORIAL DE SOLICITUD DE CONSTANCIAS:" TextColor="White" FontSize="Subtitle" Margin="0,10,0,10"></Label>
-
+                Text="Constancias de Alumno Regular"
+                TextColor="White"
+                FontSize="Large"
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"
+                FontAttributes="Bold"/>
         </StackLayout>
 
+        <!-- Formulario de solicitud -->
+        <StackLayout Grid.Row="1" Padding="20,10" Spacing="10">
 
-        <CollectionView Grid.Row="2" ItemsSource="{Binding ConstanciasList}" x:Name="miCollectionView">
+            <!-- NUEVA SOLICITUD 
 
+            <Label Text="Organismo a presentar:" TextColor="White" FontSize="Medium"/>
+            <Entry TextColor="White" BackgroundColor="#323F4B" Text="{Binding EntryText}" Placeholder="Ingrese organismo"/>
+
+            <Button Text="Solicitar Nueva Constancia"
+                    TextColor="White"
+                    BackgroundColor="#3094FF"
+                    CornerRadius="20"
+                    Padding="10"
+                    Command="{Binding NuevaConstanciaCommand}"/>
+            <BoxView BackgroundColor="#Aqua" HeightRequest="2" Margin="0,10"/> -->
+
+            <BoxView BackgroundColor="#EE7511" HeightRequest="2" Margin="0,10"/>
+
+            <Label Text="Historial de Solicitudes:"
+                   TextColor="White"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                   Margin="0,10"/>
+        </StackLayout>
+
+        <!-- Historial de constancias -->
+        <CollectionView Grid.Row="2" ItemsSource="{Binding ConstanciasList}" BackgroundColor="Transparent">
             <CollectionView.ItemsLayout>
-                <LinearItemsLayout ItemSpacing="0" Orientation="Vertical" />
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="10"/>
             </CollectionView.ItemsLayout>
+
             <CollectionView.ItemTemplate>
-                <DataTemplate >
+                <DataTemplate>
+                    <Frame CornerRadius="10" Padding="10" BackgroundColor="#1E2838" BorderColor="#3094FF">
+                        <Grid RowSpacing="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
 
-                    <StackLayout Margin="0,0,0,1" BackgroundColor="#3094FF">
-
-                        <Frame Margin="0"
-               Padding="5"
-               CornerRadius="0"
-               BackgroundColor="#1e2838"
-               IsClippedToBounds="False"
-               HasShadow="False">
-
-                            <Grid HeightRequest="50"
-              BackgroundColor="Transparent"
-              Margin="0"
-              >
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height=".5*"/>
-                                    <RowDefinition Height=".5*"/>
-                                </Grid.RowDefinitions>
-                                <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Padding="25,0,0,0" Text="{Binding oRequiere}" TextColor
-                                       ="AliceBlue" FontAttributes="Bold" FontSize="Medium" Margin="0,0,0,0"/>
-                                <Label Grid.Row="1" Grid.Column="0" Text="{Binding fSolicitud}" TextColor="AliceBlue"/>
-
-                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding fVencimiento}" TextColor="AliceBlue"/>
-
-                                <Image Grid.RowSpan="1" Grid.Column="0" Source="exam.png" HorizontalOptions="Start" HeightRequest="30" Margin="0,0,0,0"/>
-
-
-                                <!--<Button WidthRequest="20" IsVisible="false"  HeightRequest="20" Padding="0,0,0,0" Margin="40,0,0,0" Grid.Column="2" Grid.RowSpan="2" Text="PDF" Clicked="Button_Clicked"></Button>-->
-                                <Button x:Name="miBoton"  IsVisible="false" MinimumHeightRequest="33" Text="Ver notas Trimestrales" Grid.Column="2" Grid.RowSpan="2"  Command="{Binding BindingContext.DesactivarBotonCommand2, Source={x:Reference miCollectionView}}" >
-                                    <Button.Triggers>
-                                        <DataTrigger TargetType="Button" Binding="{Binding IsBotonActivado}" Value="False">
-                                            <Setter Property="BackgroundColor" Value="Gray" />
-                                            <Setter Property="TextColor" Value="White" />
-                                        </DataTrigger>
-                                    </Button.Triggers>
-                                </Button>
-
-                            </Grid>
-                        </Frame>
-                        <Frame x:Name="miFrame" WidthRequest="200" Padding="15,5,15,25" IsVisible="FALSE" CornerRadius="15" BackgroundColor="Transparent" BorderColor="Transparent">
-                            <!-- Contenido del Frame  #0B78FF  3094FF-->
-                            <StackLayout>
-                                <Frame BackgroundColor="#1e2838" CornerRadius="10" BorderColor="#3094FF" >
-                                    <Grid ColumnSpacing="0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="auto" />
-                                            <ColumnDefinition Width="auto" />
-                                            <ColumnDefinition Width="*" />
-
-                                        </Grid.ColumnDefinitions>
-                                        <Image HeightRequest="25" Source="{Binding IconoA}" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Start"/>
-                                        <Label Text="Primer trimestre:"  Grid.Column="1" HorizontalOptions="Start" TextColor="White" Margin="9,0,5,0" VerticalOptions="Center"></Label>
-                                        <Label Text="{Binding NotaA}" Grid.Column="2" HorizontalOptions="Start"  VerticalOptions="Center" TextColor="White"/>
-                                    </Grid>
-                                </Frame>
-
-
-                                <Frame BackgroundColor="#1e2838" CornerRadius="10" BorderColor="#3094FF">
-                                    <Grid ColumnSpacing="0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="auto" />
-                                            <ColumnDefinition Width="auto" />
-                                            <ColumnDefinition Width="*" />
-                                        </Grid.ColumnDefinitions>
-                                        <Image HeightRequest="25" Source="{Binding IconoB}" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Start"/>
-                                        <Label Text="Segundo trimestre:"  Grid.Column="1" HorizontalOptions="Start" TextColor="White" Margin="9,0,5,0" VerticalOptions="Center"></Label>
-                                        <Label Text="{Binding NotaB}" Grid.Column="2" HorizontalOptions="Start"  VerticalOptions="Center" TextColor="White"/>
-                                    </Grid>
-                                    <Frame.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding Button_AsistenciaPorCursoCommand}" />
-                                    </Frame.GestureRecognizers>
-                                </Frame>
-
-
-                                <Frame BackgroundColor="#1e2838" CornerRadius="10" BorderColor="#3094FF">
-                                    <Grid ColumnSpacing="0">
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="auto" />
-                                            <ColumnDefinition Width="auto" />
-                                            <ColumnDefinition Width="*" />
-                                        </Grid.ColumnDefinitions>
-                                        <Image HeightRequest="25" Source="{Binding IconoC}" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Start"/>
-                                        <Label Text="Tercer trimestre:"  Grid.Column="1" HorizontalOptions="Start" TextColor="White" Margin="9,0,5,0" VerticalOptions="Center"></Label>
-                                        <Label Text="{Binding NotaC}" Grid.Column="2" HorizontalOptions="Start"  VerticalOptions="Center" TextColor="White"/>
-                                    </Grid>
-                                    <Frame.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding Button_NotastrimestralesCommand}" />
-                                    </Frame.GestureRecognizers>
-                                </Frame>
+                            <StackLayout Grid.Column="0" Margin="5,0,0,0">
+                                <Label Text="{Binding oRequiere}" FontAttributes="Bold" TextColor="White"/>
+                                <Label Text="{Binding fSolicitud}" TextColor="LightGray" FontSize="Small"/>
+                                <Label Text="{Binding fVencimiento}" TextColor="LightGray" FontSize="Small"/>
                             </StackLayout>
-                        </Frame>
-                    </StackLayout>
 
+                            <StackLayout Grid.Column="1" Margin="0,0,10,0">
 
+                                <Image Grid.Column="2"     HeightRequest="35"     HorizontalOptions="Center"     IsVisible="true"     Source="exam.png" 
+                                 >
+                                    
+                                </Image>     
+                                           
+                                           
+                                 <Label Text="Descargar" TextColor="LightGray" FontSize="Small" HorizontalTextAlignment="Center"/>
+                            </StackLayout>
 
+                            <!-- Elimina el comando del botón hasta que esté implementado -->
+
+                        </Grid>
+                    </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
-            <CollectionView.EmptyView>
-                <DataTemplate>
-                    <Label
-                     Grid.Row="0"
-                     Grid.Column="1"
-                     FontAttributes="Bold"
-                     FontSize="Medium"
-                     Text="aaaaa"
-                     TextColor="AliceBlue" />
 
-                </DataTemplate>
+            <CollectionView.EmptyView>
+                <Label Text="No hay solicitudes disponibles."
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="LightGray"
+                       FontAttributes="Italic"/>
             </CollectionView.EmptyView>
         </CollectionView>
     </Grid>

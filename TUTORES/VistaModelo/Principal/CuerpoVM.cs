@@ -77,7 +77,9 @@ namespace TUTORES.VistaModelo.Principal
         }
         public async Task Button_AsistenciaPorCursoFunction()
         {
-            await Navigation.PushAsync(new PageAsistenciasPorCurso());
+            //await Navigation.PushAsync(new PageAsistenciasPorCurso());
+            await Navigation.PushAsync(new AttendancePage());
+
         }
         public async Task Button_TardanzaPorCursoFunction()
         {

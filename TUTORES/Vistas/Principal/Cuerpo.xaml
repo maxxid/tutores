@@ -60,7 +60,7 @@
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding VolverCommand}" />
                             </Image.GestureRecognizers>
-
+                           
                         </Image>
 
 
