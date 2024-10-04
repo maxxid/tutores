@@ -5,6 +5,17 @@
     <Application.Resources>
         <ResourceDictionary>
             <!-- Puedes agregar aquí otros recursos si es necesario -->
+
+            <!-- Estilo global para NavigationPage -->
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#13304D" />
+                <!-- Cambia el color del TopBar -->
+                <Setter Property="BarTextColor" Value="White" />
+                <!-- Cambia el color del texto del TopBar -->
+            </Style>
+            
+            
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

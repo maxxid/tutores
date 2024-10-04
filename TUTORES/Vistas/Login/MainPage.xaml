@@ -20,8 +20,12 @@
                 
                 <Image Source="wallpaper_init2.png" Aspect="AspectFill" Grid.RowSpan="2"></Image>
 
-                <Frame Grid.Row="0" Padding="20,0" CornerRadius="20" TranslationY="-11" HasShadow="True">
-                    <Image Source="gobaseguir.png" Margin="0,12,0,0"></Image>
+                <Frame Grid.Row="0" Padding="20,0" CornerRadius="20" TranslationY="-11" HasShadow="True" BackgroundColor="#13304D">
+                    
+                    <Image Source="gobaseguir24.png" Margin="0,12,0,0" HeightRequest="30"/>
+
+                    
+                    
                 </Frame>
 
 

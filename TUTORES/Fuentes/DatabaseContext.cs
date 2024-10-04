@@ -15,35 +15,19 @@ namespace TUTORES.Fuentes
         public DatabaseContext()
         {
             _database = DependencyService.Get<ISQLiteDb>().GetConnection();
-            _database.CreateTableAsync<Tutor>().Wait();
+
             _database.CreateTableAsync<Alumno>().Wait();
+            _database.CreateTableAsync<Asistencia>().Wait();
+            _database.CreateTableAsync<Configuracion>().Wait();
+            _database.CreateTableAsync<Constancia>().Wait();
+            _database.CreateTableAsync<Curso>().Wait();
             _database.CreateTableAsync<Escuela>().Wait();
             _database.CreateTableAsync<Materia>().Wait();
-            _database.CreateTableAsync<Curso>().Wait();
             _database.CreateTableAsync<Nota>().Wait();
-            _database.CreateTableAsync<Asistencia>().Wait();
+            _database.CreateTableAsync<Tutor>().Wait();
         }
 
-        // Métodos CRUD para Tutor
-        public Task<int> SaveTutorAsync(Tutor tutor)
-        {
-            return _database.InsertAsync(tutor);
-        }
-
-        public Task<List<Tutor>> GetTutorsAsync()
-        {
-            return _database.Table<Tutor>().ToListAsync();
-        }
-
-        public Task<int> DeleteTutorAsync(Tutor tutor)
-        {
-            return _database.DeleteAsync(tutor);
-        }
-
-        public Task<int> UpdateTutorAsync(Tutor tutor)
-        {
-            return _database.UpdateAsync(tutor);
-        }
+        
 
         // Métodos CRUD para Alumno
         public Task<int> SaveAlumnoAsync(Alumno alumno)
@@ -65,6 +49,92 @@ namespace TUTORES.Fuentes
         {
             return _database.UpdateAsync(alumno);
         }
+        // Métodos CRUD para Asistencia
+        public Task<int> SaveAsistenciaAsync(Asistencia asistencia)
+        {
+            return _database.InsertAsync(asistencia);
+        }
+
+        public Task<List<Asistencia>> GetAsistenciasAsync()
+        {
+            return _database.Table<Asistencia>().ToListAsync();
+        }
+
+        public Task<int> DeleteAsistenciaAsync(Asistencia asistencia)
+        {
+            return _database.DeleteAsync(asistencia);
+        }
+
+        public Task<int> UpdateAsistenciaAsync(Asistencia asistencia)
+        {
+            return _database.UpdateAsync(asistencia);
+        }
+
+        // Métodos CRUD para Configutacion
+        public Task<int> SaveConfiguracionAsync(Configuracion configuracion)
+        {
+            return _database.InsertAsync(configuracion);
+        }
+
+        public Task<List<Configuracion>> GetConfiguracionAsync()
+        {
+            return _database.Table<Configuracion>().ToListAsync();
+        }
+
+        public Task<int> DeleteConfiguracionAsync(Configuracion configuracion)
+        {
+            return _database.DeleteAsync(configuracion);
+        }
+
+        public Task<int> UpdateConfiguracionAsync(Configuracion configuracion)
+        {
+            return _database.UpdateAsync(configuracion);
+        }
+
+
+        // Métodos CRUD para Constancias
+        public Task<int> SaveConstanciasAsync(Constancia constancia)
+        {
+            return _database.InsertAsync(constancia);
+        }
+
+        public Task<List<Constancia>> GetConstanciasAsync()
+        {
+            return _database.Table<Constancia>().ToListAsync();
+        }
+
+        public Task<int> DeleteConstanciasAsync(Constancia constancia)
+        {
+            return _database.DeleteAsync(constancia);
+        }
+
+        public Task<int> UpdateConstanciasAsync(Constancia constancia)
+        {
+            return _database.UpdateAsync(constancia);
+        }
+
+        // Métodos CRUD para Curso
+        public Task<int> SaveCursoAsync(Curso curso)
+        {
+            return _database.InsertAsync(curso);
+        }
+
+        public Task<List<Curso>> GetCursosAsync()
+        {
+            return _database.Table<Curso>().ToListAsync();
+        }
+
+        public Task<int> DeleteCursoAsync(Curso curso)
+        {
+            return _database.DeleteAsync(curso);
+        }
+
+        public Task<int> UpdateCursoAsync(Curso curso)
+        {
+            return _database.UpdateAsync(curso);
+        }
+
+
 
         // Métodos CRUD para Escuela
         public Task<int> SaveEscuelaAsync(Escuela escuela)
@@ -108,26 +178,7 @@ namespace TUTORES.Fuentes
             return _database.UpdateAsync(materia);
         }
 
-        // Métodos CRUD para Curso
-        public Task<int> SaveCursoAsync(Curso curso)
-        {
-            return _database.InsertAsync(curso);
-        }
-
-        public Task<List<Curso>> GetCursosAsync()
-        {
-            return _database.Table<Curso>().ToListAsync();
-        }
-
-        public Task<int> DeleteCursoAsync(Curso curso)
-        {
-            return _database.DeleteAsync(curso);
-        }
-
-        public Task<int> UpdateCursoAsync(Curso curso)
-        {
-            return _database.UpdateAsync(curso);
-        }
+        
 
         // Métodos CRUD para Nota
         public Task<int> SaveNotaAsync(Nota nota)
@@ -150,25 +201,30 @@ namespace TUTORES.Fuentes
             return _database.UpdateAsync(nota);
         }
 
-        // Métodos CRUD para Asistencia
-        public Task<int> SaveAsistenciaAsync(Asistencia asistencia)
+       
+
+        // Métodos CRUD para Tutor
+        public Task<int> SaveTutorAsync(Tutor tutor)
         {
-            return _database.InsertAsync(asistencia);
+            return _database.InsertAsync(tutor);
         }
 
-        public Task<List<Asistencia>> GetAsistenciasAsync()
+        public Task<List<Tutor>> GetTutorsAsync()
         {
-            return _database.Table<Asistencia>().ToListAsync();
+            return _database.Table<Tutor>().ToListAsync();
         }
 
-        public Task<int> DeleteAsistenciaAsync(Asistencia asistencia)
+        public Task<int> DeleteTutorAsync(Tutor tutor)
         {
-            return _database.DeleteAsync(asistencia);
+            return _database.DeleteAsync(tutor);
         }
 
-        public Task<int> UpdateAsistenciaAsync(Asistencia asistencia)
+        public Task<int> UpdateTutorAsync(Tutor tutor)
         {
-            return _database.UpdateAsync(asistencia);
+            return _database.UpdateAsync(tutor);
         }
+
+
+
     }
 }

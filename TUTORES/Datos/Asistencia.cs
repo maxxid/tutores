@@ -1,10 +1,13 @@
-﻿using SQLite;
+﻿using MagicGradients.Animation;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace TUTORES.Datos
 {
+    [Table("Asistencias")]
+
     public class Asistencia
     {
         [PrimaryKey, AutoIncrement]
@@ -14,6 +17,11 @@ namespace TUTORES.Datos
 
         public DateTime Fecha { get; set; }
         public string Estado { get; set; } // Presente, Ausente, Tardanza
+        public string Justificacion { get; set; }
+        public string Observaciones { get; set; }
+        public int SyncStatus { get; set; }
+        public DateTime FechaSync {  get; set; }
+
     }
 
 }

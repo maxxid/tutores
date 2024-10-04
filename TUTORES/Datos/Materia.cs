@@ -9,8 +9,10 @@ namespace TUTORES.Datos
     {
         [PrimaryKey, AutoIncrement]
         public int ID_Materia { get; set; }
-        public string NombreMateria { get; set; }
+        public string Nombre { get; set; }
         public string Descripcion { get; set; }
+
+        public List <Nota> Notas { get; set; }
     }
 
 }

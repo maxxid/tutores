@@ -5329,3 +5329,4 @@ C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\stamp\_ConvertR
 C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\res\drawable\gobaseguir24.png

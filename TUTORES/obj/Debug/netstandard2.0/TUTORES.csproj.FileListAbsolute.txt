@@ -194,6 +194,7 @@ C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Asist
 C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Asistencias\PaseTardanzasPorCurso.xaml.g.cs
 C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\ConstanciaAlum\PageConstancias.xaml.g.cs
 C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Cursos\PageVistaNotasTrimestrales.xaml.g.cs
+C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Cursos\TabbedPageNotas.xaml.g.cs
 C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\PageEmergente_Fail.xaml.g.cs
 C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\PageEmergente_OK.xaml.g.cs
 C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\ViewEmergente_CambioRol.xaml.g.cs

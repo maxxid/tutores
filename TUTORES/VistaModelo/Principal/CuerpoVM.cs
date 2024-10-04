@@ -138,8 +138,11 @@ namespace TUTORES.VistaModelo.Principal
             await Navigation.PushAsync(new PageConstancias());
         }
 
-
-
+        
+        public async Task Button_TabbedPageNotas()
+        {
+            await Navigation.PushAsync(new TabbedPageNotas());
+        }
 
         public async Task Button_Usuario()
         {
@@ -164,6 +167,8 @@ namespace TUTORES.VistaModelo.Principal
         public ICommand Button_AsistenciaPorCursoCommand => new Command(async () => await Button_AsistenciaPorCursoFunction());
 
         public ICommand Button_AnimOkCommand => new Command(async () => await Button_AnimOk());
+        
+        public ICommand Button_TabbedPageNotasCommand => new Command(async () => await Button_TabbedPageNotas());
 
         public ICommand Button_AnimFailCommand => new Command(async () => await Button_AnimFail());
 

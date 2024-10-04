@@ -342,7 +342,15 @@
     <AndroidResource Include="Resources\drawable\iconback_orange_v2.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\drawable\gobaseguir2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\drawable\gobASeguir2024.png" />
+    <AndroidResource Include="Resources\drawable\gobaseguir24.png">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
     <Content Include="Resources\drawable\iconA_Constancias_download.png" />
+    <Content Include="Resources\drawable\icon_B_book.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

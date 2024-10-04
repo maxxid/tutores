@@ -16,10 +16,10 @@
             <Grid>
 
                 <Image Aspect="AspectFill" Source="wallpaper_init2.png" />
-                <StackLayout
-                    Padding="15,30,15,10"
-                    BackgroundColor="Transparent"
-                    VerticalOptions="FillAndExpand">
+                <!-- Contenedor Principal para Agrupar el Contenido -->
+                <StackLayout Padding="15,30,15,10" BackgroundColor="Transparent" VerticalOptions="FillAndExpand">
+
+                    <!-- Primer Grid (Header con Fecha y Iconos) -->
                     <Grid ColumnSpacing="10">
                         <Grid.RowDefinitions>
                             <RowDefinition />
@@ -50,6 +50,8 @@
                             IsVisible="False"
                             Source="icon_A_menu.png" />
                     </Grid>
+
+                    <!-- Información del Alumno y Botón de Cambio de Rol -->
                     <StackLayout Margin="5,10,0,10" Orientation="Horizontal">
                         <Label
                             FontSize="13"
@@ -60,11 +62,13 @@
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding VolverCommand}" />
                             </Image.GestureRecognizers>
-                           
                         </Image>
-
-
                     </StackLayout>
+
+
+
+
+
                     <Grid ColumnSpacing="10">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="140" />
@@ -367,7 +371,7 @@
                                     Padding="0"
                                     VerticalOptions="CenterAndExpand">
                                     <StackLayout.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding Button_AnimFailCommand}" />
+                                        <TapGestureRecognizer Command="{Binding Button_TabbedPageNotasCommand}" />
                                     </StackLayout.GestureRecognizers>
                                     <Image HeightRequest="25" Source="icon_B_informes" />
                                     <Label
