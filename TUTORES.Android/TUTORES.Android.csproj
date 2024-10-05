@@ -123,6 +123,7 @@
     <None Include="Properties\AndroidManifest.xml" />
     <AndroidResource Include="Resources\drawable\anim_work2.json" />
     <AndroidResource Include="Resources\drawable\animation_sett.json" />
+    <None Include="Resources\drawable\loading_splash.json" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\styles.xml" />
@@ -342,15 +343,15 @@
     <AndroidResource Include="Resources\drawable\iconback_orange_v2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\drawable\gobaseguir2.png">
+    <AndroidResource Include="Resources\drawable\gobaseguir2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\drawable\gobASeguir2024.png" />
-    <AndroidResource Include="Resources\drawable\gobaseguir24.png">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
     </AndroidResource>
-    <Content Include="Resources\drawable\iconA_Constancias_download.png" />
-    <Content Include="Resources\drawable\icon_B_book.png" />
+    <AndroidResource Include="Resources\drawable\iconA_Constancias_download.png" />
+    <AndroidResource Include="Resources\drawable\icon_B_book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\drawable\logoNexo.svg" />
+    <Content Include="Resources\drawable\logoNexoSplash.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

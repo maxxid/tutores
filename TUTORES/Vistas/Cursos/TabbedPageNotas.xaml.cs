@@ -57,7 +57,6 @@ namespace TUTORES.Vistas.Cursos
             {
                 var card = new Frame
                 {
-
                     BorderColor = Color.FromHex("#EE7511"),
                     BackgroundColor = Color.FromHex("#1e2838"),
                     CornerRadius = 15,
@@ -66,33 +65,51 @@ namespace TUTORES.Vistas.Cursos
                     Margin = new Thickness(0, 0, 0, 5)
                 };
 
+                // Icono de la materia
+                var iconImage = new Image
+                {
+                    Source = "icon_B_book.png",
+                    HeightRequest = 24,
+                    WidthRequest = 24,
+                    VerticalOptions = LayoutOptions.Center,
+                    Margin = new Thickness(0, 0, 10, 0) // Separación con el texto
+                };
+
+                // Nombre de la materia
                 var nombreMateria = new Label
                 {
                     Text = materia.Nombre,
-                    FontSize = 22,
+                    FontSize = 20,
                     TextColor = Color.FromHex("#FAFAFA"),
                     FontAttributes = FontAttributes.Bold,
-                    HorizontalOptions = LayoutOptions.Start
+                    VerticalOptions = LayoutOptions.Center
                 };
 
+                // Notas de la materia
                 var notasLabel = new Label
                 {
                     Text = "Notas: " + string.Join(", ", materia.Notas.Select(n => $"{n.Descripcion}: {n.Calificacion}")),
                     FontSize = 16,
-                    TextColor = Color.FromHex("#FAFAFA")
-                };
-                var iconImage = new Image
-                {
-                    Source = "icon_B_book.png", // Icono para materia aprobada
-                    HeightRequest = 24,
-                    WidthRequest = 24,
-                    HorizontalOptions = LayoutOptions.End
-                };
-                var contenidoCard = new StackLayout
-                {
-                    Children = { nombreMateria, notasLabel }
+                    TextColor = Color.FromHex("#FAFAFA"),
+                    Margin = new Thickness(0, 10, 0, 0) // Separación hacia abajo
                 };
 
+                // Layout para el encabezado de la materia (icono + nombre)
+                var headerLayout = new StackLayout
+                {
+                    Orientation = StackOrientation.Horizontal,
+                    Spacing = 5,
+                    Children = { iconImage, nombreMateria }
+                };
+
+                // Layout para el contenido del card (Encabezado + notas)
+                var contenidoCard = new StackLayout
+                {
+                    Spacing = 5,
+                    Children = { headerLayout, notasLabel }
+                };
+
+                // Asignar el contenido al frame
                 card.Content = contenidoCard;
                 layout.Children.Add(card);
             }
@@ -138,6 +155,54 @@ namespace TUTORES.Vistas.Cursos
             Materias = new List<Materia>
             {
                 new Materia
+                {
+                    Nombre = "Matemática",
+                    Notas = new List<Nota>
+                    {
+                        new Nota { Calificacion = 6.5, Descripcion = "Examen Parcial" }
+                    }
+                },
+                 new Materia
+                {
+                    Nombre = "Matemática",
+                    Notas = new List<Nota>
+                    {
+                        new Nota { Calificacion = 6.5, Descripcion = "Examen Parcial" }
+                    }
+                },
+                  new Materia
+                {
+                    Nombre = "Matemática",
+                    Notas = new List<Nota>
+                    {
+                        new Nota { Calificacion = 6.5, Descripcion = "Examen Parcial" }
+                    }
+                },
+                   new Materia
+                {
+                    Nombre = "Matemática",
+                    Notas = new List<Nota>
+                    {
+                        new Nota { Calificacion = 6.5, Descripcion = "Examen Parcial" }
+                    }
+                },
+                    new Materia
+                {
+                    Nombre = "Matemática",
+                    Notas = new List<Nota>
+                    {
+                        new Nota { Calificacion = 6.5, Descripcion = "Examen Parcial" }
+                    }
+                },
+                     new Materia
+                {
+                    Nombre = "Matemática",
+                    Notas = new List<Nota>
+                    {
+                        new Nota { Calificacion = 6.5, Descripcion = "Examen Parcial" }
+                    }
+                },
+                      new Materia
                 {
                     Nombre = "Matemática",
                     Notas = new List<Nota>

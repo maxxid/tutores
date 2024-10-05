@@ -14,10 +14,44 @@
             WidthRequest="120">
 
             <Grid>
-
-                <Image Aspect="AspectFill" Source="wallpaper_init2.png" />
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Image Aspect="AspectFill" Source="wallpaper_init2.png" Grid.Row="0" Grid.RowSpan="2"/>
                 <!-- Contenedor Principal para Agrupar el Contenido -->
-                <StackLayout Padding="15,30,15,10" BackgroundColor="Transparent" VerticalOptions="FillAndExpand">
+
+
+                <Frame BackgroundColor="#13304D" Grid.Row="0" CornerRadius="20" Padding="0" Margin="0"  TranslationY="-11" >
+
+                </Frame>
+                <StackLayout Grid.Row="0" Orientation="Horizontal" Padding="0" Margin="0" TranslationY="-5">
+                    <Image
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        HeightRequest="45"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Center"
+                        Source="family1.png" 
+                        Margin="8,0"
+                        
+                    />
+
+                     <Label
+                         Margin="0"
+                        Grid.Column="1"
+                        FontSize="15"
+                         VerticalOptions="Center"
+                        HorizontalOptions="FillAndExpand"
+                        Text="{Binding FechaHoy}"
+                        TextColor="White" 
+                     />
+                    
+                </StackLayout>
+                <StackLayout Padding="15,-20,15,10" BackgroundColor="Transparent" 
+                             VerticalOptions="FillAndExpand" Grid.Row="1"
+                             
+                             >
 
                     <!-- Primer Grid (Header con Fecha y Iconos) -->
                     <Grid ColumnSpacing="10">
@@ -29,19 +63,9 @@
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="45" />
                         </Grid.ColumnDefinitions>
-                        <Image
-                            Grid.Row="0"
-                            Grid.Column="0"
-                            HeightRequest="45"
-                            HorizontalOptions="Start"
-                            Source="family1.png" />
 
-                        <Label
-                            Grid.Column="1"
-                            FontSize="15"
-                            HorizontalOptions="FillAndExpand"
-                            Text="{Binding FechaHoy}"
-                            TextColor="White" />
+                        
+                        
 
                         <Image
                             Grid.Column="2"
@@ -314,20 +338,20 @@
                     <Frame
                         Margin="0,0,0,0"
                         Padding="15,12,15,5"
-                        BackgroundColor="#0e5174"
+                        BackgroundColor="#13304D"
                         CornerRadius="15"
                         HasShadow="True"
                         HorizontalOptions="Center"
                         IsClippedToBounds="True"
                         VerticalOptions="EndAndExpand">
                         <Grid
-                            BackgroundColor="#0e5174"
+                            BackgroundColor="#13304D"
                             HeightRequest="80"
                             VerticalOptions="End">
 
                             <Frame
                                 Padding="7"
-                                BackgroundColor="#3094FF"
+                                BackgroundColor="#13304D"
                                 CornerRadius="60"
                                 HeightRequest="70"
                                 HorizontalOptions="Center"
@@ -371,7 +395,7 @@
                                     Padding="0"
                                     VerticalOptions="CenterAndExpand">
                                     <StackLayout.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding Button_TabbedPageNotasCommand}" />
+                                        <TapGestureRecognizer Command="{Binding Button_AnimFailCommand}" />
                                     </StackLayout.GestureRecognizers>
                                     <Image HeightRequest="25" Source="icon_B_informes" />
                                     <Label
@@ -388,7 +412,7 @@
                                     Padding="0"
                                     VerticalOptions="CenterAndExpand">
                                     <StackLayout.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding Button_NotastrimestralesCommand}" />
+                                        <TapGestureRecognizer Command="{Binding Button_TabbedPageNotasCommand}" />
                                     </StackLayout.GestureRecognizers>
                                     <Image HeightRequest="25" Source="icon_B_cursos.png" />
                                     <Label

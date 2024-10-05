@@ -43,7 +43,7 @@ namespace TUTORES.Vistas.Principal
             fadeInAnimation.Commit(this, "FadeInAnimation", length: 1000, easing: Easing.Linear);
 
             // Esperar la animación antes de continuar (opcional)
-            await Task.Delay(1000); // Ajusta el tiempo según la duración de la animación
+            await Task.Delay(500); // Ajusta el tiempo según la duración de la animación
         }
 
         private async Task DesvanecerFrame()
@@ -53,7 +53,7 @@ namespace TUTORES.Vistas.Principal
             fadeOutAnimation.Commit(this, "FadeOutAnimation", length: 1000, easing: Easing.Linear);
 
             // Esperar la animación antes de cambiar la visibilidad
-            await Task.Delay(1000); // Ajusta el tiempo según la duración de la animación
+            await Task.Delay(500); // Ajusta el tiempo según la duración de la animación
 
             // Cambiar la visibilidad del Frame después de la animación
             miFrame.IsVisible = false;

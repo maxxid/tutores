@@ -12,8 +12,8 @@
         
         <Image Aspect="AspectFill" Source="wallpaper_init2.png" Grid.RowSpan="2"/>
 
-        <Frame Grid.Row="0" Padding="20,0" CornerRadius="20" TranslationY="-11" HasShadow="True">
-            <Image Source="gobaseguir.png" Margin="0,12,0,0"></Image>
+        <Frame Grid.Row="0" Padding="1" CornerRadius="20" TranslationY="-11" HasShadow="True" BackgroundColor="#13304D">
+            <Image Source="gobaseguir2.png" Margin="0,-70"></Image>
         </Frame>
 
         <StackLayout Grid.Row="1">
@@ -70,7 +70,7 @@
 
                 <Frame
                 Grid.Row="2"
-                BackgroundColor="CadetBlue"
+                BackgroundColor="#13304D"
                 CornerRadius="10">
                     <Label
                     HorizontalOptions="Center"

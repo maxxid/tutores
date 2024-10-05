@@ -15,7 +15,15 @@
             </Style>
             
             
-            
+            <!-- Define el color naranja aquí -->
+            <Color x:Key="PrimaryOrangeColor">#EE7511</Color>
+
+            <!-- Estilo para Pickers -->
+            <Style TargetType="Picker">
+                <Setter Property="TextColor" Value="{StaticResource PrimaryOrangeColor}" />
+            </Style>
+         
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

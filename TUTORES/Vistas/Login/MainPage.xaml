@@ -20,12 +20,8 @@
                 
                 <Image Source="wallpaper_init2.png" Aspect="AspectFill" Grid.RowSpan="2"></Image>
 
-                <Frame Grid.Row="0" Padding="20,0" CornerRadius="20" TranslationY="-11" HasShadow="True" BackgroundColor="#13304D">
-                    
-                    <Image Source="gobaseguir24.png" Margin="0,12,0,0" HeightRequest="30"/>
-
-                    
-                    
+                <Frame Grid.Row="0" Padding="1" CornerRadius="20" TranslationY="-11" HasShadow="True" BackgroundColor="#13304D">
+                    <Image Source="gobaseguir2.png" Margin="0,-70"></Image>
                 </Frame>
 
 
@@ -62,7 +58,11 @@
                         FontSize="Medium"
                         Text="Ingrese su CUIL sin guiones"
                         TextColor="White" />
-                        <Entry Placeholder="* * * * * * * * *" PlaceholderColor="DarkGray" Text="{Binding User}" IsTextPredictionEnabled="True" TextColor="Azure"/>
+                        <Entry Placeholder="* * * * * * * * *" 
+                               PlaceholderColor="DarkGray" Text="{Binding User}" 
+                               IsTextPredictionEnabled="True" TextColor="Azure"
+                              
+                              />
                         <Label
                         FontSize="Medium"
                         Text="Contraseña"

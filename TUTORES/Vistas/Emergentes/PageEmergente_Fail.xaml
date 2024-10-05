@@ -68,22 +68,14 @@
 
 
                     <!--  Payment status label  -->
-                    <Label
-                        Margin="0,0,0,0"
-                        Padding="30,20"
-                        FontSize="20"
-                        HorizontalOptions="Center"
-                        HorizontalTextAlignment="Center"
-                        LineHeight="{OnPlatform Android=1.25,
-                                                Default=-1}"
-                        Text="OH! Esta opcion se encuentra en desarrollo. "
-                        TextColor="White" />
+                    
+                    <Image Source="logoNexo.svg" HeightRequest="100"/>
 
 
                     <forms:AnimationView
                         x:Name="animationView"
                         Margin="0,0,0,0"
-                        Animation="animation_programming.json"
+                        Animation="loading_splash.json"
                         AnimationSource="AssetOrBundle"
                         Command="{Binding ClickCommand}"
                         HeightRequest="200"
@@ -94,18 +86,7 @@
                         WidthRequest="200" />
 
 
-                    <!--  Payment description label  -->
-                    <Label
-                        Margin="17,8"
-                        FontFamily="Montserrat-Medium"
-                        HorizontalOptions="Center"
-                        LineHeight="{OnPlatform Android=1.25,
-                                                Default=-1}"
-                        Text=""
-                        TextColor="White" />
-                    <Button Text="MENU PRINCIPAL" VerticalOptions="Start" Padding="10,10" Margin="20" CornerRadius="10" Command="{Binding VolverCommand}"/>
-
-
+                    
                 </StackLayout>
             </ScrollView>
 

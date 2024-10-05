@@ -4646,6 +4646,9 @@ C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\res\drawable\ex
 C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\res\drawable\report.png
 C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\res\drawable\iconback_orange_v1.png
 C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\res\drawable\iconback_orange_v2.png
+C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\res\drawable\gobaseguir2.png
+C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\res\drawable\icona_constancias_download.png
+C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\res\drawable\icon_b_book.png
 C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\uploadflags.txt
 C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\resolvedassemblies.hash
 C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\android\assets\Acr.UserDialogs.dll
@@ -5329,4 +5332,3 @@ C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\stamp\_ConvertR
 C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\maxib\Desarrollo\tutores2\TUTORES.Android\obj\Debug\130\res\drawable\gobaseguir24.png

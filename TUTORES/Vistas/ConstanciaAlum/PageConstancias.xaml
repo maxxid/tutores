@@ -15,7 +15,7 @@
         <StackLayout Orientation="Horizontal" Grid.Row="0" Spacing="10" VerticalOptions="Center" Padding="5,10" Margin="0,0,0,0">
             <Image
                 Source="iconback_orange_v1.png"
-                HeightRequest="25"
+                HeightRequest="20"
                 VerticalOptions="Center">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Command="{Binding VolverCommand}" />
@@ -31,7 +31,7 @@
         </StackLayout>
 
         <!-- Formulario de solicitud -->
-        <StackLayout Grid.Row="1" Padding="20,10" Spacing="10">
+        <StackLayout Grid.Row="1" Padding="20,0,20,10" Spacing="10">
 
             <!-- NUEVA SOLICITUD 
 
@@ -46,7 +46,7 @@
                     Command="{Binding NuevaConstanciaCommand}"/>
             <BoxView BackgroundColor="#Aqua" HeightRequest="2" Margin="0,10"/> -->
 
-            <BoxView BackgroundColor="#EE7511" HeightRequest="2" Margin="0,10"/>
+            <BoxView BackgroundColor="#EE7511" HeightRequest="1" Margin="0,10,0,0"/>
 
             <Label Text="Historial de Solicitudes:"
                    TextColor="White"
@@ -78,7 +78,9 @@
 
                             <StackLayout Grid.Column="1" Margin="0,0,10,0">
 
-                                <Image Grid.Column="2"     HeightRequest="35"     HorizontalOptions="Center"     IsVisible="true"     Source="exam.png" 
+                                <Image Grid.Column="2"     HeightRequest="35"    
+                                       HorizontalOptions="Center"     IsVisible="true"  
+                                       Source="iconA_Constancias_download.png" 
                                  >
                                     
                                 </Image>     

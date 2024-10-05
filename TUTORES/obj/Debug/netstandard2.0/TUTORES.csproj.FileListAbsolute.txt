@@ -197,6 +197,7 @@ C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Curso
 C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Cursos\TabbedPageNotas.xaml.g.cs
 C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\PageEmergente_Fail.xaml.g.cs
 C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\PageEmergente_OK.xaml.g.cs
+C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\Page_Anim.xaml.g.cs
 C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\ViewEmergente_CambioRol.xaml.g.cs
 C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\ViewEmergente_ModoOffline.xaml.g.cs
 C:\Users\maxib\Desarrollo\tutores2\TUTORES\obj\Debug\netstandard2.0\Vistas\Emergentes\ViewEmergente_ModoOnline.xaml.g.cs

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="TUTORES.Vistas.Emergentes.Page_Anim"
+    NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="4*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="0" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Frame
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                BackgroundColor="#0E2A47"
+                CornerRadius="0" />
+
+            <Image
+                Grid.Row="0"
+                Grid.Column="0"
+                Margin="10"
+                HeightRequest="35"
+                HorizontalOptions="CenterAndExpand"
+                Source="icon_B_atras.png"
+                VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding VolverCommand}" />
+                </Image.GestureRecognizers>
+            </Image>
+
+
+
+
+
+            <Frame
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                BackgroundColor="#08192B"
+                CornerRadius="0" />
+
+
+
+            <ScrollView
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Padding="20,00"
+                TranslationY="-20">
+                <StackLayout
+                    HorizontalOptions="Center"
+                    Spacing="0"
+                    VerticalOptions="Center">
+
+
+
+                    <!--  Payment status label  -->
+                    <Label
+                        Margin="0,40,0,0"
+                        FontSize="20"
+                        HorizontalOptions="Center"
+                        LineHeight="{OnPlatform Android=1.25,
+                                                Default=-1}"
+                        Text="SOLICITUD CARGADA"
+                        TextColor="White" />
+
+                    <Image Source="logoNexoSplash.svg" HeightRequest="100" />
+
+                    <forms:AnimationView
+                        x:Name="animationView"
+                        Margin="20,0,0,0"
+                        Animation="loading_splash.json"
+                        AnimationSource="AssetOrBundle"
+                        Command="{Binding ClickCommand}"
+                        HeightRequest="220"
+                        HorizontalOptions="FillAndExpand"
+                        MaxFrame="90"
+                        RepeatCount="2"
+                        RepeatMode="Restart"
+                        VerticalOptions="FillAndExpand"
+                        WidthRequest="200" />
+
+
+                </StackLayout>
+            </ScrollView>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

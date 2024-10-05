@@ -3,48 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\maxib\\Desarrollo\\tutores2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistamodelo\\pageconstanciasvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistamodelo\\pageconstanciasvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistas\\constanciaalum\\pageconstancias.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistas\\constanciaalum\\pageconstancias.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistas\\constanciaalum\\pageconstancias.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistas\\constanciaalum\\pageconstancias.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14A08BC6-D553-4390-8FB9-F8BDF450D97B}|TUTORES.Android\\TUTORES.Android.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores.android\\resources\\values\\styles.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{14A08BC6-D553-4390-8FB9-F8BDF450D97B}|TUTORES.Android\\TUTORES.Android.csproj|solutionrelative:tutores.android\\resources\\values\\styles.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistas\\principal\\cuerpo.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
       "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistas\\principal\\cuerpo.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistamodelo\\principal\\cuerpovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistamodelo\\principal\\cuerpovm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistas\\emergentes\\pageemergente_fail.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistas\\emergentes\\pageemergente_fail.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistamodelo\\pageconstanciasvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistamodelo\\pageconstanciasvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistas\\principal\\cuerpo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistas\\principal\\cuerpo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistas\\emergentes\\page_anim.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistas\\emergentes\\page_anim.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistas\\emergentes\\pageemergente_ok.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistas\\emergentes\\pageemergente_ok.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\app.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
       "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\app.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\converters\\statustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\converters\\statustocolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistas\\constanciaalum\\pageconstancias.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistas\\constanciaalum\\pageconstancias.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\converters\\booleantoisenabledconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\converters\\booleantoisenabledconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14A08BC6-D553-4390-8FB9-F8BDF450D97B}|TUTORES.Android\\TUTORES.Android.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores.android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14A08BC6-D553-4390-8FB9-F8BDF450D97B}|TUTORES.Android\\TUTORES.Android.csproj|solutionrelative:tutores.android\\mainactivity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistas\\cursos\\tabbedpagenotas.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistas\\cursos\\tabbedpagenotas.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistas\\login\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
       "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistas\\login\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistamodelo\\loginpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistamodelo\\loginpagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistas\\cursos\\tabbedpagenotas.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistas\\cursos\\tabbedpagenotas.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistas\\login\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistas\\login\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\vistas\\login\\selectionpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\vistas\\login\\selectionpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|c:\\users\\maxib\\desarrollo\\tutores2\\tutores\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5524651B-DE72-453A-A460-6E2F0285B436}|TUTORES\\TUTORES.csproj|solutionrelative:tutores\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14A08BC6-D553-4390-8FB9-F8BDF450D97B}|TUTORES.Android\\TUTORES.Android.csproj|C:\\Users\\maxib\\Desarrollo\\tutores2\\tutores.android\\resources\\values\\colors.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{14A08BC6-D553-4390-8FB9-F8BDF450D97B}|TUTORES.Android\\TUTORES.Android.csproj|solutionrelative:tutores.android\\resources\\values\\colors.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,12 +74,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 13,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -81,147 +97,215 @@
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Cuerpo.xaml",
-              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Principal\\Cuerpo.xaml",
-              "RelativeDocumentMoniker": "TUTORES\\Vistas\\Principal\\Cuerpo.xaml",
-              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Principal\\Cuerpo.xaml",
-              "RelativeToolTip": "TUTORES\\Vistas\\Principal\\Cuerpo.xaml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAD0AAAA3AAAA",
+              "Title": "PageEmergente_Fail.xaml",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Emergentes\\PageEmergente_Fail.xaml",
+              "RelativeDocumentMoniker": "TUTORES\\Vistas\\Emergentes\\PageEmergente_Fail.xaml",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Emergentes\\PageEmergente_Fail.xaml",
+              "RelativeToolTip": "TUTORES\\Vistas\\Emergentes\\PageEmergente_Fail.xaml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAEkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-29T05:36:25.335Z",
+              "WhenOpened": "2024-10-04T20:43:28.74Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\App.xaml",
-              "RelativeDocumentMoniker": "TUTORES\\App.xaml",
-              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\App.xaml",
-              "RelativeToolTip": "TUTORES\\App.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-29T05:05:23.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BooleanToIsEnabledConverter.cs",
-              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Converters\\BooleanToIsEnabledConverter.cs",
-              "RelativeDocumentMoniker": "TUTORES\\Converters\\BooleanToIsEnabledConverter.cs",
-              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Converters\\BooleanToIsEnabledConverter.cs",
-              "RelativeToolTip": "TUTORES\\Converters\\BooleanToIsEnabledConverter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T05:04:55.732Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainActivity.cs",
-              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES.Android\\MainActivity.cs",
-              "RelativeDocumentMoniker": "TUTORES.Android\\MainActivity.cs",
-              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES.Android\\MainActivity.cs",
-              "RelativeToolTip": "TUTORES.Android\\MainActivity.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwBkAAABTAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T04:48:15.293Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoginPageVM.cs",
-              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\VistaModelo\\LoginPageVM.cs",
-              "RelativeDocumentMoniker": "TUTORES\\VistaModelo\\LoginPageVM.cs",
-              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\VistaModelo\\LoginPageVM.cs",
-              "RelativeToolTip": "TUTORES\\VistaModelo\\LoginPageVM.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAuwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T04:46:52.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Login\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "TUTORES\\Vistas\\Login\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Login\\MainPage.xaml.cs",
-              "RelativeToolTip": "TUTORES\\Vistas\\Login\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T04:46:47.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Login\\MainPage.xaml",
-              "RelativeDocumentMoniker": "TUTORES\\Vistas\\Login\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Login\\MainPage.xaml",
-              "RelativeToolTip": "TUTORES\\Vistas\\Login\\MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-29T04:46:28.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PageConstancias.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\ConstanciaAlum\\PageConstancias.xaml.cs",
-              "RelativeDocumentMoniker": "TUTORES\\Vistas\\ConstanciaAlum\\PageConstancias.xaml.cs",
-              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\ConstanciaAlum\\PageConstancias.xaml.cs",
-              "RelativeToolTip": "TUTORES\\Vistas\\ConstanciaAlum\\PageConstancias.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T03:48:41.749Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PageConstancias.xaml",
-              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\ConstanciaAlum\\PageConstancias.xaml",
-              "RelativeDocumentMoniker": "TUTORES\\Vistas\\ConstanciaAlum\\PageConstancias.xaml",
-              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\ConstanciaAlum\\PageConstancias.xaml",
-              "RelativeToolTip": "TUTORES\\Vistas\\ConstanciaAlum\\PageConstancias.xaml",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAwFIAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-09-29T03:35:12.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "PageConstanciasVM.cs",
               "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\VistaModelo\\PageConstanciasVM.cs",
               "RelativeDocumentMoniker": "TUTORES\\VistaModelo\\PageConstanciasVM.cs",
               "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\VistaModelo\\PageConstanciasVM.cs",
               "RelativeToolTip": "TUTORES\\VistaModelo\\PageConstanciasVM.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAADwv2MAAAAzAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T21:44:10.752Z",
+              "WhenOpened": "2024-10-04T20:43:14.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CuerpoVM.cs",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\VistaModelo\\Principal\\CuerpoVM.cs",
+              "RelativeDocumentMoniker": "TUTORES\\VistaModelo\\Principal\\CuerpoVM.cs",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\VistaModelo\\Principal\\CuerpoVM.cs",
+              "RelativeToolTip": "TUTORES\\VistaModelo\\Principal\\CuerpoVM.cs",
+              "ViewState": "AQIAAKAAAAAAAAAAAAAQwKwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T20:41:55.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Page_Anim.xaml",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Emergentes\\Page_Anim.xaml",
+              "RelativeDocumentMoniker": "TUTORES\\Vistas\\Emergentes\\Page_Anim.xaml",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Emergentes\\Page_Anim.xaml",
+              "RelativeToolTip": "TUTORES\\Vistas\\Emergentes\\Page_Anim.xaml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAEMAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-04T20:05:52.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PageEmergente_OK.xaml",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Emergentes\\PageEmergente_OK.xaml",
+              "RelativeDocumentMoniker": "TUTORES\\Vistas\\Emergentes\\PageEmergente_OK.xaml",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Emergentes\\PageEmergente_OK.xaml",
+              "RelativeToolTip": "TUTORES\\Vistas\\Emergentes\\PageEmergente_OK.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-04T20:04:57.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\App.xaml",
+              "RelativeDocumentMoniker": "TUTORES\\App.xaml",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\App.xaml",
+              "RelativeToolTip": "TUTORES\\App.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-04T04:51:05.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cuerpo.xaml",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Principal\\Cuerpo.xaml",
+              "RelativeDocumentMoniker": "TUTORES\\Vistas\\Principal\\Cuerpo.xaml",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Principal\\Cuerpo.xaml",
+              "RelativeToolTip": "TUTORES\\Vistas\\Principal\\Cuerpo.xaml",
+              "ViewState": "AQIAAIcBAAAAAAAAAAAmwJIBAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-04T04:17:34.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "styles.xml",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES.Android\\Resources\\values\\styles.xml",
+              "RelativeDocumentMoniker": "TUTORES.Android\\Resources\\values\\styles.xml",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES.Android\\Resources\\values\\styles.xml",
+              "RelativeToolTip": "TUTORES.Android\\Resources\\values\\styles.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-10-04T13:26:56.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\App.xaml.cs",
+              "RelativeDocumentMoniker": "TUTORES\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\App.xaml.cs",
+              "RelativeToolTip": "TUTORES\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T13:14:28.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TabbedPageNotas.xaml",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Cursos\\TabbedPageNotas.xaml",
+              "RelativeDocumentMoniker": "TUTORES\\Vistas\\Cursos\\TabbedPageNotas.xaml",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Cursos\\TabbedPageNotas.xaml",
+              "RelativeToolTip": "TUTORES\\Vistas\\Cursos\\TabbedPageNotas.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-04T04:41:54.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Login\\MainPage.xaml",
+              "RelativeDocumentMoniker": "TUTORES\\Vistas\\Login\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Login\\MainPage.xaml",
+              "RelativeToolTip": "TUTORES\\Vistas\\Login\\MainPage.xaml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-04T04:28:57.4Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "StatusToColorConverter.cs",
-              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Converters\\StatusToColorConverter.cs",
-              "RelativeDocumentMoniker": "TUTORES\\Converters\\StatusToColorConverter.cs",
-              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Converters\\StatusToColorConverter.cs",
-              "RelativeToolTip": "TUTORES\\Converters\\StatusToColorConverter.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAswCEAAAABAAAA",
+              "Title": "Cuerpo.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Principal\\Cuerpo.xaml.cs",
+              "RelativeDocumentMoniker": "TUTORES\\Vistas\\Principal\\Cuerpo.xaml.cs",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Principal\\Cuerpo.xaml.cs",
+              "RelativeToolTip": "TUTORES\\Vistas\\Principal\\Cuerpo.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T05:53:36.454Z",
+              "WhenOpened": "2024-10-04T14:52:31.285Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TabbedPageNotas.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Cursos\\TabbedPageNotas.xaml.cs",
+              "RelativeDocumentMoniker": "TUTORES\\Vistas\\Cursos\\TabbedPageNotas.xaml.cs",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Cursos\\TabbedPageNotas.xaml.cs",
+              "RelativeToolTip": "TUTORES\\Vistas\\Cursos\\TabbedPageNotas.xaml.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAqwDQAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T13:35:30.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SelectionPage.xaml",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Login\\SelectionPage.xaml",
+              "RelativeDocumentMoniker": "TUTORES\\Vistas\\Login\\SelectionPage.xaml",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\Login\\SelectionPage.xaml",
+              "RelativeToolTip": "TUTORES\\Vistas\\Login\\SelectionPage.xaml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAB2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-04T15:32:21.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PageConstancias.xaml",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\ConstanciaAlum\\PageConstancias.xaml",
+              "RelativeDocumentMoniker": "TUTORES\\Vistas\\ConstanciaAlum\\PageConstancias.xaml",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES\\Vistas\\ConstanciaAlum\\PageConstancias.xaml",
+              "RelativeToolTip": "TUTORES\\Vistas\\ConstanciaAlum\\PageConstancias.xaml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAD8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-04T14:48:28.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "colors.xml",
+              "DocumentMoniker": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES.Android\\Resources\\values\\colors.xml",
+              "RelativeDocumentMoniker": "TUTORES.Android\\Resources\\values\\colors.xml",
+              "ToolTip": "C:\\Users\\maxib\\Desarrollo\\tutores2\\TUTORES.Android\\Resources\\values\\colors.xml",
+              "RelativeToolTip": "TUTORES.Android\\Resources\\values\\colors.xml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2024-10-04T13:18:31.672Z"
             }
           ]
         }
